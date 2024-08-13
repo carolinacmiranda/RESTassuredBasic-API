@@ -1,0 +1,48 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://example.com/example.json",
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "age": {
+          "type": "integer"
+        },
+        "salary": {
+          "type": ["number", "integer", "null"]
+        },
+        "endereco": {
+          "type": "object",
+          "properties": {
+            "rua": {
+              "type": "string"
+            },
+            "numero": {
+              "type": "integer"
+            }
+          },
+          "required": ["rua", "numero"]
+        },
+        "filhos": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              }
+            },
+            "required": ["name"]
+          }
+        }
+      },
+      "required": ["id", "name", "age"]
+    }
+  }
+  

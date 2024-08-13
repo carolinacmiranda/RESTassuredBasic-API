@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.FileTest" time="6.444" tests="4" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="22"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/carolinacosta/restAssured-API/target/test-classes:/Users/carolinacosta/restAssured-API/target/classes:/Users/carolinacosta/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/carolinacosta/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/carolinacosta/.m2/repository/io/rest-assured/rest-assured/4.4.0/rest-assured-4.4.0.jar:/Users/carolinacosta/.m2/repository/org/codehaus/groovy/groovy/3.0.8/groovy-3.0.8.jar:/Users/carolinacosta/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.8/groovy-xml-3.0.8.jar:/Users/carolinacosta/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/carolinacosta/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/carolinacosta/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/carolinacosta/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/carolinacosta/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/carolinacosta/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/carolinacosta/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/carolinacosta/.m2/repository/io/rest-assured/json-path/4.4.0/json-path-4.4.0.jar:/Users/carolinacosta/.m2/repository/org/codehaus/groovy/groovy-json/3.0.8/groovy-json-3.0.8.jar:/Users/carolinacosta/.m2/repository/io/rest-assured/rest-assured-common/4.4.0/rest-assured-common-4.4.0.jar:/Users/carolinacosta/.m2/repository/io/rest-assured/xml-path/4.4.0/xml-path-4.4.0.jar:/Users/carolinacosta/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/carolinacosta/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/carolinacosta/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/carolinacosta/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/Users/carolinacosta/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/carolinacosta/.m2/repository/io/rest-assured/json-schema-validator/5.0.0/json-schema-validator-5.0.0.jar:/Users/carolinacosta/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/carolinacosta/.m2/repository/com/google/guava/guava/28.2-android/guava-28.2-android.jar:/Users/carolinacosta/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/carolinacosta/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/carolinacosta/.m2/repository/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.jar:/Users/carolinacosta/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar:/Users/carolinacosta/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/carolinacosta/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/carolinacosta/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.0/jackson-databind-2.11.0.jar:/Users/carolinacosta/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.0/jackson-annotations-2.11.0.jar:/Users/carolinacosta/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.0/jackson-core-2.11.0.jar:/Users/carolinacosta/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/carolinacosta/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/carolinacosta/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/carolinacosta/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/carolinacosta/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/carolinacosta/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/carolinacosta/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/carolinacosta/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/carolinacosta/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/carolinacosta/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/carolinacosta/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="22"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/22.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/carolinacosta/restAssured-API/target/surefire/surefirebooter-20240813134518204_3.jar /Users/carolinacosta/restAssured-API/target/surefire 2024-08-13T13-45-18_144-jvmRun1 surefire-20240813134518204_1tmp surefire_0-20240813134518204_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/carolinacosta/restAssured-API/target/test-classes:/Users/carolinacosta/restAssured-API/target/classes:/Users/carolinacosta/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/carolinacosta/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/carolinacosta/.m2/repository/io/rest-assured/rest-assured/4.4.0/rest-assured-4.4.0.jar:/Users/carolinacosta/.m2/repository/org/codehaus/groovy/groovy/3.0.8/groovy-3.0.8.jar:/Users/carolinacosta/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.8/groovy-xml-3.0.8.jar:/Users/carolinacosta/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/carolinacosta/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/carolinacosta/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/carolinacosta/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/carolinacosta/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/carolinacosta/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/carolinacosta/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/carolinacosta/.m2/repository/io/rest-assured/json-path/4.4.0/json-path-4.4.0.jar:/Users/carolinacosta/.m2/repository/org/codehaus/groovy/groovy-json/3.0.8/groovy-json-3.0.8.jar:/Users/carolinacosta/.m2/repository/io/rest-assured/rest-assured-common/4.4.0/rest-assured-common-4.4.0.jar:/Users/carolinacosta/.m2/repository/io/rest-assured/xml-path/4.4.0/xml-path-4.4.0.jar:/Users/carolinacosta/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/carolinacosta/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/carolinacosta/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/carolinacosta/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/Users/carolinacosta/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/carolinacosta/.m2/repository/io/rest-assured/json-schema-validator/5.0.0/json-schema-validator-5.0.0.jar:/Users/carolinacosta/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/carolinacosta/.m2/repository/com/google/guava/guava/28.2-android/guava-28.2-android.jar:/Users/carolinacosta/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/carolinacosta/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/carolinacosta/.m2/repository/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.jar:/Users/carolinacosta/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar:/Users/carolinacosta/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/carolinacosta/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/carolinacosta/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.0/jackson-databind-2.11.0.jar:/Users/carolinacosta/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.0/jackson-annotations-2.11.0.jar:/Users/carolinacosta/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.0/jackson-core-2.11.0.jar:/Users/carolinacosta/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/carolinacosta/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/carolinacosta/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/carolinacosta/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/carolinacosta/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/carolinacosta/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/carolinacosta/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/carolinacosta/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/carolinacosta/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/carolinacosta/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/carolinacosta/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/carolinacosta"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/22.0.2/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/carolinacosta/restAssured-API"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/carolinacosta/restAssured-API/target/surefire/surefirebooter-20240813134518204_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="22.0.2"/>
+    <property name="user.name" value="carolinacosta"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="14.5"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/carolinacosta/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/d3/xgp1hjw55k9__4kq2636lptm0000gn/T/"/>
+    <property name="java.version" value="22.0.2"/>
+    <property name="user.dir" value="/Users/carolinacosta/restAssured-API"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/carolinacosta/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="22.0.2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="66.0"/>
+  </properties>
+  <testcase name="testSchemaJson" classname="com.example.FileTest" time="1.741">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://restapi.wcaquino.me/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx/1.12.1 (Ubuntu)
+Date: Tue, 13 Aug 2024 16:45:20 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 252
+Connection: keep-alive
+X-Powered-By: Express
+ETag: W/"fc-QgZUfb9tXxph9k/5XYXDvSt1Cwg"
+
+[
+    {
+        "id": 1,
+        "name": "João da Silva",
+        "age": 30,
+        "salary": 1234.5678
+    },
+    {
+        "id": 2,
+        "name": "Maria Joaquina",
+        "endereco": {
+            "rua": "Rua dos bobos",
+            "numero": 0
+        },
+        "age": 25,
+        "salary": 2500
+    },
+    {
+        "id": 3,
+        "name": "Ana Júlia",
+        "age": 20,
+        "filhos": [
+            {
+                "name": "Zezinho"
+            },
+            {
+                "name": "Luizinho"
+            }
+        ]
+    }
+]
+]]></system-out>
+  </testcase>
+  <testcase name="testUploadFile" classname="com.example.FileTest" time="2.386">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://restapi.wcaquino.me/upload
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=multipart/form-data
+Cookies:		<none>
+Multiparts:		------------
+				Content-Disposition: form-data; name = arquivo; filename = RestAssuredWorkshop.pdf
+				Content-Type: application/octet-stream
+
+				src/main/resources/RestAssuredWorkshop.pdf
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx/1.12.1 (Ubuntu)
+Date: Tue, 13 Aug 2024 16:45:22 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 89
+Connection: keep-alive
+X-Powered-By: Express
+ETag: W/"59-GbyPWrd04UL1Ytaghrj3jdHKyQ0"
+
+{
+    "name": "RestAssuredWorkshop.pdf",
+    "md5": "d3e7ec8b973683cf407aff22d95150a4",
+    "size": 102400
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testSendFile" classname="com.example.FileTest" time="0.776">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://restapi.wcaquino.me/upload
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Server: nginx/1.12.1 (Ubuntu)
+Date: Tue, 13 Aug 2024 16:45:23 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 32
+Connection: keep-alive
+X-Powered-By: Express
+ETag: W/"20-U2M5UmdVZjF/xl8+WzHyPzGt5Ms"
+
+{
+    "error": "Arquivo não enviado"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testDownloadFile" classname="com.example.FileTest" time="1.227">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://restapi.wcaquino.me/download
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx/1.12.1 (Ubuntu)
+Date: Tue, 13 Aug 2024 16:45:24 GMT
+Content-Type: image/jpeg
+Content-Length: 94878
+Connection: keep-alive
+X-Powered-By: Express
+Accept-Ranges: bytes
+Cache-Control: public, max-age=0
+Last-Modified: Thu, 02 May 2019 07:54:07 GMT
+ETag: W/"1729e-16a77894bef"
+
+����08Exif&amp#0;&amp#0;II*&amp#0;&amp#8;&amp#0;&amp#0;&amp#0;
+&amp#0;&amp#15;&amp#1;&amp#2;&amp#0;&amp#6;&amp#0;&amp#0;&amp#0;�&amp#0;&amp#0;&amp#0;&amp#16;&amp#1;&amp#2;&amp#0;&amp#19;&amp#0;&amp#0;&amp#0;�&amp#0;&amp#0;&amp#0;&amp#26;&amp#1;&amp#5;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;�&amp#0;&amp#0;&amp#0;&amp#27;&amp#1;&amp#5;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;�&amp#0;&amp#0;&amp#0;(&amp#1;&amp#3;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;&amp#2;&amp#0;&amp#0;&amp#0;1&amp#1;&amp#2;&amp#0;*&amp#0;&amp#0;&amp#0;�&amp#0;&amp#0;&amp#0;2&amp#1;&amp#2;&amp#0;&amp#20;&amp#0;&amp#0;&amp#0;�&amp#0;&amp#0;&amp#0;;&amp#1;&amp#2;&amp#0;&amp#0;&amp#0;&amp#0;�&amp#0;&amp#0;&amp#0;i�&amp#4;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;�&amp#0;&amp#0;&amp#0;%�&amp#4;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;�&amp#2;&amp#0;&amp#0;&amp#6;&amp#3;&amp#0;&amp#0;Canon&amp#0;Canon EOS REBEL T3&amp#0;&amp#0;�&amp#0;&amp#0;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;�&amp#0;&amp#0;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;Adobe Photoshop Lightroom 6.8 (Macintosh)&amp#0;2018:12:06 18:51:29&amp#0;Wagner Costa&amp#0;&amp#0;&amp#24;&amp#0;��&amp#5;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;"&amp#2;&amp#0;&amp#0;"�&amp#3;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;&amp#3;&amp#0;&amp#0;&amp#0;'�&amp#3;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0; &amp#3;&amp#0;&amp#0;0�&amp#3;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;&amp#2;&amp#0;&amp#0;&amp#0;2�&amp#4;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0; &amp#3;&amp#0;&amp#0;&amp#0;�&amp#7;&amp#0;&amp#4;&amp#0;&amp#0;&amp#0;0230&amp#3;�&amp#2;&amp#0;&amp#20;&amp#0;&amp#0;&amp#0;*&amp#2;&amp#0;&amp#0;&amp#4;�&amp#2;&amp#0;&amp#20;&amp#0;&amp#0;&amp#0;>&amp#2;&amp#0;&amp#0;&amp#1;�
+&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;R&amp#2;&amp#0;&amp#0;&amp#4;�
+&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;Z&amp#2;&amp#0;&amp#0;&amp#7;�&amp#3;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;&amp#6;&amp#0;&amp#0;&amp#0;	�&amp#3;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;&amp#16;&amp#0;&amp#0;&amp#0;
+�&amp#5;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;b&amp#2;&amp#0;&amp#0;��&amp#2;&amp#0;&amp#3;&amp#0;&amp#0;&amp#0;58&amp#0;&amp#0;&amp#1;�&amp#3;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;&amp#14;�&amp#5;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;j&amp#2;&amp#0;&amp#0;&amp#15;�&amp#5;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;r&amp#2;&amp#0;&amp#0;&amp#16;�&amp#3;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;&amp#2;&amp#0;&amp#0;&amp#0;&amp#1;�&amp#3;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#2;�&amp#3;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#3;�&amp#3;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#6;�&amp#3;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;1�&amp#2;&amp#0;&amp#0;&amp#0;&amp#0;z&amp#2;&amp#0;&amp#0;5�&amp#2;&amp#0;&amp#11;&amp#0;&amp#0;&amp#0;�&amp#2;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;�&amp#4;&amp#0;&amp#0;2014:10:21 11:03:17&amp#0;2014:10:21 12:03:17&amp#0;`��&amp#0;@B&amp#15;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;2&amp#0;&amp#0;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;�/A&amp#0;�&amp#3;&amp#0;&amp#0;&amp#0;u+&amp#0;S&amp#2;&amp#0;&amp#0;222073165826&amp#0;&amp#0;0000000000&amp#0;&amp#0;&amp#5;&amp#0;&amp#0;&amp#0;&amp#1;&amp#0;&amp#4;&amp#0;&amp#0;&amp#0;&amp#2;&amp#2;&amp#0;&amp#0;&amp#1;&amp#0;&amp#2;&amp#0;&amp#2;&amp#0;&amp#0;&amp#0;N&amp#0;&amp#0;&amp#0;&amp#2;&amp#0;&amp#5;&amp#0;&amp#3;&amp#0;&amp#0;&amp#0;�&amp#2;&amp#0;&amp#0;&amp#3;&amp#0;&amp#2;&amp#0;&amp#2;&amp#0;&amp#0;&amp#0;W&amp#0;&amp#0;&amp#0;&amp#4;&amp#0;&amp#5;&amp#0;&amp#3;&amp#0;&amp#0;&amp#0;�&amp#2;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#26;&amp#0;&amp#0;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;+�&amp#5;&amp#0;&amp#16;'&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;N&amp#0;&amp#0;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;&amp#26;�&amp#3;&amp#0;&amp#16;'&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;&amp#6;&amp#0;&amp#3;&amp#1;&amp#3;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;&amp#6;&amp#0;&amp#0;&amp#0;&amp#26;&amp#1;&amp#5;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;T&amp#3;&amp#0;&amp#0;&amp#27;&amp#1;&amp#5;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;\&amp#3;&amp#0;&amp#0;(&amp#1;&amp#3;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;&amp#2;&amp#0;&amp#0;&amp#0;&amp#1;&amp#2;&amp#4;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;d&amp#3;&amp#0;&amp#0;&amp#2;&amp#2;&amp#4;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;�,&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;H&amp#0;&amp#0;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;H&amp#0;&amp#0;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;����&amp#0;�&amp#0;&amp#6;&amp#4;&amp#4;&amp#4;&amp#5;&amp#4;&amp#6;&amp#5;&amp#5;&amp#6;	&amp#6;&amp#5;&amp#6;	&amp#11;&amp#8;&amp#6;&amp#6;&amp#8;&amp#11;&amp#12;
+
+&amp#11;
+
+&amp#12;&amp#16;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#16;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#1;&amp#7;&amp#7;&amp#7;&amp#12;&amp#24;&amp#16;&amp#16;&amp#24;&amp#20;&amp#14;&amp#14;&amp#14;&amp#20;&amp#20;&amp#14;&amp#14;&amp#14;&amp#14;&amp#20;&amp#17;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#17;&amp#17;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#17;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;��&amp#0;&amp#4;&amp#0; ��&amp#0;&amp#14;Adobe&amp#0;d�&amp#0;&amp#0;&amp#0;&amp#1;��&amp#0;&amp#17;&amp#8;&amp#0;�&amp#1;&amp#0;&amp#3;&amp#0;&amp#17;&amp#0;&amp#1;&amp#17;&amp#1;&amp#2;&amp#17;&amp#1;��&amp#0;�&amp#0;&amp#0;&amp#2;&amp#3;&amp#1;&amp#1;&amp#1;&amp#1;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#3;&amp#4;&amp#5;&amp#6;&amp#7;&amp#2;&amp#1;&amp#8;&amp#0;&amp#1;&amp#0;&amp#2;&amp#3;&amp#1;&amp#1;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#1;&amp#2;&amp#0;&amp#3;&amp#4;&amp#5;&amp#6;&amp#16;&amp#0;&amp#2;&amp#1;&amp#4;&amp#1;&amp#3;&amp#2;&amp#4;&amp#4;&amp#4;&amp#2;&amp#8;&amp#5;&amp#5;&amp#0;&amp#0;&amp#1;&amp#2;&amp#3;&amp#0;&amp#4;&amp#5;&amp#17;&amp#6;&amp#18;!1&amp#7;A&amp#19;"Qa&amp#20;2q�&amp#21;BR�#�&amp#8;$3br���&amp#22;C���&amp#23;����&amp#17;&amp#0;&amp#2;&amp#2;&amp#1;&amp#4;&amp#1;&amp#4;&amp#1;&amp#3;&amp#3;&amp#3;&amp#5;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#1;&amp#2;&amp#17;&amp#3;&amp#4;&amp#18;!1A&amp#5;&amp#19;"2Q&amp#20;BbRaqr��S������&amp#0;&amp#12;&amp#3;&amp#0;&amp#0;&amp#1;&amp#17;&amp#2;&amp#17;&amp#0;?&amp#0;�H�_&amp#21;A��])Cb��+&amp#25;HRD�=�ȝ�&amp#5;1&amp#25;����H�ƕ�b����z���j&amp#16;f3D�1&amp#25;�&amp#17;�&amp#21;&amp#6;&amp#14;��!�Q&amp#8;@*&amp#4;�x��a8��r�zg�J��ν��7J�&amp#0;!HϮdiey[�9,O�J�&amp#4;�b7DQIX&amp#26;)��%"��RR(
+�.(���>h&amp#8;�&amp#29;+��K&amp#5;�@)���Pl��(�a&amp#21;�Y, 5[`���-���З&amp#26;օg��`�&amp#20;&amp#24;lZE�&amp#25;1gJ&amp#3;&-*��\'cA��&amp#19;s�u[&amp#25;2>SIc!rjY&amp#14;(XB!�&amp#1;�ɢ&amp#17;���`�ȗ�&amp#17;���2&amp#8;&amp#16;��{&amp#25;&S/md�bF&amp#29;e&amp#30;h�[�2��vF(&amp#22;�&amp#11;o��&amp#5;&amp#5;��
+l���2�&amp#25;��T�&amp#20;�U&amp#0;!-AX��&amp#4;hRCPZ&amp#18;����F�&amp#26;&amp#5;l���&amp#1;X=�!�UA��7z&amp#12;6&amp#25;M#d���m��i@���}%�e��gd�P%�qJ&amp#20;�:�&amp#26;��Z�X�ր4��A^&amp#30;櫓&amp#25;&amp#17;�7z��&amp#2;h�&amp#14;wR�t����#>(�&amp#7;`4�b��8�[��&amp#27;����&amp#16;� y�yRt[&amp#12;m�=��;�&amp#23;&amp#25;IՍ�}�#�"&amp#29;�z>�4&amp#29;�Y&amp#1;���d6-c2k�����&amp#26;�&amp#18;�6�	d�~�"ۯYg#m��>&amp#25;��Fq��1��A���$L-T�Y[�&amp#11;�)w�d��K'K&amp#21;>AѦ ��&amp#3;PQ9�T&amp#0;��(&amp#8;�f�w�+&amp#18;��R�d|��A&amp#25;&amp#27;9�J+&amp#23;�&amp#17;OwPc�n��&amp#22;0�[a��R0&amp#5;&amp#17;�&amp#27;
+H�)l&amp#12;��2IX��W�d?&amp#22;�c nhX�Vf&amp#0;T���\c15�7v6�^A$_&amp#18;G�v&amp#16;�AS���[�&amp#22;�ub�z��a?�b�Yf�����ID��.�&amp#15;n��yb�7E��)F�G�����้��3���V&amp#7;�-�&amp#26;�o'C��&amp#20;S%�v\&amp#27;�_A��\E԰�&amp#14;# &amp#31;�z��m]0n#/,/lg0^@��/��R��&amp#26;V�������E �:&amp#24;�'�Kg{�1�؁�J&amp#23;�#�dύN���&amp#4;�&amp#12;�[�l]�@&amp#3;��j��{VYd~��&amp#31;�&amp#7;�8�x�Lo*��@&amp#24;�{��9$��&amp#8;�O&amp#25;��흈�bT���X0f�R��8t�&amp#15;}sok���&amp#16;#�&amp#24;�C��.9���&amp#5;&amp#24;�-��SH��bκ�p`�W��&amp#5;e���SK@&amp#12;FY<б&amp#24;��R�b��5,B6��&amp#17;�@|�&amp#21;���P&amp#26;��ݨ0X�iU6&amp#18;��0��L���>�Se��f�����Kp�?#�U{������97\�9c&amp#8;��9&amp#16;��.��wЩ�t%s/�&amp#14;A4OL��͉8ԘC{&amp#3;�E�֍���~�ʖײ_�u42M4�%��R\ܣ��q!#�n�Q��W&amp#1;z���<�l���uO��&amp#30;�S�Rב��,j�x��4��&amp#15;�������9G2�%���2*�i&amp#20;��vL�a��?&amp#2;�����w�:hba�&amp#28;=���g�׾��P�&amp#28;H��/��M��X�yx�;h��ʥ���&���U�s{��L�\��&amp#22;�-�N��K&amp#27;{&amp#17;節8f�����w&amp#19;u����n����T�ᇳ&amp#15;�W2Qqt�&amp#1;&amp#20;�S
+5?Fsӥ��/gẙ&amp#16;&amp#15;꬚�Sm8���K�]rh��&amp#21;�z�,�=�o��Nly0�����&amp#25;��a�41�׵&amp#29;/�&amp#6;�FL���&amp#8;ů�W&amp#8;Arؽ��G�q)&amp#11;0'`��2�p6��]�9�?7��&6��'Sɿ?a]?N��&amp#20;��b�dWH��Z�&amp#24;�4�&amp#8;-4�&amp#0;�f���)+бX��AX��ڥ��.&amp#8;�DW!bi��?n�,,)�i$�J����&amp#25;&amp#19;���}�UK�F&amp#7;��F
+(��|x��ub���{����&amp#11;6�V�GL�2�����&amp#28;�v��F��&amp#24;nx&amp#12;�&amp#4;��Z����&amp#3;�&amp#0;ʛ܇�\���hex�&amp#0;&amp#15;��k�1��&amp#5;�&amp#0;�M&amp#20;��#�1}3��No�R�&amp#23;�\���%w��&amp#21;&amp#30;&amp#31;ò~����Np��Es����&amp#11;�4_&amp#27;�.�؟�ui��j�$��d�?�hťMs�;���{����S),��N�o��W3&�&amp#20;��������&amp#30;^�Je�ll1�����e�܈���3��G�m�Ztz&amp#5;�[�b�%�~Dϩ{k�o&amp#27;���&amp#18;]�Y&amp#15;�&amp#17;����~��zF&amp#8;�y+����)Z���'�G�.��
+u�w�W]&amp#25;�&amp#21;�����[i�4N�~��+_�4��z]�|O:�⓴!C��h�՗L��H�/��<��7����&amp#17;R&amp#4;�1qr��7~ݼ�Rd�)��A�|&amp#12;Z���_����ׄO��ţ��I��L3<O��v�&amp#11;�G�H@�&amp#0;}��&amp#3;���V��X���՝�&'tx�&amp#29;�A�����7J�qf��&amp#23;&amp#21;��&amp#31;��d_�b�u&amp#15;�V����E&amp#11;�e��&amp#0;�y&amp#28;��h&amp#3;�Go&amp#23;�&amp#0;�&amp#15;�X�&amp#8;��$[�&amp#6;&amp#2;�,�X��vM2TT����&amp#14;ZN�	b�K��`&amp#18;�ZP1i&amp#30;�V&amp#5;���%m
+�&amp#1;&amp#25;�ɢ�f&amp#2;���Wf�`&amp#30;��v  ,O�*�2ċ&7�d�=&amp#29;
+~�jG&amp#19;c���-�'��I\����,&amp#28;&amp#23;�L�q6�&amp#8;Uw�V&amp#28;��Lo��Ո�j�n9�0���s!�KCph��}����&amp#18;{�&amp#4;�_����C��3�ŏ򨥞]����&amp#0;&amp#19;f��St_����ଌTx�k_���?P�&amp#14;�蝨�ԀZ��r&amp#24;�ƥ�&amp#16;w"*��ݪ�&Lz��=���%G�&amp#0;a���7���.&amp#23;	"جw&amp#15;�U� $&amp#22;P|&amp#3;���-&amp#19;Ïk�㙗>�uCv�s&amp#31;��I&amp#31;��R}�daȎ\&amp#0;��t7��G�ڞ�(�D^W�Ek�{�A֕>�UY�(��&amp#24;;��7&�G&amp#31;y�/�&amp#18;e���&amp#22;��v	�G�SV�F1���&amp#18;q�햿N2�%ǡ�H&amp#0;��e�ս�aZqJ�#�%���u��V&amp#12;y#۔�P~��&amp#0;^&amp#25;���t&amp#14;�K�]&amp#6;���&amp#21;��&amp#4;�&amp#3;��&amp#24;$G+!�&amp#28;{	��6������~��	�++y?K�T��n�1��?+��&amp#15;ޗڏ���&amp#28;ێ���RY&amp#22;��б��ǒ&amp#27;]&amp#4;�5�ך��&amp#11;�(4�K&amp#22;w�+&amp#0;&amp#7;j&amp#2;�L�,&amp#2;�IA	&&�Z�$�(���lY��uv_�#v�&amp#28;/�P�\b�5R#&amp#27;��欄&amp#18;5F%��&amp#27;o&amp#24;Q�*�&amp#31;i`�KtֵTM�A&amp#18;-}&amp#20;k��5A��֮C!�y��&amp#1;�!�.�Q�Hhn&amp#1;3:0e%YN�&amp#29;�57&amp#5;&amp#18;-�3�t���Ƃ&amp#5;u&amp#7;`ި�&amp#5;7�&amp#27;qkrD�x6
+��&amp#23;&amp#21;��&amp#8;�T&amp#15;&amp#20;I���=U�=?G,&amp#17;�?����{�:-&amp#29;W.G��ـ�t&amp#29;��
+{�PP��~j�&amp#2;Ȯed.OC���Y��Tf\�:^Aa&amp#3;��&amp#2;M�I�&amp#0;�>&amp#1;�&amp#0;�W&amp#19;_��H�&amp#24;_%&amp#19;�<�&amp#28;t3ƥ͹=_e5�&amp#14;�N�&amp#19;�f��G1I��$}Mlt��׵vt�n5�1�f�6FepY�&amp#7;��֝ܚiP�YVx�&amp#14;�&amp#7;@U�\&amp#21;��G&amp#28;�V�P����y6P1&amp#11;�&amp#23;ο�R��V�-j�&amp#1;�3�/q(`|&amp#16;wV���A�&amp#25;��ˁ��&amp#30;�&�	��.�18XP&amp#22;������
+0_]�ֳr&amp#8;≁�%ӑY5&amp#18;�&amp#12;˚��Y�Pf⅂�&amp#26;j&amp#22;&amp#6;��������&amp#27;&amp#3;#n�"�0&������l&amp#5;��:!Z�/�N7��a�QF��^�r�#sʭ��l�k�A�H&amp#14;Do�&amp#0;QG_L~>����}&amp#6;9R&amp#15;&amp#15;6���(��3&amp#0;k:��.��&amp#31;�׭B�^N��0Gi&amp#15;&amp#8;56�&amp#11;�&amp#20;&amp#19;�7D����,�[�&amp#6;�&amp#19;JK����&amp#15;oq���2&amp#25;:&amp#7;�ҽRwɦ/���ƪ��&amp#29;B�&amp#17;�k����a�~	$|A���U�w=&amp#26;~&amp#27;��f�I��;�/�?&amp#26;���p;/H$u�{�}���_-�~��a.Q�I;�2�&amp#29;�n�d�&���t&amp#19;}��y`�&amp#26;&amp#25;�d�t�����:E��Q_�&amp#28;�&amp#15;�&amp#28;�5��o{&amp#31;O���7&amp#23;h�d�(;_SK�>�b��X�&amp#4;G.�z�V�j/���C<��&amp#6;��L&amp#29;�7��&amp#1;��N�X�Ļ&amp#28;T�3�I�󙛕��n��zb
+&amp#2;��߰&amp#21;��g�I\�|R�B6��'&amp#20;=+3�&amp#24;�4��,fג�IQ�)�&amp#25;+ll&amp#5;n_�&amp#12;	c�շ&amp#11;m�sΐ&amp#24;�r�X~&amp#21;Y:�z~.�j޳J��!E�e�����C$�v�j�lG!o�M
+&amp#21;���xm�#���&amp#16;G徦��Kq�r<�|N|&amp#29;�B&amp#1;=g�G�Դ&amp#12;������mq���:�V�G�<N��K֎Q��&amp#29;&amp#16;j�e���G�5,��ƽ�6&amp#11;$�x��Y�[&amp#25;&amp#19;Qf.�4�G�H�2���i�;��&amp#31;�U�V�TT�1�Y�)���VA�&amp#2;g�Ѕ�&amp#30;��\&amp#12;A~&amp#21;�&amp#6;���h��Um&amp#4;JV�V�_};�&amp#6;��h�D�.zP��t�:�vȲ.�S,���&amp#30;������WfM�&amp#6;�W�x;&amp#12;�� Dp/r<&amp#22;�R���<�|&amp#18;�&amp#30;'ï����	$_�*&amp#1;�&amp#0;*L��˖�"�<�&amp#7;�c��Ecn�&amp#17;��&amp#11;AG&amp#31;T��.̿��N��r�C�"���&amp#29;ƾ�X�ZE&amp#21;�=&amp#23;�͹�1�l��@�s&amp#31;��&amp#20;>°J~2�x?q�&amp#0;K�����&amp#29;6�w$�&amp#0;�lÎY8G&amp#27;6�>��&amp#30;�`p�&amp#5;'O�M"�Y$�Mt���T���ѕ���?����f��h��&amp#31;j���6������Fد&amp#8;�r&amp#12;����c��}�&amp#22;��=&amp#3;3ڋ?>�:���Ig#$�/�|�_Q]�&amp#0;�ƾ'/+o���&amp#26;�&amp#11;~�wK�Rz[��w&amp#22;�2��&amp#27;�څ&amp#11;a����8�˰Q��Yp�\�>�����cx�=(&amp#3;2&amp#2;�ޱ)ru�B�W9�&amp#6;&amp#28;�-���Ў&amp#24;�҂���&amp#22;Ѣ^q�1�1&amp#24;Ƃk�گ��Cm�|�ϱ�c�&Hƕ�?�M�V�F�5"�&amp#23;�YfS���+	&amp#26;})&amp#27; �KTɖ!Ȗ���(*��&amp#20;
+ gz�"&amp#3;��E#�\6�'E;R4&amp#16;&amp#18;�F�#:�8�^&amp#11;&amp#11;����&amp#21;,�uکp
+Vm�&amp#31;ӌu�p�4a�&amp#14;�f�kF�&amp#2;�E�7�&amp#18;�o�|��"P�4&amp#5;zM�&amp#20;Y&amp#11;������&�Q�U&amp#25;�F�v%l��=C�I�9&amp#31;@&amp#26;��W#S�@��3ʺs��&amp#11;R�&amp#30;0L�cy5�ݟ¹p��L��&amp#17;]xjV�J���&amp#6;i�'&amp#23;�ڃ��&amp#21;�M�X��&amp#7;�X5
+�M&amp#24;�j�����p�5i&amp#7;U��,��>�f�S��W�&amp#21;�zN]eyl��H&amp#26;6&amp#27;�]G�]�2���ԇ��E�{�4Mru�Svk�
+T1�y��&amp#25;�G��_z�C:B�Vhr�&amp#23;�n��j�Ff&amp#25;D�[�EA�R#*I=��͝܌�3K+&amp#27;���&amp#11;8$����&amp#28;J]�컪�M#&amp#5;���$&amp#25;��KGg&amp#19;	&amp#30;6e��#��&amp#24;��d�=��v(ԕ�D�CՉ�c�@5\h�J��HB�_&amp#28;�9&F1��������mўs���t%�Į���&amp#25;W#���}Z� �4�i�j�o�G3U&amp#14;L�.���9��.ΨX��D�����Cq-U&2&amp#27;�UL#
+*�&amp#16;���b����&amp#1;殈R���]Tj��&amp#24;&amp#15;Y{R4&amp#16;&amp#18;&�6�Vh�8���&amp#27;<~Ad�oɤ��&amp#12;��&Ǆ�8��5�v|�z|�"L��q����gm�&amp#0;)�B��"2*&amp#26;2���U4Y&amp#6;a|����YPll�~����4nޚ ��F&amp#6;��k+�&amp#2;,���W-ˍb��&amp#31;֣I�&amp#0;����[���E�$��=�s�7�NNل�&amp#11; w��6��&amp#0;퇫��&amp#27;��Z��&amp#25;�s�r�1$w��h�xv�0=����uN|/&amp#27;��c�IpNq�]qj&amp#22;?�z<2&amp#19;U�c.	��'���&amp#5;=L{�L���eZ��)Azm�h1�O�_�{&amp#29;2�����&��&amp#1;�&amp#29;��c�h�I&amp#20;�g�<&amp#28;��aط�0��&amp#26;�&amp#5;�&amp#8;?��&=ȢQ.\?��#�,E�"�"b&amp#7;Źa�3���{��
+=&amp#6;1^	[ܢD@B>��k&amp#14;�\��-n5b�}���`�K3[��f���{�{Uzl�c�H�|�$&amp#26;j1{��&amp#0;��Њm�ʿzX��j��&amp#5;�ﱸ���V*&amp#4;n;&amp#31;��&amp#24;�QN�3�Ӣ���5�g�a4C�&amp#16;t�&amp#31;�G���W;g���z_s�.>4$�d���>�Õ�LY!E&amp#17;&amp#23;�fl�!���&amp#0;&amp#21;[&amp#25;F��l(e&amp#1;���֑��t&amp#8;�+�d��&amp#26;�,�&amp#25;��&amp#18;�)�&amp#1;�&amp#27;�h'&amp#12;�(��&amp#1;B�GΤ�&amp#0;�|
+V�\�o&amp#18;�Yc�]3".�&amp#23;u��jv5��tt�g.�V+�Ī�c�Cڽ6�R��2d����f&amp#16;��^�ڬ�:@�l�y&amp#31;����`*�&amp#11;\l��WF��X�5��&amp#3;u&amp#20;���7S�'JY�h���0�}�&amp#0;�z=&amp#28;$�K�f�7&amp#23;H�m峴�m��Hb�i"@&amp#21;T&amp#15;`&amp#5;uRK�38��2B�3�&amp#21;='�E�E�"���.�&amp#30;+��E�wV��Hऩ�����z��m�&amp#6;��X�g�9�Z��O�W&amp#7;W��>c�N�&amp#12;�j���Y���}�&amp#15;jĖ��\�&amp#19;�L���&amp#18;���cO&amp#14;&amp#31;"�m�w#�P��&amp#0;���\&amp#20;e�.8��ߤ&amp#8;��ka�5Ӌ0�&amp#12;_���K��<�L��&amp#22;�&amp#0;&amp#1;ƭ�U�e1�T��&amp#23;�Pptk����&amp#20;�E�Q���J.����sjK&amp#31;���T֜^�&amp#28;��V��Zg&amp#25;Xv�o�(FQk��&amp#7;�]����ʚ&amp#15;�&amp#0;G?Ǟ�&amp#0;��mKN�!E���&amp#1;^�.��j�&amp#2;m����2zu���{����)�������/p��G'�-&amp#25;�@�F[s&amp#12;�D|�&amp#21;?��305AbB|����
+C1�V���j�@�R��U&amp#1;F���&amp#19;�#K��h�~�
+�:���iti��l`���-sZ0����&amp#28;�;P�&amp#8;��J�	�&amp#27;�&�d�i&amp#19;V�����&amp#19;��&amp#20;m��ay&amp#14;'&amp#24;&amp#17;&amp#24;.������J�&amp#29;�Y�&amp#20;+�w&��7QI &amp#18;!�C&amp#31;j��V-�f&amp#12;��9&amp#22;����I`I���&amp#22;,�2+�u�8&�[�D�&amp#27;��O�M&amp#18;�&amp#0;�Ӧ?q��&amp#24;cVg�+&amp#1;��<�:�4{���5:����v&amp#28;{�&amp#16;��&amp#3;&amp#11;kq&amp#28;W�&amp#8;�κ�ڂ~��Vl^���F�,ɢ�Z.Q�b�&amp#4;����P�� ��uԑ�k
+�oyn��&amp#26;�2&amp#2;�&amp#27;�&amp#15;�&amp#6;�X:0��Վ&��&amp#25;l�b�7��O�ڸZ�7�+K�t0�ܹ�Χ�`�1����~��IIsDM#�nE�������&amp#6;*&amp#15;�U$V�&amp#4;���)�/�&amp#6;��:7]�V�k\6>u�#�t��}�x�w��{2���V�-��&amp#30;R)D֒L&amp#4;r�&amp#8;&amp#18;&amp#16;��w&amp#21;�����~ߗ���cʩ��&amp#8;o�����2&amp#0;&amp#0;�&amp#27;�~�Y �G�&amp#18;mm[%���Z�E0��`�m��_�H�&amp#0;���Ú9�;���&amp#19;:�&amp#28;&amp#28;k�X�K|�&amp#5;Jƀl��k]�뻋S&amp#12;��/�`�7&amp#14;Y&amp#19;t�&amp#28;����&amp#5;���|N�����P�5��&amp#18;X��QR5O<�#>^&amp#17;�m�>�7��5�&amp#22;���&amp#23;R�c�@�&amp#3;u�l�F.R�޸/��xzr7&amp#18;\+�]&amp#18;X]�&amp#21;��:��&amp#0;ojYG���ŦK�J��>)}x�"�kE;-&amp#12;]!w�&amp#0;04�)�&amp#25;i"�&amp#19;��&amp#6;�m&amp#31;�5�Ir�&amp#18;}w��&amp#21;D'	�j d��m&amp#25;6w&amp#3;���f����H��;&amp#16;}��ɊP|��&amp#22;&amp#15;O}5����֠Aa&amp#11;��w %v;���f���ydw�xco�&amp#7;�8^7&amp#14;&amp#26;�8&amp#3;��j&amp#7;Q�޿J��4�Б�����F&amp#19;��D&amp#7;.�J�&amp#7;��&amp#0;&amp#31;\��yO�J/֌1�cB6���_&amp#19;�,{&amp#21;R��&amp#30;j�dPF�I&amp#25;/.�&amp#23;�����&amp#0;��X�-��D�Wl�W�&amp#19;�kIZ)&amp#7;�>jFn=&amp#21;Yd��7*��r�M{��&amp#0;�o��f���y�}(���&amp#31;���&amp#22;�A��Z&amp#12;&amp#5;�
+�s<J��g&amp#29;G���_&amp#20;El����p�5���vLKܱ�W/Q�K��/�&amp#19;v&amp#23;%�F=��^�\��k&amp#17;�0b��&amp#24;$iN��W&amp#30;8��NI|i�r����&amp#20;�<c&amp#27;k��ݢ��&amp#5;&amp#27;7���{>tk�����'ً,T�Q.pd&amp#8;#gǚ��F)!>c.?#Ǯl�X&amp#2;�&amp#12;L|�&amp#7;�&amp#31;�U�Q�&amp#26;ca�$ϛ�F��&amp#29;�H&amp#24;�o}W&amp#14;x&amp#26;:&amp#30;�&�]�8�U��v	&amp#28;s(���\&amp#21;?���=���M\Z>����t;�lj�&amp#2;g2��ݚ]�&amp#20;W)0�&amp#27;����՟S�d�E�rmvcWw9�3Q��or�uF�m��b:�~W�+��&amp#28;ۧ����&amp#0;����]&amp#12;r��Lh��8�l��ʩ�.��6>�.m&amp#30;(cQ]�9d��.<_3��&amp#17;&amp#17;�>�&amp#20;|ʤ���R|�[t��O�&amp#31;�¼�I�'�2&amp#16;<��[�O�&amp#31;�&amp#24;�=�&amp#0;��U4����3��&amp#5;��T�<)�&amp#17;<���&amp#31;q]G&amp#25;?�c�H����묝����T���&amp#31;�d�m��Ϛ�"07���Xރ��O&amp#28;�=�#�{U&amp#19;*�-�L�&amp#21;r�&amp#26;&amp#24;.!q-�ꮌ>�o��9�K���A4&amp#30;KՌ,�A�(�R���&amp#3;�F3�J�����V,1�ܾ���M*&amp#20;�p�7*���C&amp#31;QFySA�T�������&amp#21;g36:n˦&amp#31;&amp#15;��٭�2�-���F&amp#0;&amp#27;>Oo�o�&amp#20;U"��o�4Y&amp#17;���&amp#21;��G
+�]�&amp#5;&amp#1;�]
+V�Al94��`�栲�S�&amp#3;1���Ne��߅�&amp#21;D��@�d<���]�&amp#1;�&amp#16;�OM=1���&amp#18;]�pl�6�>%�OS;&amp#3;����?3S�+��v,Nf����&amp#21;1�ȏ@&amp#2;6�c��kc�\���Q?g&amp#26;���,�_�N��J��t�~��6�&amp#31;&amp#12;��W�6�M�&amp#18;O�ƺxt8t����J_i���y]���O��X頵_�D&amp#24;�%�&amp#0;ӷ�x��X5&amp#30;�&amp#24;�0Ԛ���Ҷ�L�rx�I��k�>+D[kw.�`&amp#29;�@��t��Sk|�/{W&amp#8;�q&amp#24;l���&amp#23;�a����$����=���E�2p����QR`r�R�/g-�Œ���S�N��j{&amp#21;�\�T�>G�l�yK�&amp#27;�:f���)�ꍊ�&amp#31;ڱ�~&amp#25;�Yec&amp#24;>R��&amp#5;���&amp#30;���Ҵm���H���s&amp#8;r<N��H%��~&amp#21;Ώ�֝��]5t�ٯ&amp#26;o�d�ˎ��m����`��-�&amp#15;��$��2r`i$Xn��2)�$���,���&amp#26;l��/��#6�d>W�`�-ͺ:�&amp#17;���&amp#0;q�Y2�~&amp#25;�q.��q�ɐ���I��
+�&amp#2;�d�&amp#6;&amp#29;�bŋ&amp#23;�+h�r�,$���&amp#26;&amp#4;�&amp#27;�(g�&amp#12;���	���}��&amp#27;��Y�&amp#23;0=ŭ�X��R
+���O�_&amp#21;F8�&amp#27;�.�&amp#27;��Rq�*�{^E�&amp#17;�̲̉��c'���<��&amp#29;�<qm6]�^��_���pl�7&amp#8;&amp#24;H&amp#25;����W:&amp#26;�Ի5~�-ZE�&amp#19;��&amp#11;�K&amp#27;Yݔc��Hv�˿p=�����&amp#21;�ъ5I��+ �?��ʆ=�c�z~_��i͞="F�3
+�}3k�&amp#30;���9�$�?d��>�@&amp#1;�H���]&amp#20;I���E��ԄbW��&amp#26;�pD����&amp#1;\�3P��&amp#0;Хr&amp#5;	�.�&amp#27;&amp#1;&amp#31;9;5[&amp#21;�J(P��(�@,)�`\Q!�z#��d���&x`��*�F�&amp#16;��&amp#31;���)s�Y!M���dh�d͋\|)�&amp#12;q�؎�>گ7(c߶�Gv2��K����Z�贗R�n����u��}�(6c�
+��{���J�&amp#0;���&amp#5; �&amp#0;�&amp#7;cu�E��&amp#25;�ղ��%T�F*��)&amp#29;��跍��l��&amp#1;�v=�&amp#29;&\��?�o�fw�1T����&amp#22;i#�LD&amp#21;&amp#29;��C	$�&amp#18;�#�G9��`�3&amp#19;�8��&amp#14;�g֑&amp#7;ݛB��!&amp#28;iY�NF�k����纕�^:�b��f�ݘ�&amp#21;��&amp#16;�.1�rXy�¸�%?̌G���1>��6`�\K��n&amp#31;�V&amp#30;[(-��Z�&amp#17;U��&amp#0;<n@��_2n�ŭ��_&amp#22;i�ܮKŷ)����g�x�&amp#5;Z6��5�fL�ڤ&amp#21;���W��S�&�&amp#12;�,����z&amp#19;&amp#31;�#
+��&amp#21;z|o�ssejlю��y�\��H`��rP�&amp#6;n�&amp#24;�ğ�&amp#6;�B|r$��3kFx���˹&amp#7;⧑��&amp#8;�#&amp#5;��;-��Cb�L_��o�n&amp#14;_�w&amp#31;��V��&amp#4;�2�&amp#0;�uSn�C��<Y����!&amp#0;���H�/�
+�@�&amp#7;j��P�&amp#26;,ǭ�X�&amp#31;�&amp#25;�s����1�&amp#0;a�_��p&amp#30;�.���&amp#0;����b�oɩc��^5��y�#a&amp#20;(&amp#3;��Mz�&amp#30;�ۏ��×5�	(�!R&amp#31;���o�V݉&amp#20;�c�2�;v&amp#30;�tQ[g�/&amp#1;��&amp#20;F��j�
+?��&amp#12;�\�ʨFI&amp#14;�&amp#27;&amp#21;�,ۨ#@$&amp#20;&amp#5;b���#&amp#21;q�&amp#0;��@2j�KG���&amp#27;��r�<��C�o&amp#16;&amp#31;&amp#15;���yn��G�&amp#0;�gN4i��Q|�&amp#12;Ϭ\?���&amp#11;���v&amp#0;&amp#2;1��`ZH���A��]&amp#19;|&amp#15;)���9���Z�!1p�i3�&amp#27;Z1�b����Fũ��&amp#20;NAk&amp#4;w&amp#18;L"&amp#8;�h~�j�itp��K��͹Pi-��&amp#29;�ROb;��Z&amp#27;�0x�3}���(�&amp#1;! I)�RH�����ɓ�D'�>�&amp#28;� C��	�o&amp#26;&amp#3;�/��Ty?�Ia㲜�3�l�&amp#14;�%��锞��EU&amp#22;d�i�d�r&amp#28;�I&amp#28;Nfk):I��&amp#21;Fl
+_�ч;��-1N�(����}w1�S��s����MI&amp#22;�;���&amp#6;������T��&amp#0;��Ye}�QE���]�#hl㉕����]��w;>�c�EQ����;����&amp#22;�+�#:�&amp#25;��&amp#0;�E��&amp#19;4&amp#26;�&amp#6;!qy{<��M$���&amp#0;&amp#17;�&amp#29;��vy��^B��j���+n��e�jF��&amp#30;&amp#26;�K댌�/&amp#30;�7�+~�&amp#26;�5a\Y�%���$l&amp#24;&amp#14;�U�m&amp#22;�fXT�&amp#0;�ֆ�X���)�@"�ɕ'�$�&amp#20;�-�)�wB.��&amp#31;��Nf�C&amp#20;JC�QX&amp#18;uD��v�P��JEB�,�u&amp#16;&amp#14;&amp#24;Q&amp#8;��*&amp#4;������??!��<#mw2���&amp#7;nO�����4���k>��	x�b��&amp#5;ū�&amp#18;i
+v�H��k�&amp#0;1&amp#21;�4��&amp#11;�M�4I�u��xߍ&amp#25;&amp#17;�aU&amp#23;���>:��Za�MXqd܉���|m���ӈ�C$�{&amp#1;U�\�7pY�?�Au�a���\�C�&amp#0;7zӍ�S3��!}'�F&amp#12;<�Qht�+�OM�3y#+��&amp#7;{&amp#29;�����,xԌ�-�E�Q�&amp#3;�q����&E�L�7���r# �������W���^��u�eU&amp#31;aE�&amp#31;��H�&amp#0;$�?�>4&amp#25;&amp#30;�&amp#3;��V\�T�5����J{����#�gQ�[-�.@�E��:&amp#20;/�&amp#2;�=�4�c?4mMai4g|�&amp#24;�����6��8'�&amp#30;[�l�J�[&amp#20;�&amp#12;Q|�&amp#22;�Ֆ���}*ʽ��`��7�Z�f��7i�fˀo�^RK,�&amp#30;�տ&amp#4;��i̸'.2j��)�[&amp#12;�J��]�&amp#25;&amp#0;$���gNV^��	y&amp#4;D��%&amp#7;����n@I&amp#12;`�s�^�<��b�'&amp#19;��BZ�F))�El]ځ[&amp#0;�@��}��0Dj�&amp#20;��5�B��d�&amp#25;ǚF1��&amp#0;��&amp#20;I�2Y�@�X����&amp#0;\���U��8Rr.¹2�&amp#0;Q�Rg��S"�ԏ3G&amp#15;�&amp#17;�zW_�u�s�&amp#11;��W�9\�&amp#26;�/�����xu�&amp#30;�G���O&amp#25;��&amp#21;��d�ޥr�Y��&amp#26;��&amp#27;tѸ[`���[·���ɝ>�&amp#30;S��&amp#27;&amp#31;�&amp#25;���..��h�&amp#15;�n��&amp#17;�֭6[U�.�F����t�Z���U&amp#20;>i|���QH]w'޹���"�tg�&amp#28;�S&amp#31;�s2LxY&amp#31;&amp#30;a�p�m��&amp#1;Ub��ԗ&amp#5;��y&amp#22;l�$Z�����_����M��&amp#20;O,b\��3&amp#31;%���ܲ9&amp#29;��ҽ6>YK�?&amp#5;&amp#23;=���Q\��W!��T5L�R_W��&amp#26;��*rzQ͠�)k��R<2&amp#0;&amp#20;�����z�����&amp#26;�&amp#11;��ʋ���h�zRW&amp#0;�?N��A�Q�*&amp#26;3����m�6d&amp#0;&amp#11;뱥�+͉M&amp#25;��*k&amp#11;�&amp#28;��ﱫ}�G&amp#7;.���Y\N@�wH�&amp#24;6k^�p���?&amp#22;�
+��c�kF&amp#28;;��5�&amp#27;��ĸ��t��򟸮�q�����9̭��&amp#18;Ct�!��A�Q=R��:��˟V�S��3�ި��%��B���w*��ۓ,�*&amp#18;w���&amp#22;��Dp'�<��&amp#11;&amp#28;*�&amp#15;�&amp#1;,�O�n��fy��Ӎ�A��1[&amp#18;��+&amp#23;c@��j&amp#5;l�&amp#8;�5&amp#2;&amp#1;jb&amp#11;�;T&amp#8;���+
+6�2Éz&amp#25;}�:K��[D|&amp#18;d�&amp#0;&amp#14;?��[��&amp#18;5c�6|��$�U�&amp#20;��&amp#16;&amp#21;GrI�b�EY�p_@mg��#�� 8&amp#12;-T�&amp#1;��k�oj5��_f�a��&amp#24;�6���&amp#23;�X@|}�/ZÊt՝H�&amp#27;\&amp#29;�(2��i��&amp#0;7f�Z&amp#0;WsK�K/�&amp#25;3i�K*c��&amp#7;���a�O�]h�ɗs y>&amp#30;�%&amp#17;��޾V&amp#30;wUj1)�-�*1&amp#14;U��&amp#29;|��&amp#15;���&amp#17;\<�v�f�%D���F|���������&��&amp#26;��.�ߎⅿs�&amp#6;�M�&amp#14;X�M_\�0�&amp#14;��kYI&amp#29;��L�o#�4x%3��'_b:�R�@M�s�&amp#22;��^&amp#24;�c&amp#14;&amp#3;&amp#14;���+V�%�Ek��s��+\��X^l�!�%&amp#30;&amp#15;��X��>c�f�Z�G��1�Kť��K&amp#27;�~�x�0�e>�\����4d�&amp#28;��7�����&amp#20;��ZlQ��ȱ�7�&amp#30;6���&amp#21;&amp#20;.�vq�E&amp#8;�3Yd������rmE��f9����H��}�&amp#27;:�ɺ0Te댸��[½LN�&amp#20;o�J&amp#6;��xm�:AwvD�:�G�����aI�)�No�� �&amp#7;`k�)�3N&amp#22;�ԅ���1&amp#24;��F &amp#22;�b�g�B�p|�&amp#20;�T@&amp#2;��@$���&amp#17;�ޕ�&amp#26;׬��>�q�X�E�&amp#4;-&amp#24;�zb�Z���j����>�&amp#27;��&amp#22;P�N�cz5�&amp#26;*��G�vd�&amp#2;,�0׏�+&������&amp#16;�E&amp#31;K/H��j�&amp#26;�q��^93�=&amp#12;_�'�v�]oG��>��Ne��N�z��9L��Gߚ&amp#12;�%S��Zܛc<a�p	?Oڹ����}��?ciki&amp#26;[ı(&amp#3;��3
+�k�E�ϴ}�������;),�&amp#17;~oz�|��"�&amp#29;��&amp#30;��&&amp#24;�&amp#8;�(=���&amp#26;�+&amp#28;�&amp#21;M�]e#ѳ|?>h����&amp#4;-��@g�h�&amp#20;�̽M���&amp#21;�[&amp#20;�f�3{��&amp#11;$�+&amp#31;͡޹�o��P�5����c�]uф�r&amp#25;d2&amp#16;X�;R͘�*y���X[�&amp#5;?�*�6W��&amp#15;cTC��t^,����&amp#24;���除��鲾&amp#3;&amp#20;����.&amp#0;Photoshop 3.0&amp#0;8BIM&amp#3;�&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#16;&amp#0;�&amp#0;&amp#0;&amp#0;&amp#1;&amp#0;&amp#1;&amp#0;�&amp#0;&amp#0;&amp#0;&amp#1;&amp#0;&amp#1;8BIM&amp#4;&amp#4;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;�&amp#28;&amp#1;Z&amp#0;&amp#3;&amp#27;%G&amp#28;&amp#2;&amp#0;&amp#0;&amp#2;&amp#0;&amp#4;&amp#28;&amp#2;&amp#25;&amp#0;&amp#7;Bahamas&amp#28;&amp#2;&amp#25;&amp#0;&amp#5;Canon&amp#28;&amp#2;&amp#25;&amp#0;&amp#8;Cruzeiro&amp#28;&amp#2;&amp#25;&amp#0;&amp#3;EUA&amp#28;&amp#2;&amp#25;&amp#0;&amp#4;Flor&amp#28;&amp#2;&amp#25;&amp#0;&amp#2;T3&amp#28;&amp#2;7&amp#0;&amp#8;20141021&amp#28;&amp#2;<&amp#0;&amp#6;110317&amp#28;&amp#2;>&amp#0;&amp#8;20141021&amp#28;&amp#2;?&amp#0;&amp#6;120317&amp#28;&amp#2;P&amp#0;&amp#12;Wagner Costa&amp#28;&amp#2;_&amp#0;&amp#17;West Grand Bahama&amp#28;&amp#2;d&amp#0;&amp#2;BS&amp#28;&amp#2;e&amp#0;&amp#11;The Bahamas8BIM&amp#4;&amp#12;&amp#0;&amp#0;&amp#0;&amp#0;,�&amp#0;&amp#0;&amp#0;&amp#1;&amp#0;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;&amp#0;�&amp#0;&amp#0;&amp#3;&amp#0;&amp#0;&amp#2;&amp#1;&amp#0;&amp#0;&amp#0;,�&amp#0;&amp#24;&amp#0;&amp#1;����&amp#0;�&amp#0;&amp#6;&amp#4;&amp#4;&amp#4;&amp#5;&amp#4;&amp#6;&amp#5;&amp#5;&amp#6;	&amp#6;&amp#5;&amp#6;	&amp#11;&amp#8;&amp#6;&amp#6;&amp#8;&amp#11;&amp#12;
+
+&amp#11;
+
+&amp#12;&amp#16;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#16;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#1;&amp#7;&amp#7;&amp#7;&amp#12;&amp#24;&amp#16;&amp#16;&amp#24;&amp#20;&amp#14;&amp#14;&amp#14;&amp#20;&amp#20;&amp#14;&amp#14;&amp#14;&amp#14;&amp#20;&amp#17;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#17;&amp#17;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#17;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;��&amp#0;&amp#4;&amp#0; ��&amp#0;&amp#14;Adobe&amp#0;d�&amp#0;&amp#0;&amp#0;&amp#1;��&amp#0;&amp#17;&amp#8;&amp#0;�&amp#1;&amp#0;&amp#3;&amp#0;&amp#17;&amp#0;&amp#1;&amp#17;&amp#1;&amp#2;&amp#17;&amp#1;��&amp#0;�&amp#0;&amp#0;&amp#2;&amp#3;&amp#1;&amp#1;&amp#1;&amp#1;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#3;&amp#4;&amp#5;&amp#6;&amp#7;&amp#2;&amp#1;&amp#8;&amp#0;&amp#1;&amp#0;&amp#2;&amp#3;&amp#1;&amp#1;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#1;&amp#2;&amp#0;&amp#3;&amp#4;&amp#5;&amp#6;&amp#16;&amp#0;&amp#2;&amp#1;&amp#4;&amp#1;&amp#3;&amp#2;&amp#4;&amp#4;&amp#4;&amp#2;&amp#8;&amp#5;&amp#5;&amp#0;&amp#0;&amp#1;&amp#2;&amp#3;&amp#0;&amp#4;&amp#5;&amp#17;&amp#6;&amp#18;!1&amp#7;A&amp#19;"Qa&amp#20;2q�&amp#21;BR�#�&amp#8;$3br���&amp#22;C���&amp#23;����&amp#17;&amp#0;&amp#2;&amp#2;&amp#1;&amp#4;&amp#1;&amp#4;&amp#1;&amp#3;&amp#3;&amp#3;&amp#5;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#1;&amp#2;&amp#17;&amp#3;&amp#4;&amp#18;!1A&amp#5;&amp#19;"2Q&amp#20;BbRaqr��S������&amp#0;&amp#12;&amp#3;&amp#0;&amp#0;&amp#1;&amp#17;&amp#2;&amp#17;&amp#0;?&amp#0;�H�_&amp#21;A��])Cb��+&amp#25;HRD�=�ȝ�&amp#5;1&amp#25;����H�ƕ�b����z���j&amp#16;f3D�1&amp#25;�&amp#17;�&amp#21;&amp#6;&amp#14;��!�Q&amp#8;@*&amp#4;�x��a8��r�zg�J��ν��7J�&amp#0;!HϮdiey[�9,O�J�&amp#4;�b7DQIX&amp#26;)��%"��RR(
+�.(���>h&amp#8;�&amp#29;+��K&amp#5;�@)���Pl��(�a&amp#21;�Y, 5[`���-���З&amp#26;օg��`�&amp#20;&amp#24;lZE�&amp#25;1gJ&amp#3;&-*��\'cA��&amp#19;s�u[&amp#25;2>SIc!rjY&amp#14;(XB!�&amp#1;�ɢ&amp#17;���`�ȗ�&amp#17;���2&amp#8;&amp#16;��{&amp#25;&S/md�bF&amp#29;e&amp#30;h�[�2��vF(&amp#22;�&amp#11;o��&amp#5;&amp#5;��
+l���2�&amp#25;��T�&amp#20;�U&amp#0;!-AX��&amp#4;hRCPZ&amp#18;����F�&amp#26;&amp#5;l���&amp#1;X=�!�UA��7z&amp#12;6&amp#25;M#d���m��i@���}%�e��gd�P%�qJ&amp#20;�:�&amp#26;��Z�X�ր4��A^&amp#30;櫓&amp#25;&amp#17;�7z��&amp#2;h�&amp#14;wR�t����#>(�&amp#7;`4�b��8�[��&amp#27;����&amp#16;� y�yRt[&amp#12;m�=��;�&amp#23;&amp#25;IՍ�}�#�"&amp#29;�z>�4&amp#29;�Y&amp#1;���d6-c2k�����&amp#26;�&amp#18;�6�	d�~�"ۯYg#m��>&amp#25;��Fq��1��A���$L-T�Y[�&amp#11;�)w�d��K'K&amp#21;>AѦ ��&amp#3;PQ9�T&amp#0;��(&amp#8;�f�w�+&amp#18;��R�d|��A&amp#25;&amp#27;9�J+&amp#23;�&amp#17;OwPc�n��&amp#22;0�[a��R0&amp#5;&amp#17;�&amp#27;
+H�)l&amp#12;��2IX��W�d?&amp#22;�c nhX�Vf&amp#0;T���\c15�7v6�^A$_&amp#18;G�v&amp#16;�AS���[�&amp#22;�ub�z��a?�b�Yf�����ID��.�&amp#15;n��yb�7E��)F�G�����้��3���V&amp#7;�-�&amp#26;�o'C��&amp#20;S%�v\&amp#27;�_A��\E԰�&amp#14;# &amp#31;�z��m]0n#/,/lg0^@��/��R��&amp#26;V�������E �:&amp#24;�'�Kg{�1�؁�J&amp#23;�#�dύN���&amp#4;�&amp#12;�[�l]�@&amp#3;��j��{VYd~��&amp#31;�&amp#7;�8�x�Lo*��@&amp#24;�{��9$��&amp#8;�O&amp#25;��흈�bT���X0f�R��8t�&amp#15;}sok���&amp#16;#�&amp#24;�C��.9���&amp#5;&amp#24;�-��SH��bκ�p`�W��&amp#5;e���SK@&amp#12;FY<б&amp#24;��R�b��5,B6��&amp#17;�@|�&amp#21;���P&amp#26;��ݨ0X�iU6&amp#18;��0��L���>�Se��f�����Kp�?#�U{������97\�9c&amp#8;��9&amp#16;��.��wЩ�t%s/�&amp#14;A4OL��͉8ԘC{&amp#3;�E�֍���~�ʖײ_�u42M4�%��R\ܣ��q!#�n�Q��W&amp#1;z���<�l���uO��&amp#30;�S�Rב��,j�x��4��&amp#15;�������9G2�%���2*�i&amp#20;��vL�a��?&amp#2;�����w�:hba�&amp#28;=���g�׾��P�&amp#28;H��/��M��X�yx�;h��ʥ���&���U�s{��L�\��&amp#22;�-�N��K&amp#27;{&amp#17;節8f�����w&amp#19;u����n����T�ᇳ&amp#15;�W2Qqt�&amp#1;&amp#20;�S
+5?Fsӥ��/gẙ&amp#16;&amp#15;꬚�Sm8���K�]rh��&amp#21;�z�,�=�o��Nly0�����&amp#25;��a�41�׵&amp#29;/�&amp#6;�FL���&amp#8;ů�W&amp#8;Arؽ��G�q)&amp#11;0'`��2�p6��]�9�?7��&6��'Sɿ?a]?N��&amp#20;��b�dWH��Z�&amp#24;�4�&amp#8;-4�&amp#0;�f���)+бX��AX��ڥ��.&amp#8;�DW!bi��?n�,,)�i$�J����&amp#25;&amp#19;���}�UK�F&amp#7;��F
+(��|x��ub���{����&amp#11;6�V�GL�2�����&amp#28;�v��F��&amp#24;nx&amp#12;�&amp#4;��Z����&amp#3;�&amp#0;ʛ܇�\���hex�&amp#0;&amp#15;��k�1��&amp#5;�&amp#0;�M&amp#20;��#�1}3��No�R�&amp#23;�\���%w��&amp#21;&amp#30;&amp#31;ò~����Np��Es����&amp#11;�4_&amp#27;�.�؟�ui��j�$��d�?�hťMs�;���{����S),��N�o��W3&�&amp#20;��������&amp#30;^�Je�ll1�����e�܈���3��G�m�Ztz&amp#5;�[�b�%�~Dϩ{k�o&amp#27;���&amp#18;]�Y&amp#15;�&amp#17;����~��zF&amp#8;�y+����)Z���'�G�.��
+u�w�W]&amp#25;�&amp#21;�����[i�4N�~��+_�4��z]�|O:�⓴!C��h�՗L��H�/��<��7����&amp#17;R&amp#4;�1qr��7~ݼ�Rd�)��A�|&amp#12;Z���_����ׄO��ţ��I��L3<O��v�&amp#11;�G�H@�&amp#0;}��&amp#3;���V��X���՝�&'tx�&amp#29;�A�����7J�qf��&amp#23;&amp#21;��&amp#31;��d_�b�u&amp#15;�V����E&amp#11;�e��&amp#0;�y&amp#28;��h&amp#3;�Go&amp#23;�&amp#0;�&amp#15;�X�&amp#8;��$[�&amp#6;&amp#2;�,�X��vM2TT����&amp#14;ZN�	b�K��`&amp#18;�ZP1i&amp#30;�V&amp#5;���%m
+�&amp#1;&amp#25;�ɢ�f&amp#2;���Wf�`&amp#30;��v  ,O�*�2ċ&7�d�=&amp#29;
+~�jG&amp#19;c���-�'��I\����,&amp#28;&amp#23;�L�q6�&amp#8;Uw�V&amp#28;��Lo��Ո�j�n9�0���s!�KCph��}����&amp#18;{�&amp#4;�_����C��3�ŏ򨥞]����&amp#0;&amp#19;f��St_����ଌTx�k_���?P�&amp#14;�蝨�ԀZ��r&amp#24;�ƥ�&amp#16;w"*��ݪ�&Lz��=���%G�&amp#0;a���7���.&amp#23;	"جw&amp#15;�U� $&amp#22;P|&amp#3;���-&amp#19;Ïk�㙗>�uCv�s&amp#31;��I&amp#31;��R}�daȎ\&amp#0;��t7��G�ڞ�(�D^W�Ek�{�A֕>�UY�(��&amp#24;;��7&�G&amp#31;y�/�&amp#18;e���&amp#22;��v	�G�SV�F1���&amp#18;q�햿N2�%ǡ�H&amp#0;��e�ս�aZqJ�#�%���u��V&amp#12;y#۔�P~��&amp#0;^&amp#25;���t&amp#14;�K�]&amp#6;���&amp#21;��&amp#4;�&amp#3;��&amp#24;$G+!�&amp#28;{	��6������~��	�++y?K�T��n�1��?+��&amp#15;ޗڏ���&amp#28;ێ���RY&amp#22;��б��ǒ&amp#27;]&amp#4;�5�ך��&amp#11;�(4�K&amp#22;w�+&amp#0;&amp#7;j&amp#2;�L�,&amp#2;�IA	&&�Z�$�(���lY��uv_�#v�&amp#28;/�P�\b�5R#&amp#27;��欄&amp#18;5F%��&amp#27;o&amp#24;Q�*�&amp#31;i`�KtֵTM�A&amp#18;-}&amp#20;k��5A��֮C!�y��&amp#1;�!�.�Q�Hhn&amp#1;3:0e%YN�&amp#29;�57&amp#5;&amp#18;-�3�t���Ƃ&amp#5;u&amp#7;`ި�&amp#5;7�&amp#27;qkrD�x6
+��&amp#23;&amp#21;��&amp#8;�T&amp#15;&amp#20;I���=U�=?G,&amp#17;�?����{�:-&amp#29;W.G��ـ�t&amp#29;��
+{�PP��~j�&amp#2;Ȯed.OC���Y��Tf\�:^Aa&amp#3;��&amp#2;M�I�&amp#0;�>&amp#1;�&amp#0;�W&amp#19;_��H�&amp#24;_%&amp#19;�<�&amp#28;t3ƥ͹=_e5�&amp#14;�N�&amp#19;�f��G1I��$}Mlt��׵vt�n5�1�f�6FepY�&amp#7;��֝ܚiP�YVx�&amp#14;�&amp#7;@U�\&amp#21;��G&amp#28;�V�P����y6P1&amp#11;�&amp#23;ο�R��V�-j�&amp#1;�3�/q(`|&amp#16;wV���A�&amp#25;��ˁ��&amp#30;�&�	��.�18XP&amp#22;������
+0_]�ֳr&amp#8;≁�%ӑY5&amp#18;�&amp#12;˚��Y�Pf⅂�&amp#26;j&amp#22;&amp#6;��������&amp#27;&amp#3;#n�"�0&������l&amp#5;��:!Z�/�N7��a�QF��^�r�#sʭ��l�k�A�H&amp#14;Do�&amp#0;QG_L~>����}&amp#6;9R&amp#15;&amp#15;6���(��3&amp#0;k:��.��&amp#31;�׭B�^N��0Gi&amp#15;&amp#8;56�&amp#11;�&amp#20;&amp#19;�7D����,�[�&amp#6;�&amp#19;JK����&amp#15;oq���2&amp#25;:&amp#7;�ҽRwɦ/���ƪ��&amp#29;B�&amp#17;�k����a�~	$|A���U�w=&amp#26;~&amp#27;��f�I��;�/�?&amp#26;���p;/H$u�{�}���_-�~��a.Q�I;�2�&amp#29;�n�d�&���t&amp#19;}��y`�&amp#26;&amp#25;�d�t�����:E��Q_�&amp#28;�&amp#15;�&amp#28;�5��o{&amp#31;O���7&amp#23;h�d�(;_SK�>�b��X�&amp#4;G.�z�V�j/���C<��&amp#6;��L&amp#29;�7��&amp#1;��N�X�Ļ&amp#28;T�3�I�󙛕��n��zb
+&amp#2;��߰&amp#21;��g�I\�|R�B6��'&amp#20;=+3�&amp#24;�4��,fג�IQ�)�&amp#25;+ll&amp#5;n_�&amp#12;	c�շ&amp#11;m�sΐ&amp#24;�r�X~&amp#21;Y:�z~.�j޳J��!E�e�����C$�v�j�lG!o�M
+&amp#21;���xm�#���&amp#16;G徦��Kq�r<�|N|&amp#29;�B&amp#1;=g�G�Դ&amp#12;������mq���:�V�G�<N��K֎Q��&amp#29;&amp#16;j�e���G�5,��ƽ�6&amp#11;$�x��Y�[&amp#25;&amp#19;Qf.�4�G�H�2���i�;��&amp#31;�U�V�TT�1�Y�)���VA�&amp#2;g�Ѕ�&amp#30;��\&amp#12;A~&amp#21;�&amp#6;���h��Um&amp#4;JV�V�_};�&amp#6;��h�D�.zP��t�:�vȲ.�S,���&amp#30;������WfM�&amp#6;�W�x;&amp#12;�� Dp/r<&amp#22;�R���<�|&amp#18;�&amp#30;'ï����	$_�*&amp#1;�&amp#0;*L��˖�"�<�&amp#7;�c��Ecn�&amp#17;��&amp#11;AG&amp#31;T��.̿��N��r�C�"���&amp#29;ƾ�X�ZE&amp#21;�=&amp#23;�͹�1�l��@�s&amp#31;��&amp#20;>°J~2�x?q�&amp#0;K�����&amp#29;6�w$�&amp#0;�lÎY8G&amp#27;6�>��&amp#30;�`p�&amp#5;'O�M"�Y$�Mt���T���ѕ���?����f��h��&amp#31;j���6������Fد&amp#8;�r&amp#12;����c��}�&amp#22;��=&amp#3;3ڋ?>�:���Ig#$�/�|�_Q]�&amp#0;�ƾ'/+o���&amp#26;�&amp#11;~�wK�Rz[��w&amp#22;�2��&amp#27;�څ&amp#11;a����8�˰Q��Yp�\�>�����cx�=(&amp#3;2&amp#2;�ޱ)ru�B�W9�&amp#6;&amp#28;�-���Ў&amp#24;�҂���&amp#22;Ѣ^q�1�1&amp#24;Ƃk�گ��Cm�|�ϱ�c�&Hƕ�?�M�V�F�5"�&amp#23;�YfS���+	&amp#26;})&amp#27; �KTɖ!Ȗ���(*��&amp#20;
+ gz�"&amp#3;��E#�\6�'E;R4&amp#16;&amp#18;�F�#:�8�^&amp#11;&amp#11;����&amp#21;,�uکp
+Vm�&amp#31;ӌu�p�4a�&amp#14;�f�kF�&amp#2;�E�7�&amp#18;�o�|��"P�4&amp#5;zM�&amp#20;Y&amp#11;������&�Q�U&amp#25;�F�v%l��=C�I�9&amp#31;@&amp#26;��W#S�@��3ʺs��&amp#11;R�&amp#30;0L�cy5�ݟ¹p��L��&amp#17;]xjV�J���&amp#6;i�'&amp#23;�ڃ��&amp#21;�M�X��&amp#7;�X5
+�M&amp#24;�j�����p�5i&amp#7;U��,��>�f�S��W�&amp#21;�zN]eyl��H&amp#26;6&amp#27;�]G�]�2���ԇ��E�{�4Mru�Svk�
+T1�y��&amp#25;�G��_z�C:B�Vhr�&amp#23;�n��j�Ff&amp#25;D�[�EA�R#*I=��͝܌�3K+&amp#27;���&amp#11;8$����&amp#28;J]�컪�M#&amp#5;���$&amp#25;��KGg&amp#19;	&amp#30;6e��#��&amp#24;��d�=��v(ԕ�D�CՉ�c�@5\h�J��HB�_&amp#28;�9&F1��������mўs���t%�Į���&amp#25;W#���}Z� �4�i�j�o�G3U&amp#14;L�.���9��.ΨX��D�����Cq-U&2&amp#27;�UL#
+*�&amp#16;���b����&amp#1;殈R���]Tj��&amp#24;&amp#15;Y{R4&amp#16;&amp#18;&�6�Vh�8���&amp#27;<~Ad�oɤ��&amp#12;��&Ǆ�8��5�v|�z|�"L��q����gm�&amp#0;)�B��"2*&amp#26;2���U4Y&amp#6;a|����YPll�~����4nޚ ��F&amp#6;��k+�&amp#2;,���W-ˍb��&amp#31;֣I�&amp#0;����[���E�$��=�s�7�NNل�&amp#11; w��6��&amp#0;퇫��&amp#27;��Z��&amp#25;�s�r�1$w��h�xv�0=����uN|/&amp#27;��c�IpNq�]qj&amp#22;?�z<2&amp#19;U�c.	��'���&amp#5;=L{�L���eZ��)Azm�h1�O�_�{&amp#29;2�����&��&amp#1;�&amp#29;��c�h�I&amp#20;�g�<&amp#28;��aط�0��&amp#26;�&amp#5;�&amp#8;?��&=ȢQ.\?��#�,E�"�"b&amp#7;Źa�3���{��
+=&amp#6;1^	[ܢD@B>��k&amp#14;�\��-n5b�}���`�K3[��f���{�{Uzl�c�H�|�$&amp#26;j1{��&amp#0;��Њm�ʿzX��j��&amp#5;�ﱸ���V*&amp#4;n;&amp#31;��&amp#24;�QN�3�Ӣ���5�g�a4C�&amp#16;t�&amp#31;�G���W;g���z_s�.>4$�d���>�Õ�LY!E&amp#17;&amp#23;�fl�!���&amp#0;&amp#21;[&amp#25;F��l(e&amp#1;���֑��t&amp#8;�+�d��&amp#26;�,�&amp#25;��&amp#18;�)�&amp#1;�&amp#27;�h'&amp#12;�(��&amp#1;B�GΤ�&amp#0;�|
+V�\�o&amp#18;�Yc�]3".�&amp#23;u��jv5��tt�g.�V+�Ī�c�Cڽ6�R��2d����f&amp#16;��^�ڬ�:@�l�y&amp#31;����`*�&amp#11;\l��WF��X�5��&amp#3;u&amp#20;���7S�'JY�h���0�}�&amp#0;�z=&amp#28;$�K�f�7&amp#23;H�m峴�m��Hb�i"@&amp#21;T&amp#15;`&amp#5;uRK�38��2B�3�&amp#21;='�E�E�"���.�&amp#30;+��E�wV��Hऩ�����z��m�&amp#6;��X�g�9�Z��O�W&amp#7;W��>c�N�&amp#12;�j���Y���}�&amp#15;jĖ��\�&amp#19;�L���&amp#18;���cO&amp#14;&amp#31;"�m�w#�P��&amp#0;���\&amp#20;e�.8��ߤ&amp#8;��ka�5Ӌ0�&amp#12;_���K��<�L��&amp#22;�&amp#0;&amp#1;ƭ�U�e1�T��&amp#23;�Pptk����&amp#20;�E�Q���J.����sjK&amp#31;���T֜^�&amp#28;��V��Zg&amp#25;Xv�o�(FQk��&amp#7;�]����ʚ&amp#15;�&amp#0;G?Ǟ�&amp#0;��mKN�!E���&amp#1;^�.��j�&amp#2;m����2zu���{����)�������/p��G'�-&amp#25;�@�F[s&amp#12;�D|�&amp#21;?��305AbB|����
+C1�V���j�@�R��U&amp#1;F���&amp#19;�#K��h�~�
+�:���iti��l`���-sZ0����&amp#28;�;P�&amp#8;��J�	�&amp#27;�&�d�i&amp#19;V�����&amp#19;��&amp#20;m��ay&amp#14;'&amp#24;&amp#17;&amp#24;.������J�&amp#29;�Y�&amp#20;+�w&��7QI &amp#18;!�C&amp#31;j��V-�f&amp#12;��9&amp#22;����I`I���&amp#22;,�2+�u�8&�[�D�&amp#27;��O�M&amp#18;�&amp#0;�Ӧ?q��&amp#24;cVg�+&amp#1;��<�:�4{���5:����v&amp#28;{�&amp#16;��&amp#3;&amp#11;kq&amp#28;W�&amp#8;�κ�ڂ~��Vl^���F�,ɢ�Z.Q�b�&amp#4;����P�� ��uԑ�k
+�oyn��&amp#26;�2&amp#2;�&amp#27;�&amp#15;�&amp#6;�X:0��Վ&��&amp#25;l�b�7��O�ڸZ�7�+K�t0�ܹ�Χ�`�1����~��IIsDM#�nE�������&amp#6;*&amp#15;�U$V�&amp#4;���)�/�&amp#6;��:7]�V�k\6>u�#�t��}�x�w��{2���V�-��&amp#30;R)D֒L&amp#4;r�&amp#8;&amp#18;&amp#16;��w&amp#21;�����~ߗ���cʩ��&amp#8;o�����2&amp#0;&amp#0;�&amp#27;�~�Y �G�&amp#18;mm[%���Z�E0��`�m��_�H�&amp#0;���Ú9�;���&amp#19;:�&amp#28;&amp#28;k�X�K|�&amp#5;Jƀl��k]�뻋S&amp#12;��/�`�7&amp#14;Y&amp#19;t�&amp#28;����&amp#5;���|N�����P�5��&amp#18;X��QR5O<�#>^&amp#17;�m�>�7��5�&amp#22;���&amp#23;R�c�@�&amp#3;u�l�F.R�޸/��xzr7&amp#18;\+�]&amp#18;X]�&amp#21;��:��&amp#0;ojYG���ŦK�J��>)}x�"�kE;-&amp#12;]!w�&amp#0;04�)�&amp#25;i"�&amp#19;��&amp#6;�m&amp#31;�5�Ir�&amp#18;}w��&amp#21;D'	�j d��m&amp#25;6w&amp#3;���f����H��;&amp#16;}��ɊP|��&amp#22;&amp#15;O}5����֠Aa&amp#11;��w %v;���f���ydw�xco�&amp#7;�8^7&amp#14;&amp#26;�8&amp#3;��j&amp#7;Q�޿J��4�Б�����F&amp#19;��D&amp#7;.�J�&amp#7;��&amp#0;&amp#31;\��yO�J/֌1�cB6���_&amp#19;�,{&amp#21;R��&amp#30;j�dPF�I&amp#25;/.�&amp#23;�����&amp#0;��X�-��D�Wl�W�&amp#19;�kIZ)&amp#7;�>jFn=&amp#21;Yd��7*��r�M{��&amp#0;�o��f���y�}(���&amp#31;���&amp#22;�A��Z&amp#12;&amp#5;�
+�s<J��g&amp#29;G���_&amp#20;El����p�5���vLKܱ�W/Q�K��/�&amp#19;v&amp#23;%�F=��^�\��k&amp#17;�0b��&amp#24;$iN��W&amp#30;8��NI|i�r����&amp#20;�<c&amp#27;k��ݢ��&amp#5;&amp#27;7���{>tk�����'ً,T�Q.pd&amp#8;#gǚ��F)!>c.?#Ǯl�X&amp#2;�&amp#12;L|�&amp#7;�&amp#31;�U�Q�&amp#26;ca�$ϛ�F��&amp#29;�H&amp#24;�o}W&amp#14;x&amp#26;:&amp#30;�&�]�8�U��v	&amp#28;s(���\&amp#21;?���=���M\Z>����t;�lj�&amp#2;g2��ݚ]�&amp#20;W)0�&amp#27;����՟S�d�E�rmvcWw9�3Q��or�uF�m��b:�~W�+��&amp#28;ۧ����&amp#0;����]&amp#12;r��Lh��8�l��ʩ�.��6>�.m&amp#30;(cQ]�9d��.<_3��&amp#17;&amp#17;�>�&amp#20;|ʤ���R|�[t��O�&amp#31;�¼�I�'�2&amp#16;<��[�O�&amp#31;�&amp#24;�=�&amp#0;��U4����3��&amp#5;��T�<)�&amp#17;<���&amp#31;q]G&amp#25;?�c�H����묝����T���&amp#31;�d�m��Ϛ�"07���Xރ��O&amp#28;�=�#�{U&amp#19;*�-�L�&amp#21;r�&amp#26;&amp#24;.!q-�ꮌ>�o��9�K���A4&amp#30;KՌ,�A�(�R���&amp#3;�F3�J�����V,1�ܾ���M*&amp#20;�p�7*���C&amp#31;QFySA�T�������&amp#21;g36:n˦&amp#31;&amp#15;��٭�2�-���F&amp#0;&amp#27;>Oo�o�&amp#20;U"��o�4Y&amp#17;���&amp#21;��G
+�]�&amp#5;&amp#1;�]
+V�Al94��`�栲�S�&amp#3;1���Ne��߅�&amp#21;D��@�d<���]�&amp#1;�&amp#16;�OM=1���&amp#18;]�pl�6�>%�OS;&amp#3;����?3S�+��v,Nf����&amp#21;1�ȏ@&amp#2;6�c��kc�\���Q?g&amp#26;���,�_�N��J��t�~��6�&amp#31;&amp#12;��W�6�M�&amp#18;O�ƺxt8t����J_i���y]���O��X頵_�D&amp#24;�%�&amp#0;ӷ�x��X5&amp#30;�&amp#24;�0Ԛ���Ҷ�L�rx�I��k�>+D[kw.�`&amp#29;�@��t��Sk|�/{W&amp#8;�q&amp#24;l���&amp#23;�a����$����=���E�2p����QR`r�R�/g-�Œ���S�N��j{&amp#21;�\�T�>G�l�yK�&amp#27;�:f���)�ꍊ�&amp#31;ڱ�~&amp#25;�Yec&amp#24;>R��&amp#5;���&amp#30;���Ҵm���H���s&amp#8;r<N��H%��~&amp#21;Ώ�֝��]5t�ٯ&amp#26;o�d�ˎ��m����`��-�&amp#15;��$��2r`i$Xn��2)�$���,���&amp#26;l��/��#6�d>W�`�-ͺ:�&amp#17;���&amp#0;q�Y2�~&amp#25;�q.��q�ɐ���I��
+�&amp#2;�d�&amp#6;&amp#29;�bŋ&amp#23;�+h�r�,$���&amp#26;&amp#4;�&amp#27;�(g�&amp#12;���	���}��&amp#27;��Y�&amp#23;0=ŭ�X��R
+���O�_&amp#21;F8�&amp#27;�.�&amp#27;��Rq�*�{^E�&amp#17;�̲̉��c'���<��&amp#29;�<qm6]�^��_���pl�7&amp#8;&amp#24;H&amp#25;����W:&amp#26;�Ի5~�-ZE�&amp#19;��&amp#11;�K&amp#27;Yݔc��Hv�˿p=�����&amp#21;�ъ5I��+ �?��ʆ=�c�z~_��i͞="F�3
+�}3k�&amp#30;���9�$�?d��>�@&amp#1;�H���]&amp#20;I���E��ԄbW��&amp#26;�pD����&amp#1;\�3P��&amp#0;Хr&amp#5;	�.�&amp#27;&amp#1;&amp#31;9;5[&amp#21;�J(P��(�@,)�`\Q!�z#��d���&x`��*�F�&amp#16;��&amp#31;���)s�Y!M���dh�d͋\|)�&amp#12;q�؎�>گ7(c߶�Gv2��K����Z�贗R�n����u��}�(6c�
+��{���J�&amp#0;���&amp#5; �&amp#0;�&amp#7;cu�E��&amp#25;�ղ��%T�F*��)&amp#29;��跍��l��&amp#1;�v=�&amp#29;&\��?�o�fw�1T����&amp#22;i#�LD&amp#21;&amp#29;��C	$�&amp#18;�#�G9��`�3&amp#19;�8��&amp#14;�g֑&amp#7;ݛB��!&amp#28;iY�NF�k����纕�^:�b��f�ݘ�&amp#21;��&amp#16;�.1�rXy�¸�%?̌G���1>��6`�\K��n&amp#31;�V&amp#30;[(-��Z�&amp#17;U��&amp#0;<n@��_2n�ŭ��_&amp#22;i�ܮKŷ)����g�x�&amp#5;Z6��5�fL�ڤ&amp#21;���W��S�&�&amp#12;�,����z&amp#19;&amp#31;�#
+��&amp#21;z|o�ssejlю��y�\��H`��rP�&amp#6;n�&amp#24;�ğ�&amp#6;�B|r$��3kFx���˹&amp#7;⧑��&amp#8;�#&amp#5;��;-��Cb�L_��o�n&amp#14;_�w&amp#31;��V��&amp#4;�2�&amp#0;�uSn�C��<Y����!&amp#0;���H�/�
+�@�&amp#7;j��P�&amp#26;,ǭ�X�&amp#31;�&amp#25;�s����1�&amp#0;a�_��p&amp#30;�.���&amp#0;����b�oɩc��^5��y�#a&amp#20;(&amp#3;��Mz�&amp#30;�ۏ��×5�	(�!R&amp#31;���o�V݉&amp#20;�c�2�;v&amp#30;�tQ[g�/&amp#1;��&amp#20;F��j�
+?��&amp#12;�\�ʨFI&amp#14;�&amp#27;&amp#21;�,ۨ#@$&amp#20;&amp#5;b���#&amp#21;q�&amp#0;��@2j�KG���&amp#27;��r�<��C�o&amp#16;&amp#31;&amp#15;���yn��G�&amp#0;�gN4i��Q|�&amp#12;Ϭ\?���&amp#11;���v&amp#0;&amp#2;1��`ZH���A��]&amp#19;|&amp#15;)���9���Z�!1p�i3�&amp#27;Z1�b����Fũ��&amp#20;NAk&amp#4;w&amp#18;L"&amp#8;�h~�j�itp��K��͹Pi-��&amp#29;�ROb;��Z&amp#27;�0x�3}���(�&amp#1;! I)�RH�����ɓ�D'�>�&amp#28;� C��	�o&amp#26;&amp#3;�/��Ty?�Ia㲜�3�l�&amp#14;�%��锞��EU&amp#22;d�i�d�r&amp#28;�I&amp#28;Nfk):I��&amp#21;Fl
+_�ч;��-1N�(����}w1�S��s����MI&amp#22;�;���&amp#6;������T��&amp#0;��Ye}�QE���]�#hl㉕����]��w;>�c�EQ����;����&amp#22;�+�#:�&amp#25;��&amp#0;�E��&amp#19;4&amp#26;�&amp#6;!qy{<��M$���&amp#0;&amp#17;�&amp#29;��vy��^B��j���+n��e�jF��&amp#30;&amp#26;�K댌�/&amp#30;�7�+~�&amp#26;�5a\Y�%���$l&amp#24;&amp#14;�U�m&amp#22;�fXT�&amp#0;�ֆ�X���)�@"�ɕ'�$�&amp#20;�-�)�wB.��&amp#31;��Nf�C&amp#20;JC�QX&amp#18;uD��v�P��JEB�,�u&amp#16;&amp#14;&amp#24;Q&amp#8;��*&amp#4;������??!��<#mw2���&amp#7;nO�����4���k>��	x�b��&amp#5;ū�&amp#18;i
+v�H��k�&amp#0;1&amp#21;�4��&amp#11;�M�4I�u��xߍ&amp#25;&amp#17;�aU&amp#23;���>:��Za�MXqd܉���|m���ӈ�C$�{&amp#1;U�\�7pY�?�Au�a���\�C�&amp#0;7zӍ�S3��!}'�F&amp#12;<�Qht�+�OM�3y#+��&amp#7;{&amp#29;�����,xԌ�-�E�Q�&amp#3;�q����&E�L�7���r# �������W���^��u�eU&amp#31;aE�&amp#31;��H�&amp#0;$�?�>4&amp#25;&amp#30;�&amp#3;��V\�T�5����J{����#�gQ�[-�.@�E��:&amp#20;/�&amp#2;�=�4�c?4mMai4g|�&amp#24;�����6��8'�&amp#30;[�l�J�[&amp#20;�&amp#12;Q|�&amp#22;�Ֆ���}*ʽ��`��7�Z�f��7i�fˀo�^RK,�&amp#30;�տ&amp#4;��i̸'.2j��)�[&amp#12;�J��]�&amp#25;&amp#0;$���gNV^��	y&amp#4;D��%&amp#7;����n@I&amp#12;`�s�^�<��b�'&amp#19;��BZ�F))�El]ځ[&amp#0;�@��}��0Dj�&amp#20;��5�B��d�&amp#25;ǚF1��&amp#0;��&amp#20;I�2Y�@�X����&amp#0;\���U��8Rr.¹2�&amp#0;Q�Rg��S"�ԏ3G&amp#15;�&amp#17;�zW_�u�s�&amp#11;��W�9\�&amp#26;�/�����xu�&amp#30;�G���O&amp#25;��&amp#21;��d�ޥr�Y��&amp#26;��&amp#27;tѸ[`���[·���ɝ>�&amp#30;S��&amp#27;&amp#31;�&amp#25;���..��h�&amp#15;�n��&amp#17;�֭6[U�.�F����t�Z���U&amp#20;>i|���QH]w'޹���"�tg�&amp#28;�S&amp#31;�s2LxY&amp#31;&amp#30;a�p�m��&amp#1;Ub��ԗ&amp#5;��y&amp#22;l�$Z�����_����M��&amp#20;O,b\��3&amp#31;%���ܲ9&amp#29;��ҽ6>YK�?&amp#5;&amp#23;=���Q\��W!��T5L�R_W��&amp#26;��*rzQ͠�)k��R<2&amp#0;&amp#20;�����z�����&amp#26;�&amp#11;��ʋ���h�zRW&amp#0;�?N��A�Q�*&amp#26;3����m�6d&amp#0;&amp#11;뱥�+͉M&amp#25;��*k&amp#11;�&amp#28;��ﱫ}�G&amp#7;.���Y\N@�wH�&amp#24;6k^�p���?&amp#22;�
+��c�kF&amp#28;;��5�&amp#27;��ĸ��t��򟸮�q�����9̭��&amp#18;Ct�!��A�Q=R��:��˟V�S��3�ި��%��B���w*��ۓ,�*&amp#18;w���&amp#22;��Dp'�<��&amp#11;&amp#28;*�&amp#15;�&amp#1;,�O�n��fy��Ӎ�A��1[&amp#18;��+&amp#23;c@��j&amp#5;l�&amp#8;�5&amp#2;&amp#1;jb&amp#11;�;T&amp#8;���+
+6�2Éz&amp#25;}�:K��[D|&amp#18;d�&amp#0;&amp#14;?��[��&amp#18;5c�6|��$�U�&amp#20;��&amp#16;&amp#21;GrI�b�EY�p_@mg��#�� 8&amp#12;-T�&amp#1;��k�oj5��_f�a��&amp#24;�6���&amp#23;�X@|}�/ZÊt՝H�&amp#27;\&amp#29;�(2��i��&amp#0;7f�Z&amp#0;WsK�K/�&amp#25;3i�K*c��&amp#7;���a�O�]h�ɗs y>&amp#30;�%&amp#17;��޾V&amp#30;wUj1)�-�*1&amp#14;U��&amp#29;|��&amp#15;���&amp#17;\<�v�f�%D���F|���������&��&amp#26;��.�ߎⅿs�&amp#6;�M�&amp#14;X�M_\�0�&amp#14;��kYI&amp#29;��L�o#�4x%3��'_b:�R�@M�s�&amp#22;��^&amp#24;�c&amp#14;&amp#3;&amp#14;���+V�%�Ek��s��+\��X^l�!�%&amp#30;&amp#15;��X��>c�f�Z�G��1�Kť��K&amp#27;�~�x�0�e>�\����4d�&amp#28;��7�����&amp#20;��ZlQ��ȱ�7�&amp#30;6���&amp#21;&amp#20;.�vq�E&amp#8;�3Yd������rmE��f9����H��}�&amp#27;:�ɺ0Te댸��[½LN�&amp#20;o�J&amp#6;��xm�:AwvD�:�G�����aI�)�No�� �&amp#7;`k�)�3N&amp#22;�ԅ���1&amp#24;��F &amp#22;�b�g�B�p|�&amp#20;�T@&amp#2;��@$���&amp#17;�ޕ�&amp#26;׬��>�q�X�E�&amp#4;-&amp#24;�zb�Z���j����>�&amp#27;��&amp#22;P�N�cz5�&amp#26;*��G�vd�&amp#2;,�0׏�+&������&amp#16;�E&amp#31;K/H��j�&amp#26;�q��^93�=&amp#12;_�'�v�]oG��>��Ne��N�z��9L��Gߚ&amp#12;�%S��Zܛc<a�p	?Oڹ����}��?ciki&amp#26;[ı(&amp#3;��3
+�k�E�ϴ}�������;),�&amp#17;~oz�|��"�&amp#29;��&amp#30;��&&amp#24;�&amp#8;�(=���&amp#26;�+&amp#28;�&amp#21;M�]e#ѳ|?>h����&amp#4;-��@g�h�&amp#20;�̽M���&amp#21;�[&amp#20;�f�3{��&amp#11;$�+&amp#31;͡޹�o��P�5����c�]uф�r&amp#25;d2&amp#16;X�;R͘�*y���X[�&amp#5;?�*�6W��&amp#15;cTC��t^,����&amp#24;���除��鲾&amp#3;&amp#20;��8BIM&amp#4;%&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#16;�$8��&amp#14;�61��\P����&amp#12;XICC_PROFILE&amp#0;&amp#1;&amp#1;&amp#0;&amp#0;&amp#12;HLino&amp#2;&amp#16;&amp#0;&amp#0;mntrRGB XYZ &amp#7;�&amp#0;&amp#2;&amp#0;	&amp#0;&amp#6;&amp#0;1&amp#0;&amp#0;acspMSFT&amp#0;&amp#0;&amp#0;&amp#0;IEC sRGB&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;��&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;&amp#0;�-HP  &amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#17;cprt&amp#0;&amp#0;&amp#1;P&amp#0;&amp#0;&amp#0;3desc&amp#0;&amp#0;&amp#1;�&amp#0;&amp#0;&amp#0;lwtpt&amp#0;&amp#0;&amp#1;�&amp#0;&amp#0;&amp#0;&amp#20;bkpt&amp#0;&amp#0;&amp#2;&amp#4;&amp#0;&amp#0;&amp#0;&amp#20;rXYZ&amp#0;&amp#0;&amp#2;&amp#24;&amp#0;&amp#0;&amp#0;&amp#20;gXYZ&amp#0;&amp#0;&amp#2;,&amp#0;&amp#0;&amp#0;&amp#20;bXYZ&amp#0;&amp#0;&amp#2;@&amp#0;&amp#0;&amp#0;&amp#20;dmnd&amp#0;&amp#0;&amp#2;T&amp#0;&amp#0;&amp#0;pdmdd&amp#0;&amp#0;&amp#2;�&amp#0;&amp#0;&amp#0;�vued&amp#0;&amp#0;&amp#3;L&amp#0;&amp#0;&amp#0;�view&amp#0;&amp#0;&amp#3;�&amp#0;&amp#0;&amp#0;$lumi&amp#0;&amp#0;&amp#3;�&amp#0;&amp#0;&amp#0;&amp#20;meas&amp#0;&amp#0;&amp#4;&amp#12;&amp#0;&amp#0;&amp#0;$tech&amp#0;&amp#0;&amp#4;0&amp#0;&amp#0;&amp#0;&amp#12;rTRC&amp#0;&amp#0;&amp#4;<&amp#0;&amp#0;&amp#8;&amp#12;gTRC&amp#0;&amp#0;&amp#4;<&amp#0;&amp#0;&amp#8;&amp#12;bTRC&amp#0;&amp#0;&amp#4;<&amp#0;&amp#0;&amp#8;&amp#12;text&amp#0;&amp#0;&amp#0;&amp#0;Copyright (c) 1998 Hewlett-Packard Company&amp#0;&amp#0;desc&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#18;sRGB IEC61966-2.1&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#18;sRGB IEC61966-2.1&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;XYZ &amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;�Q&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;&amp#1;&amp#22;�XYZ &amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;XYZ &amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;o�&amp#0;&amp#0;8�&amp#0;&amp#0;&amp#3;�XYZ &amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;b�&amp#0;&amp#0;��&amp#0;&amp#0;&amp#24;�XYZ &amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;$�&amp#0;&amp#0;&amp#15;�&amp#0;&amp#0;��desc&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#22;IEC http://www.iec.ch&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#22;IEC http://www.iec.ch&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;desc&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;.IEC 61966-2.1 Default RGB colour space - sRGB&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;.IEC 61966-2.1 Default RGB colour space - sRGB&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;desc&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;,Reference Viewing Condition in IEC61966-2.1&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;,Reference Viewing Condition in IEC61966-2.1&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;view&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#19;��&amp#0;&amp#20;_.&amp#0;&amp#16;�&amp#20;&amp#0;&amp#3;��&amp#0;&amp#4;&amp#19;&amp#11;&amp#0;&amp#3;\�&amp#0;&amp#0;&amp#0;&amp#1;XYZ &amp#0;&amp#0;&amp#0;&amp#0;&amp#0;L	V&amp#0;P&amp#0;&amp#0;&amp#0;W&amp#31;�meas&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#1;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#2;�&amp#0;&amp#0;&amp#0;&amp#2;sig &amp#0;&amp#0;&amp#0;&amp#0;CRT curv&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#4;&amp#0;&amp#0;&amp#0;&amp#0;&amp#5;&amp#0;
+&amp#0;&amp#15;&amp#0;&amp#20;&amp#0;&amp#25;&amp#0;&amp#30;&amp#0;#&amp#0;(&amp#0;-&amp#0;2&amp#0;7&amp#0;;&amp#0;@&amp#0;E&amp#0;J&amp#0;O&amp#0;T&amp#0;Y&amp#0;^&amp#0;c&amp#0;h&amp#0;m&amp#0;r&amp#0;w&amp#0;|&amp#0;�&amp#0;�&amp#0;�&amp#0;�&amp#0;�&amp#0;�&amp#0;�&amp#0;�&amp#0;�&amp#0;�&amp#0;�&amp#0;�&amp#0;�&amp#0;�&amp#0;�&amp#0;�&amp#0;�&amp#0;�&amp#0;�&amp#0;�&amp#0;�&amp#0;�&amp#0;�&amp#0;�&amp#0;�&amp#1;&amp#1;&amp#1;&amp#7;&amp#1;&amp#1;&amp#19;&amp#1;&amp#25;&amp#1;&amp#31;&amp#1;%&amp#1;+&amp#1;2&amp#1;8&amp#1;>&amp#1;E&amp#1;L&amp#1;R&amp#1;Y&amp#1;`&amp#1;g&amp#1;n&amp#1;u&amp#1;|&amp#1;�&amp#1;�&amp#1;�&amp#1;�&amp#1;�&amp#1;�&amp#1;�&amp#1;�&amp#1;�&amp#1;�&amp#1;�&amp#1;�&amp#1;�&amp#1;�&amp#1;�&amp#1;�&amp#2;&amp#3;&amp#2;&amp#12;&amp#2;&amp#20;&amp#2;&amp#29;&amp#2;&&amp#2;/&amp#2;8&amp#2;A&amp#2;K&amp#2;T&amp#2;]&amp#2;g&amp#2;q&amp#2;z&amp#2;�&amp#2;�&amp#2;�&amp#2;�&amp#2;�&amp#2;�&amp#2;�&amp#2;�&amp#2;�&amp#2;�&amp#2;�&amp#2;�&amp#3;&amp#0;&amp#3;&amp#11;&amp#3;&amp#22;&amp#3;!&amp#3;-&amp#3;8&amp#3;C&amp#3;O&amp#3;Z&amp#3;f&amp#3;r&amp#3;~&amp#3;�&amp#3;�&amp#3;�&amp#3;�&amp#3;�&amp#3;�&amp#3;�&amp#3;�&amp#3;�&amp#3;�&amp#4;&amp#6;&amp#4;&amp#19;&amp#4; &amp#4;-&amp#4;;&amp#4;H&amp#4;U&amp#4;c&amp#4;q&amp#4;~&amp#4;�&amp#4;�&amp#4;�&amp#4;�&amp#4;�&amp#4;�&amp#4;�&amp#4;�&amp#4;�&amp#5;&amp#5;&amp#28;&amp#5;+&amp#5;:&amp#5;I&amp#5;X&amp#5;g&amp#5;w&amp#5;�&amp#5;�&amp#5;�&amp#5;�&amp#5;�&amp#5;�&amp#5;�&amp#5;�&amp#6;&amp#6;&amp#6;&amp#22;&amp#6;'&amp#6;7&amp#6;H&amp#6;Y&amp#6;j&amp#6;{&amp#6;�&amp#6;�&amp#6;�&amp#6;�&amp#6;�&amp#6;�&amp#6;�&amp#7;&amp#7;&amp#7;&amp#25;&amp#7;+&amp#7;=&amp#7;O&amp#7;a&amp#7;t&amp#7;�&amp#7;�&amp#7;�&amp#7;�&amp#7;�&amp#7;�&amp#7;�&amp#8;&amp#11;&amp#8;&amp#31;&amp#8;2&amp#8;F&amp#8;Z&amp#8;n&amp#8;�&amp#8;�&amp#8;�&amp#8;�&amp#8;�&amp#8;�&amp#8;�	&amp#16;	%	:	O	d	y	�	�	�	�	�	�
+&amp#17;
+'
+=
+T
+j
+�
+�
+�
+�
+�
+�&amp#11;&amp#11;&amp#11;"&amp#11;9&amp#11;Q&amp#11;i&amp#11;�&amp#11;�&amp#11;�&amp#11;�&amp#11;�&amp#11;�&amp#12;&amp#18;&amp#12;*&amp#12;C&amp#12;\&amp#12;u&amp#12;�&amp#12;�&amp#12;�&amp#12;�&amp#12;�&@Zt�����&amp#14;&amp#19;&amp#14;.&amp#14;I&amp#14;d&amp#14;&amp#14;�&amp#14;�&amp#14;�&amp#14;�&amp#15;	&amp#15;%&amp#15;A&amp#15;^&amp#15;z&amp#15;�&amp#15;�&amp#15;�&amp#15;�&amp#16;	&amp#16;&&amp#16;C&amp#16;a&amp#16;~&amp#16;�&amp#16;�&amp#16;�&amp#16;�&amp#17;&amp#19;&amp#17;1&amp#17;O&amp#17;m&amp#17;�&amp#17;�&amp#17;�&amp#17;�&amp#18;&amp#7;&amp#18;&&amp#18;E&amp#18;d&amp#18;�&amp#18;�&amp#18;�&amp#18;�&amp#19;&amp#3;&amp#19;#&amp#19;C&amp#19;c&amp#19;�&amp#19;�&amp#19;�&amp#19;�&amp#20;&amp#6;&amp#20;'&amp#20;I&amp#20;j&amp#20;�&amp#20;�&amp#20;�&amp#20;�&amp#21;&amp#18;&amp#21;4&amp#21;V&amp#21;x&amp#21;�&amp#21;�&amp#21;�&amp#22;&amp#3;&amp#22;&&amp#22;I&amp#22;l&amp#22;�&amp#22;�&amp#22;�&amp#22;�&amp#23;&amp#29;&amp#23;A&amp#23;e&amp#23;�&amp#23;�&amp#23;�&amp#23;�&amp#24;&amp#27;&amp#24;@&amp#24;e&amp#24;�&amp#24;�&amp#24;�&amp#24;�&amp#25; &amp#25;E&amp#25;k&amp#25;�&amp#25;�&amp#25;�&amp#26;&amp#4;&amp#26;*&amp#26;Q&amp#26;w&amp#26;�&amp#26;�&amp#26;�&amp#27;&amp#20;&amp#27;;&amp#27;c&amp#27;�&amp#27;�&amp#27;�&amp#28;&amp#2;&amp#28;*&amp#28;R&amp#28;{&amp#28;�&amp#28;�&amp#28;�&amp#29;&amp#30;&amp#29;G&amp#29;p&amp#29;�&amp#29;�&amp#29;�&amp#30;&amp#22;&amp#30;@&amp#30;j&amp#30;�&amp#30;�&amp#30;�&amp#31;&amp#19;&amp#31;>&amp#31;i&amp#31;�&amp#31;�&amp#31;� &amp#21; A l � � �!&amp#28;!H!u!�!�!�"'"U"�"�"�#
+#8#f#�#�#�$&amp#31;$M$|$�$�%	%8%h%�%�%�&'&W&�&�&�'&amp#24;'I'z'�'�((?(q(�(�)&amp#6;)8)k)�)�*&amp#2;*5*h*�*�+&amp#2;+6+i+�+�,&amp#5;,9,n,�,�-&amp#12;-A-v-�-�.&amp#22;.L.�.�.�/$/Z/�/�/�050l0�0�1&amp#18;1J1�1�1�2*2c2�2�33F33�3�4+4e4�4�5&amp#19;5M5�5�5�676r6�6�7$7`7�7�8&amp#20;8P8�8�9&amp#5;9B99�9�:6:t:�:�;-;k;�;�<'<e<�<�="=a=�=�> >`>�>�?!?a?�?�@#@d@�@�A)AjA�A�B0BrB�B�C:C}C�D&amp#3;DGD�D�E&amp#18;EUE�E�F"FgF�F�G5G{G�H&amp#5;HKH�H�I&amp#29;IcI�I�J7J}J�K&amp#12;KSK�K�L*LrL�M&amp#2;MJM�M�N%NnN�O&amp#0;OIO�O�P'PqP�Q&amp#6;QPQ�Q�R1R|R�S&amp#19;S_S�S�TBT�T�U(UuU�V&amp#15;V\V�V�WDW�W�X/X}X�Y&amp#26;YiY�Z&amp#7;ZVZ�Z�[E[�[�\5\�\�]']x]�^&amp#26;^l^�_&amp#15;_a_�`&amp#5;`W`�`�aOa�a�bIb�b�cCc�c�d@d�d�e=e�e�f=f�f�g=g�g�h?h�h�iCi�i�jHj�j�kOk�k�lWl�m&amp#8;m`m�n&amp#18;nkn�o&amp#30;oxo�p+p�p�q:q�q�rKr�s&amp#1;s]s�t&amp#20;tpt�u(u�u�v>v�v�wVw�x&amp#17;xnx�y*y�y�zFz�{&amp#4;{c{�|!|�|�}A}�~&amp#1;~b~�#��G���
+�k�͂0����W���&amp#29;����G���&amp#14;�r�ׇ;���&amp#4;�i�Ή3�����d�ʋ0�����c�ʍ1�����f�Ώ6���&amp#6;�n�֑?���&amp#17;�z��M��� �����_�ɖ4���
+�u���L���$�����h�՛B���&amp#28;�����d�Ҟ@���&amp#29;�����i�ءG���&���&amp#6;�v��V�ǥ8���&amp#26;�����n��R�ĩ7���&amp#28;���&amp#2;�u��\�ЭD���-���&amp#22;���&amp#0;�u��`�ֲK�³8���%���&amp#19;���&amp#1;�y��h��Y�ѹJ�º;���.���!���&amp#21;���
+�����z���p���g���_���X���Q���K���F���Aǿ�=ȼ�:ɹ�8ʷ�6˶�5̵�5͵�6ζ�7ϸ�9к�<Ѿ�?���D���I���N���U���\���d���l���v��ۀ�&amp#5;܊�&amp#16;ݖ�&amp#28;ޢ�)߯�6��D���S���c���s������&amp#31;��2��F���[���p����&amp#17;��(��@���X���r����&amp#25;��4���P���m�����&amp#25;���8���W���w�&amp#7;���)���K���m����+�http://ns.adobe.com/xap/1.0/&amp#0;<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c128 79.159124, 2016/03/18-14:01:55        ">
+ <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about=""
+    xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:aux="http://ns.adobe.com/exif/1.0/aux/"
+    xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/"
+    xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"
+    xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#"
+    xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#"
+    xmlns:lr="http://ns.adobe.com/lightroom/1.0/"
+    xmlns:Iptc4xmpCore="http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/"
+    xmlns:crs="http://ns.adobe.com/camera-raw-settings/1.0/"
+   xmp:Rating="5"
+   xmp:ModifyDate="2018-12-06T18:51:29-03:00"
+   xmp:CreateDate="2014-10-21T12:03:17.58"
+   xmp:MetadataDate="2018-12-06T18:51:29-03:00"
+   xmp:CreatorTool="Adobe Photoshop Lightroom 6.8 (Macintosh)"
+   dc:format="image/jpeg"
+   aux:SerialNumber="222073165826"
+   aux:LensSerialNumber="0000000000"
+   aux:ImageNumber="0"
+   aux:FlashCompensation="0/1"
+   aux:Firmware="1.0.5"
+   photoshop:DateCreated="2014-10-21T11:03:17"
+   photoshop:State="West Grand Bahama"
+   photoshop:Country="The Bahamas"
+   xmpMM:DocumentID="xmp.did:7974b2d5-d64c-49e2-a213-de1bc2b21673"
+   xmpMM:OriginalDocumentID="52CE7845E84E00B7012358B6550AFEBA"
+   xmpMM:InstanceID="xmp.iid:7974b2d5-d64c-49e2-a213-de1bc2b21673"
+   Iptc4xmpCore:CountryCode="BS"
+   crs:Version="9.8"
+   crs:ProcessVersion="6.7"
+   crs:WhiteBalance="As Shot"
+   crs:AutoWhiteVersion="134348800"
+   crs:Temperature="4500"
+   crs:Tint="+18"
+   crs:Saturation="0"
+   crs:Sharpness="25"
+   crs:LuminanceSmoothing="0"
+   crs:ColorNoiseReduction="25"
+   crs:VignetteAmount="0"
+   crs:ShadowTint="0"
+   crs:RedHue="0"
+   crs:RedSaturation="0"
+   crs:GreenHue="0"
+   crs:GreenSaturation="0"
+   crs:BlueHue="0"
+   crs:BlueSaturation="0"
+   crs:Vibrance="0"
+   crs:HueAdjustmentRed="0"
+   crs:HueAdjustmentOrange="0"
+   crs:HueAdjustmentYellow="0"
+   crs:HueAdjustmentGreen="0"
+   crs:HueAdjustmentAqua="0"
+   crs:HueAdjustmentBlue="0"
+   crs:HueAdjustmentPurple="0"
+   crs:HueAdjustmentMagenta="0"
+   crs:SaturationAdjustmentRed="0"
+   crs:SaturationAdjustmentOrange="0"
+   crs:SaturationAdjustmentYellow="0"
+   crs:SaturationAdjustmentGreen="0"
+   crs:SaturationAdjustmentAqua="0"
+   crs:SaturationAdjustmentBlue="0"
+   crs:SaturationAdjustmentPurple="0"
+   crs:SaturationAdjustmentMagenta="0"
+   crs:LuminanceAdjustmentRed="0"
+   crs:LuminanceAdjustmentOrange="0"
+   crs:LuminanceAdjustmentYellow="0"
+   crs:LuminanceAdjustmentGreen="0"
+   crs:LuminanceAdjustmentAqua="0"
+   crs:LuminanceAdjustmentBlue="0"
+   crs:LuminanceAdjustmentPurple="0"
+   crs:LuminanceAdjustmentMagenta="0"
+   crs:SplitToningShadowHue="0"
+   crs:SplitToningShadowSaturation="0"
+   crs:SplitToningHighlightHue="0"
+   crs:SplitToningHighlightSaturation="0"
+   crs:SplitToningBalance="0"
+   crs:ParametricShadows="0"
+   crs:ParametricDarks="0"
+   crs:ParametricLights="0"
+   crs:ParametricHighlights="0"
+   crs:ParametricShadowSplit="25"
+   crs:ParametricMidtoneSplit="50"
+   crs:ParametricHighlightSplit="75"
+   crs:SharpenRadius="+1.0"
+   crs:SharpenDetail="25"
+   crs:SharpenEdgeMasking="0"
+   crs:PostCropVignetteAmount="0"
+   crs:GrainAmount="0"
+   crs:ColorNoiseReductionDetail="50"
+   crs:ColorNoiseReductionSmoothness="50"
+   crs:LensProfileEnable="0"
+   crs:LensManualDistortionAmount="0"
+   crs:PerspectiveVertical="0"
+   crs:PerspectiveHorizontal="0"
+   crs:PerspectiveRotate="0.0"
+   crs:PerspectiveScale="100"
+   crs:PerspectiveAspect="0"
+   crs:PerspectiveUpright="0"
+   crs:PerspectiveX="0.00"
+   crs:PerspectiveY="0.00"
+   crs:AutoLateralCA="0"
+   crs:Exposure2012="+0.75"
+   crs:Contrast2012="+2"
+   crs:Highlights2012="-7"
+   crs:Shadows2012="+7"
+   crs:Whites2012="+14"
+   crs:Blacks2012="-39"
+   crs:Clarity2012="0"
+   crs:DefringePurpleAmount="0"
+   crs:DefringePurpleHueLo="30"
+   crs:DefringePurpleHueHi="70"
+   crs:DefringeGreenAmount="0"
+   crs:DefringeGreenHueLo="40"
+   crs:DefringeGreenHueHi="60"
+   crs:Dehaze="0"
+   crs:ToneMapStrength="0"
+   crs:ConvertToGrayscale="False"
+   crs:ToneCurveName="Linear"
+   crs:ToneCurveName2012="Linear"
+   crs:CameraProfile="Adobe Standard"
+   crs:LensProfileSetup="LensDefaults"
+   crs:UprightVersion="151388160"
+   crs:UprightCenterMode="0"
+   crs:UprightCenterNormX="0.5"
+   crs:UprightCenterNormY="0.5"
+   crs:UprightFocalMode="0"
+   crs:UprightFocalLength35mm="35"
+   crs:UprightPreview="False"
+   crs:UprightTransformCount="6"
+   crs:UprightFourSegmentsCount="0"
+   crs:HasSettings="True"
+   crs:HasCrop="False"
+   crs:AlreadyApplied="True">
+   <dc:creator>
+    <rdf:Seq>
+     <rdf:li>Wagner Costa</rdf:li>
+    </rdf:Seq>
+   </dc:creator>
+   <dc:subject>
+    <rdf:Bag>
+     <rdf:li>Bahamas</rdf:li>
+     <rdf:li>Canon</rdf:li>
+     <rdf:li>Cruzeiro</rdf:li>
+     <rdf:li>EUA</rdf:li>
+     <rdf:li>Flor</rdf:li>
+     <rdf:li>T3</rdf:li>
+    </rdf:Bag>
+   </dc:subject>
+   <xmpMM:History>
+    <rdf:Seq>
+     <rdf:li
+      stEvt:action="derived"
+      stEvt:parameters="converted from image/x-canon-cr2 to image/jpeg, saved to new location"/>
+     <rdf:li
+      stEvt:action="saved"
+      stEvt:instanceID="xmp.iid:7974b2d5-d64c-49e2-a213-de1bc2b21673"
+      stEvt:when="2018-12-06T18:51:29-03:00"
+      stEvt:softwareAgent="Adobe Photoshop Lightroom 6.8 (Macintosh)"
+      stEvt:changed="/"/>
+    </rdf:Seq>
+   </xmpMM:History>
+   <xmpMM:DerivedFrom
+    stRef:documentID="52CE7845E84E00B7012358B6550AFEBA"
+    stRef:originalDocumentID="52CE7845E84E00B7012358B6550AFEBA"/>
+   <lr:hierarchicalSubject>
+    <rdf:Bag>
+     <rdf:li>Bahamas</rdf:li>
+     <rdf:li>Canon</rdf:li>
+     <rdf:li>Cruzeiro</rdf:li>
+     <rdf:li>EUA</rdf:li>
+     <rdf:li>Flor</rdf:li>
+     <rdf:li>T3</rdf:li>
+    </rdf:Bag>
+   </lr:hierarchicalSubject>
+   <crs:ToneCurve>
+    <rdf:Seq>
+     <rdf:li>0, 0</rdf:li>
+     <rdf:li>255, 255</rdf:li>
+    </rdf:Seq>
+   </crs:ToneCurve>
+   <crs:ToneCurveRed>
+    <rdf:Seq>
+     <rdf:li>0, 0</rdf:li>
+     <rdf:li>255, 255</rdf:li>
+    </rdf:Seq>
+   </crs:ToneCurveRed>
+   <crs:ToneCurveGreen>
+    <rdf:Seq>
+     <rdf:li>0, 0</rdf:li>
+     <rdf:li>255, 255</rdf:li>
+    </rdf:Seq>
+   </crs:ToneCurveGreen>
+   <crs:ToneCurveBlue>
+    <rdf:Seq>
+     <rdf:li>0, 0</rdf:li>
+     <rdf:li>255, 255</rdf:li>
+    </rdf:Seq>
+   </crs:ToneCurveBlue>
+   <crs:ToneCurvePV2012>
+    <rdf:Seq>
+     <rdf:li>0, 0</rdf:li>
+     <rdf:li>255, 255</rdf:li>
+    </rdf:Seq>
+   </crs:ToneCurvePV2012>
+   <crs:ToneCurvePV2012Red>
+    <rdf:Seq>
+     <rdf:li>0, 0</rdf:li>
+     <rdf:li>255, 255</rdf:li>
+    </rdf:Seq>
+   </crs:ToneCurvePV2012Red>
+   <crs:ToneCurvePV2012Green>
+    <rdf:Seq>
+     <rdf:li>0, 0</rdf:li>
+     <rdf:li>255, 255</rdf:li>
+    </rdf:Seq>
+   </crs:ToneCurvePV2012Green>
+   <crs:ToneCurvePV2012Blue>
+    <rdf:Seq>
+     <rdf:li>0, 0</rdf:li>
+     <rdf:li>255, 255</rdf:li>
+    </rdf:Seq>
+   </crs:ToneCurvePV2012Blue>
+  </rdf:Description>
+ </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                       
+<?xpacket end="w"?>��&amp#0;�&amp#0;
+&amp#7;&amp#7;&amp#7;&amp#8;&amp#7;
+&amp#8;&amp#8;
+&amp#15;
+&amp#8;
+&amp#15;&amp#18;
+
+&amp#18;&amp#20;&amp#16;&amp#16;&amp#18;&amp#16;&amp#16;&amp#20;&amp#17;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#17;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#1;&amp#11;&amp#12;&amp#12;&amp#21;&amp#19;&amp#21;"&amp#24;&amp#24;"&amp#20;&amp#14;&amp#14;&amp#14;&amp#20;&amp#20;&amp#14;&amp#14;&amp#14;&amp#14;&amp#20;&amp#17;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#17;&amp#17;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#17;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;&amp#12;��&amp#0;&amp#4;&amp#0;}��&amp#0;&amp#14;Adobe&amp#0;d�&amp#0;&amp#0;&amp#0;&amp#1;��&amp#0;&amp#17;&amp#8;&amp#2;�&amp#3;�&amp#3;&amp#0;&amp#17;&amp#0;&amp#1;&amp#17;&amp#1;&amp#2;&amp#17;&amp#1;��&amp#0;�&amp#0;&amp#0;&amp#2;&amp#3;&amp#1;&amp#1;&amp#1;&amp#1;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#1;&amp#2;&amp#0;&amp#3;&amp#4;&amp#5;&amp#6;&amp#7;&amp#8;&amp#1;&amp#1;&amp#1;&amp#1;&amp#1;&amp#1;&amp#1;&amp#1;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#0;&amp#1;&amp#2;&amp#3;&amp#4;&amp#5;&amp#6;&amp#16;&amp#0;&amp#2;&amp#1;&amp#3;&amp#3;&amp#2;&amp#4;&amp#3;&amp#5;&amp#5;&amp#6;&amp#5;&amp#5;&amp#1;&amp#1;&amp#0;&amp#0;&amp#1;&amp#2;&amp#3;&amp#4;&amp#17;&amp#5;!1&amp#18;A&amp#6;&amp#19;Qa"q�&amp#20;2���#BR��&amp#7;&amp#21;b���3Cr��$����S&amp#22;&amp#17;&amp#1;&amp#1;&amp#1;&amp#1;&amp#1;&amp#0;&amp#2;&amp#2;&amp#2;&amp#2;&amp#2;&amp#2;&amp#2;&amp#2;&amp#3;&amp#1;&amp#0;&amp#1;&amp#2;&amp#17;&amp#3;&amp#18;!&amp#4;1&amp#19;A2Q&amp#20;"&amp#5;aBbRr3q����&amp#0;&amp#12;&amp#3;&amp#0;&amp#0;&amp#1;&amp#17;&amp#2;&amp#17;&amp#0;?&amp#0;�/���2^�&amp#28; 'J&amp#2;`�a&amp#0;&amp#26;AC&amp#25; V&amp#0;dk�a&amp#1;�+D&amp#1;�&amp#20;�&amp#20;.;�0&amp#0;d
+�&amp#11;�&amp#20;�&amp#0;+[�
+�)&amp#2;�&amp#21;����XR0&amp#21;�&amp#15;�P&amp#8;�&amp#3;&amp#4;&amp#0;&amp#0;�&amp#4;&amp#8;$T(( �
+&amp#1;�TR&amp#8;d&amp#20;@e��P&amp#5;&amp#0;J&amp#25;&amp#17;E&amp#20;@
+D&amp#12;�*�&amp#2;&amp#20;1&amp#4;
+%A^�G&amp#4;&amp#7;&amp#5;&amp#16;�`	���&amp#0;�h�>d�k%��&amp#30;�&amp#16;�*I.��iǙ��&�p�j�2yy(R�T&amp#6;@&amp#25;B��P��&amp#5;�&amp#16;�&amp#5;e@|�
+�&amp#12;&amp#5;`&amp#6;&amp#2;��+&amp#8;V&amp#2;0���#��&amp#18;DJ�L!&amp#25;&amp#2;��#��&amp#20;�)X)[��&amp#6;H&amp#0;Q�B�&amp#3;�Ă.J!&amp#4;(�&amp#5;���&amp#8;��Q;�&amp#29;�����!&amp#1;&amp#2;l@ED"�D�@�"&amp#8;��й#��&amp#14;�Q@L&amp#17;&amp#0;(0&amp#3;&amp#0;&amp#17;J�z�#
+&amp#0;�P`+*�A&amp#3;&amp#1;@&amp#5;{"&amp#5;~�+
+FD(
+�p&amp#20;��X
+�FE+&amp#1;&amp#24;&amp#1;�J&amp#4;&amp#2;&amp#0;&amp#0;&amp#31;�&amp#2;#
+&amp#1;&amp#17;&amp#5;&amp#16;&amp#15;p��`&amp#25;&amp#20;0&amp#5;&amp#5;&amp#20;&amp#1;A&amp#7;�S&amp#0; &amp#25;�Q�&amp#4;\&amp#0;�&amp#5;&amp#0;B�A@&amp#21;��&amp#20;&amp#20;@?�@�&amp#16;'o`'�&amp#11;m�:�c&amp#21;��{m&amp#30;�S����B5�UT�>�6��jU��=�H�s��&amp#7;`&amp#1;P&amp#25;&amp#2;���R��e&amp#3;;�
+�&amp#1;J�d
+�&amp#3;&amp#1;@&amp#15;��&amp#21;�&amp#5;a
+�W���&amp#1;&amp#25;&amp#16;�&amp#4;`#�B0&amp#21;�&amp#4;&amp#1;[�&amp#0;��?p&amp#7;��&amp#4;*&amp#0;&amp#8;�T&amp#28;�¢�&amp#2;L	���'�&amp#19;�&amp#7;$&amp#7;�dA
+��	&amp#4;�H���D&amp#22;&amp#4;&amp#0;w ����ғ9��H&amp#8;&amp#4; &amp#0;&amp#12;&amp#0;&amp#25;&amp#20;0&amp#2;�&amp#5;
+&amp#24; VP�&amp#17;A�&amp#0;�
+P0&amp#20;&amp#31;�&amp#0;�V&amp#2;�&amp#4;~�R��&amp#21;�
+�&amp#2;��H�F@�&amp#5;`#"���P&amp#0;&amp#4;&amp#0;&amp#20;&amp#2;&amp#0;T&amp#8;�&amp#20;&amp#1;&amp#2;/@&amp#25;&amp#0;��&amp#0;�&amp#24;��w&amp#0;�&amp#20;P&amp#12;�o�Q_L�&amp#20;@pPP&amp#4;(���&amp#16;&amp#8;Q&amp#8;!S�&amp#2;&amp#0;q�&&amp#0;�hv.���.sږ��*j�$�:֣���b.)�}U�&amp#31;^}Se��e&amp#1;��![&amp#1;^�&amp#6;&amp#2;�&amp#20;�&amp#15;�&amp#5;a&amp#0;�s�&amp#8;W���&amp#2;�@&amp#24;
+�&amp#21;�����F�G�&amp#21;�+a
+�&amp#17;�V�W�&amp#8;�&amp#6;p&amp#0;�&amp#21;;�&amp#0;�P&amp#8;�&amp#19; L�L�r&amp#4;&amp#0;&amp#21;S!&amp#12;A=&amp#0;9 &D�@;�&amp#8;���&amp#16;&amp#8;&amp#7;��ԑ��2@&amp#16;&amp#7;b(&amp#0;&amp#0;&amp#4;
+�&amp#0;0&amp#3;D
+�&amp#25;&amp#20;�+&amp#0;0��&amp#0;
+�&amp#24;
+V�F�&amp#21;��&amp#1;&amp#26;D
+�&amp#20;��X
+�+ F&amp#20;��&amp#0;�&amp#25;&amp#2;{&amp#0;&amp#0;&amp#0;@ D�@$&amp#16;� 2&amp#1;�&amp#7;p	C.}��&amp#2;�&amp#12;��p&amp#3;&&amp#20;QAA&amp#12;&amp#20;J&amp#14;�&amp#4;�;&amp#0;�&amp#0;@�&amp#16; Q&amp#2;&amp#1;}�&amp#23;V�b�&amp#7;^�G�T��`��F�ф&amp#30;LoM��Ҝ��(i�{�`
+&amp#3;L&amp#5;|�&amp#6;&amp#20;�&amp#8;&amp#12;�&amp#26;`+&amp#8;V&amp#0;l&amp#0;�P��&amp#2;&amp#3;&amp#8;_b��&amp#23;;��&amp#8;V&amp#0;l&amp#4;y F�&amp#21;���&amp#8;F&amp#2;�&amp#18;A&amp#21;�!&amp#25;&amp#2;0&amp#7;�DN�P�&amp#4;*�&amp#4;Ϩ&amp#16;*&amp#20;&amp#0;&amp#14;�L�2&amp#21;&amp#0;+�&amp#2;�" �&amp#16;&amp#21;�&amp#20;R&amp#2;&amp#17;&amp#16;��&amp#21;&amp#2;&amp#3;"T��&amp#19; ���ؑ��0&amp#19;&amp#4;&amp#19;&amp#0;(
+�&amp#12;�&amp#12;�X&amp#1;�6
+V&amp#2;�H&amp#3;AJ��
+VP=�V@�)XB�*�&amp#0;�&amp#4;d&amp#8;�#
+VD+aJ�&amp#3;���&amp#0; �@� &amp#31;�D&amp#0;��&amp#18;"&amp#20;&amp#16;&amp#25;&amp#0;}&amp#0;�P�&amp#16;&amp#8;&amp#12;�@7�S"��&amp#0;d�`�PW8"�&amp#12;� Q&amp#8;���p &amp#19;�&amp#0;����d�5&��߶m{Z0T�u�&amp#28;�b�F.O>�]ex���T�3&amp#24;���'��&amp#6;߀
+�&amp#21;��a
+�V�&amp#17;�+������_�&amp#2;�&amp#3;*&amp#21;�&amp#16;��.@�
+U&amp#7;�D+�&amp#11;"�&amp#24;
+�&amp#21;�&amp#2;2&amp#4;�El&amp#4;|&amp#4;V�V@��&amp#8;&amp#8;&amp#16;B�&amp#3; &amp#16; h
+��A
+�A7
+9��" &amp#25;&amp#16;E��r&amp#3;&amp#5;��A�&amp#0;92#`�&amp#17;&amp#2; W��ڎO!�!&amp#0;
+P�E&amp#6;&amp#2;�&amp#7;��/�P&amp#0;&amp#5;.�&amp#12;&amp#17;A�&amp#21;�&amp#0;`+
+V&amp#0;`+&amp#1;&amp#26;&amp#1;&amp#25;&amp#20;��
+�@��F&amp#2;2&amp#5; &amp#12;)X&amp#1;���&amp#0;�&amp#0;&amp#20;B&amp#0;&amp#1;
+��@	A&amp#0;�P&amp#12;�Q&amp#0;��@7�&amp#3;`(�&amp#25;&amp#20;2&amp#1;�QA&amp#5;&amp#5;&amp#31;�E&amp#0;B�A@@&B�@�]oMԩ&amp#24;�P��KEN�[\&amp#29;�9&amp#25;��y���V���wIͤ�&amp#21;�����d
+&amp#0;&amp#1;��&amp#5;`&amp#6;�&amp#0;��!&amp#24;&amp#8;ȅ~�J�&amp#20;!X
+�&amp#0;2�@P��@��^H�`+�P�m�W�&amp#1;[dB0&amp#21;�V��+aJ�"&amp#17;�&amp#16;� ��&amp#2;0 &amp#16;*2�A&amp#25;D �&amp#20;�&amp#8;
+�
+$&amp#7;�&amp#1;&amp#0;��&amp#17;&amp#22;�G$@&amp#0;��&amp#16;*|� &amp#31;��ڎO �&amp#8;&amp#4;&amp#0;2(0�aA�(&amp#1;�&amp#6;@&amp#24;
+U&amp#6;�&amp#0;R�&amp#3;&amp#0;4&amp#2;4&amp#0;`+
+F�F�&amp#18;DUr&amp#2;�@�)&amp#25;(F@&amp#24;R�&amp#6;@&amp#0;�܂&amp#20;��&amp#16;�e�J
+��@P&amp#5;&amp#5;&amp#20;T2aE&amp#0;P&amp#12;P�2&amp#1;�T�/�&amp#1;�&amp#12;��&amp#4;	�d��&amp#16; &amp#19;=�?�T&amp#2;&amp#0;y&amp#3;��Z��T�.~�W�����K��#&�]B���H�ڍg:�s�V&amp#31;sH &amp#12;���2&amp#0;`+&amp#1;X&amp#8;�&amp#17;��
+T+ &amp#12;!&amp#24;&amp#1;�&amp#11;�&amp#0;� &amp#16;(&amp#1;�&amp#0;��#e
+�&amp#17;�
+FD#o�&amp#1;&amp#24;BH"�&amp#2;0&amp#23;��&amp#16;"v*�d&amp#19;�&B�*&B�&amp#4;�`F DD�Ȋ+9�&amp#7;>�&amp#7;$�m�"&amp#15;p��`"v&amp#8;$&amp#16;&amp#8;&amp#4;&amp#3;���ry&amp#19; &amp#18;&amp#8;&amp#4;&amp#0;&amp#0;��>&amp#0;&amp#12;(~�
+&amp#0;aA�&amp#26;
+&amp#12;&amp#5;h&amp#0;&amp#2;�(0&amp#23;&amp#1;
+�&amp#4;�&amp#21;T�+�&amp#5;oo�Ul�Y&amp#20;�&amp#5;dR�
+#&amp#0;&amp#16;@ &amp#0;	�&amp#8;Q&amp#0;(&amp#2;&amp#3;/�&amp#2;�&amp#8;S &amp#8;&amp#12;�e�C"�AL�d&amp#1;
+(&amp#2;&amp#4;
+%&amp#16;&amp#3;�&amp#8;&amp#4;�Q&amp#2;d&amp#6;�&amp#23;9����h6]0Rh��3+��(��i�ˌ&�p�i�+O�m��YPB��&amp#16;2&amp#20;&amp#24;@l&amp#4;`+&amp#8;V&amp#2;4&amp#2;��`+ &amp#15;�&amp#1;[�!_�P�!Y&amp#2;���&amp#21;�&amp#21;�+A&amp#8;�F�Fȅ`#*&amp#17;�&amp#21;�)&amp#31;�T+ &amp#29;�&J���&amp#2;?p���&amp#7; &amp#0;�@&amp#8;��R�v"
+"�p!&amp#16;W&amp#4;Q&amp#0;�N@�&amp#4;�@'`��&amp#7;��Փ��)�P&amp#5;&amp#0;&amp#0;��&amp#1;��&amp#0;�&amp#0;R�&amp#8;&amp#20;�&amp#6;&amp#0;�
+&amp#12;&amp#0;�&amp#21;�&amp#31;%
+�&amp#12;)&amp#25;&amp#5;r �AUɐW.B�{&amp#25;R0&amp#17;�&amp#5;`&amp#0;&amp#7;�*&amp#20;&amp#15;r&amp#1;�D�&amp#8;&amp#21;&amp#0;�&amp#19; &amp#20;&amp#1;X&amp#0;�
+`0&amp#5;&amp#20;2
+e���&amp#7;^�&amp#12;��D&amp#22;F.\&amp#20;3�%��&amp#5;�
+8�&amp#0;��&amp#8;&amp#8;��
+&amp#8;�&amp#16;&amp#28;�L�P&amp#7;P��'�7�6���ۂϺ��&amp#29;>��I&amp#30;�a��A��[�&amp#17;�]uNK'&amp#27;G&amp#11;�,П�&amp#16;&amp#1;�
+�2&amp#16;&amp#27;&amp#1;X@`#�&amp#5;|&amp#0;�&amp#5;`)&amp#16;&amp#24;&amp#8;�B��a
+@�;�&amp#6;&amp#2;�&amp#16;�&amp#5;e	"!&amp#27;&amp#8;F&amp#2;�&amp#21;�$�&amp#2;��"&amp#5;�B~�/�P2&amp#17;&amp#2;�Q�v(��&amp#2;>H��&amp#25;�:�Ѐ�&amp#24;��&amp#1;D&amp#19;r!�H��N�&amp#4; �P&amp#8;&amp#17;0&amp#7;����qy&amp#12;�A&amp#2;d&amp#3;�	��&amp#16;��&amp#0;&amp#0;&amp#0;P&amp#0;&amp#0;&amp#0;&amp#17;@�`)Z�&amp#0;&amp#2;�&amp#0;�����AT���&amp#5;l���&amp#17;H�&amp#17;�&amp#0;&amp#3;&amp#2;&amp#21;@&amp#0;�&amp#4;&amp#16;�&amp#4;&amp#16;���&amp#16;Q&amp#20;QA&amp#0;�
+&amp#1;�&amp#12;&amp#20;QC�&amp#25;&amp#20;:&amp#1;�GkLӥW��:ԟm&amp#26;����Q&amp#23;Kc�8J&amp#18;Ė��*S�%&amp#24;��&amp#15;U��Ծ�)ק��!����^{R�
+W2P�2KӜcɡ2&amp#1;�&amp#0;p��cn�VQ�ܖ��-&amp#30;�&amp#22;�S_&amp#22;9/�C�]&�1���5���Q&amp#4;�&amp#4;�����
+&amp#20;��MG����Q���R�#h�R�3���h(6&amp#20;�&amp#8;��&amp#0;`&amp#21;�&amp#3;~�+a&amp#1;�&amp#23;;&amp#0;�&amp#5;op�&amp#1;Y&amp#2;�+&amp#1;&amp#25;@l�V&amp#2;��x&amp#8;������o&amp#0;+&amp#1;^&amp#2;&amp#17;�#&amp#1;&amp#25;&amp#2;0&amp#21;��� X&amp#2;g��Q;l&amp#1;#HQ&amp#2;&amp#1;&amp#0;�&amp#2;&amp#0;H&amp#25;`*" �2�Q��(�r&amp#8;�A&amp#2;n@B�&amp#0;2�z�ѱ<�&amp#30;3�&amp#3;&&amp#4;�&amp#7; &amp#28;�&amp#0;�&amp#0;)@�J&amp#17;&amp#2;�
+Ƞ&amp#0;h&amp#0;�@dR�&amp#17;��*�&amp#16;W"*�rAT�&amp#18;^�U�)[ V&amp#0;&amp#2;&amp#20;&amp#0;'$&amp#16;(0��&v&amp#0;�&amp#0;��9*�̀��&amp#5;&amp#0;�&amp#6;Y��L�&amp#14;�(t&amp#6;�*^ed�j���eN&amp#20;S��3v댵\�ªi��{[���M&amp#19;	�����O鑕��c��w$�ν}�(*&amp#14;1X�dOK�\����*��Jx�$��&amp#21;�:29*��G�&amp#27;&amp#4;jVrk��tt[&amp#25;��K&amp#27;d��z�Ժ���C���v���������p�����7��'���&amp#22;��5:�}+;����K�Ri�&amp#1;խ�F�&amp#7;��~Kǟ���<p:�#eP�&amp#17;�&amp#21;�&amp#3;`&amp#0;�l&amp#0;�V�&amp#21;���+`+~�
+�&amp#8;�
+ߠB�&amp#2;��`+a
+�&amp#8;�H��V&amp#2;?B�XB2&amp#4;�&amp#8;�&amp#21;�-'����(q�Ae&amp#16;�?̠'�&amp#4;h&amp#1;��'�&amp#4;D&amp#5;0�2 n�&amp#19;?R&amp#6;&amp#2;$D&amp#29;�
+?-�&amp#15;`"&amp#0;�E�YB&amp#15;�ұ&amp#28;&amp#30;1Kp��Q�&amp#5;0!&amp#1;&amp#0;d&amp#8;&amp#0;
+&amp#0;&amp#12;&amp#0;&amp#30;&amp#8;�P0@&amp#0;&amp#12;(0&amp#21;�&amp#21;�&amp#20;��&amp#24;UR{�\��&amp#5;2dUr ��)&amp#27; F&amp#2;�&amp#8;&amp#21;
+&amp#0;&amp#16;&amp#0;&amp#4;&amp#0;&amp#1;
+&�&amp#4;�v&amp#0;�&amp#18;*&amp#0;�&amp#20;P�2(d&amp#20;��`:e&amp#29;�&amp#18;�Ϊ��5&amp#31;@���F+�㧣0Φ%�y�+��jQ�h��=y�\u�Y�S�̒�����a�˱�{㬎F�m&amp#26;���u���9�>}q&amp#15;.���3��&amp#22;&amp#17;ri"�A�ةElIQڣ�&���&amp#29;}?M�-�nD]w�4x�&amp#0;*��{~�&amp#28;���r��Kɨ��֒G���*�\bq���>�&amp#25;%)�*q���ѥ&amp#29;�֛�g��&amp#23;M����<^�K&amp#19;o�gl�+&amp#28;����&amp#3;e&amp#1;�&amp#6;@&amp#25;&amp#8;&amp#25;�&amp#1;�)[a
+�&amp#1;��l�[&amp#1;&amp#27;&amp#1;[&amp#8;V�F&amp#16;��&amp#6;�V�&amp#21;��dB���G���&amp#17;��$	 RH!&amp#30;&amp#8;�y*&amp#6;@�=�'��&�&amp#23;�&amp#21;&amp#0;�&amp#14;B"�&amp#8;��&amp#1;H&amp#6;H��(��C 
+  &amp#28;&amp#17;G&amp#28;�<iI���E���'Z����b��
+�e�T��ӳ'��D�!G!&amp#7; &amp#28;�@&amp#14;H&amp#1;D &amp#1;@&amp#0;&amp#4;`&amp#6;&amp#20;&amp#24;
+�V&amp#0;aH�&amp#2;I�V�&amp#5;r`U&EW"UU"
+�&amp#20;��&amp#24;&amp#1;�&amp#0;��@ @*�p�&amp#16;&amp#0;�&amp#5;&amp#16;&amp#18;�&amp#0; E�&amp#8;S &amp#25;2�@2��P�&amp#7;�!^��V�xf[��(b&amp#7;=ϧ|��MH�o?oFZ-��&amp#14;�&amp#29;r�d���Ӝ`�&�&amp#23;�v�Qs�[�?C~;gq��Z=72����M�[��<rj��i��ElF��B�K�JԚ�/W�]�N��|���ʽ&amp#24;��k7���uLn&amp#18;��M����&amp#14;���V�k���3#�mN4��\&amp#28;n��ʕ&amp#25;>V�&amp#25;.%�6XW��朤z<놜&�;2�&amp#24;&amp#1;���&amp#1;��&amp#0;7�P�&amp#0;�&amp#21;��[ V�V�&amp#19;$
+�
+�B��[ W�B�@;��&amp#1;�
+�&amp#21;�@+��F&amp#16;��&amp#25;P���&amp#16;��&amp#1;&amp#17;&amp#5;�PW�&amp#8;�Er&amp#16;3�	��B�?� �&amp#3;&amp#16;&amp#18;(�1&amp#1;D&amp#7;&amp#0;��[�%���G8'Z�M;4��E�k�g���q�&amp#22;AdY�/b�~"��D����d�;�)�r&amp#1;O`
+`&amp#20;��&amp#4;*&amp#0;&amp#0;�@&amp#8;&amp#0;
+&amp#0;+&amp#0;&amp#5;+dB�)%�&amp#6;�&amp#26;]z��.1�T�[7�s=�>����G!T�	�H+���N��&amp#26;�&amp#19;�dߘ�.�&amp#0;�53��&amp#22;��u�7���&amp#24;�&amp#25;E�Kp��
+&amp#20;� 2&amp#8;&amp#0;&amp#2;d�Y
+���&amp#16;&amp#1;�A&amp#0;�&amp#2; Q&amp#0;��9
+(&amp#7;Y(dP�&amp#7;��%�W��U��&amp#17;��zy�Ӭd�&amp#28;��o=��[AF&amp#25;�zs��r��&amp#26;��3����5&amp#30;O&amp#15;��u�-�G&amp#26;&amp#18;ǡ<i����Fu�&amp#26;^�����ӻ�Xt��o���PP�5"�GdKZ�ZJ4ٍ�H��n<��Q�2�ץ��&amp#26;���;5xul{�\�Ɣ`�6�`9��w��Er�Y�&amp#12;�?���1�׌՟�#�&amp#28;t�d���&amp#16;2&amp#0;�@�&amp#2;�e&amp#1;���
+�@� 6&amp#2;7�&amp#5;l&amp#4;o�B�&amp#2;��B�V��� d&amp#5;`�&amp#3; B�6&amp#20;�!&amp#25;&amp#16;���~�#ܨP��4�&amp#16;&amp#3;�&amp#20;H&amp#0;D
+�}��&amp#4;6���d@R"�C$E4V�8��2E��i�$mҷ��+R:4m�'[�\,����f�!��5�N��Չ�g��
+!&amp#5;0&amp#8;&amp#4;&amp#2;&amp#4;
+�&amp#0;&amp#16;@&amp#6;@�@(&amp#0;&amp#24;
+��#d&amp#11;��&amp#3;�i�u�ڴW��+�k�]˯�y۝2�&amp#18;&amp#3;��u�&amp#25;'et�]6�ȵ��N./a�^����8Oʪ������^�vV���&amp#25;,m�:K�&amp#0;�[&amp#30;S\��Z�%V�+�,��&amp#23;��-e�.�.-��R`�X�#_�&amp#16;&amp#26;&amp#1;[&amp#0;0 &amp#19;�&amp#8;&amp#1;[�VS��Q�&amp#16;r~�ԉ֘�&amp#23;�YTe�/Ɵ(&amp#15;I��4d�&amp#1;���O*pq��z@�&amp#17;?P"
+(&amp#8;�&amp#12;�&amp#12;�T�䡲&amp#1;Op=7�/U9�7�b�e����4:�&amp#7;�21'�]_�l����+�&amp#17;1��o,n{�=V�u	�З��i���[[��9�s����W���&amp#18;���&amp#14;:ЇJ-Qy���t���MSg&amp#31;j��ۮ��y��J1X=8��&amp#20;�GMl�f�,&amp#30;]﮹�����]xH�,�&amp#24;�.�(�m�&amp#29;�x�R�s}���U�6��@�&amp#16; &amp#0;� ��&amp#0;@�l d&amp#4;l!r&amp#2;�����
+�B�&amp#1;���E+&amp#8;�&amp#24;@&amp#1;J��&amp#21;�
+@�"�&amp#2;��El&amp#5;m&amp#21;&amp#11;�2�G�'`&amp#14;�P�&amp#0;2&amp#17;?2�@�&amp#16;2DS$E&amp#20;��C"*�rEj�&amp#31;�Y&amp#29;&amp#27;hg&amp#2;�&amp#29;kj|g���&amp#29;[z\z&amp#25;��B�&amp#4;�&amp#25;k����&amp#14;�&amp#31;��&amp#14;�&amp#31;��&amp#8;�<C���
+`&amp#20;&amp#16;�&amp#4;�&amp#16;&amp#0;&amp#8;P �&amp#0;
+��&amp#0;R�&amp#21;���&amp#17;H�&amp#8;��&amp#30;�×�򱴶d宾w��N&amp#18;}5 ��G<z�x�\K&amp#23;���pç&amp#29;�&amp#17;���9|#�j~&amp#17;�yʥ-���������+鷑SʎN:��g&amp#30;�O>ڜ过�~G��<����&amp#0;�=�Z�<gR&amp#11;&amp#15;c&amp#24;�����,�E兕�?�SM���N��Ǯ&amp#23;�u��&amp#15;T���P�U7�h�~�pߗ&amp#30;vq�[R[���+|�&amp#0;�&amp#19;&amp#0;t4�&amp#30;����(<>_c�<�L�q�4���1S��ۃӟ����5^���&amp#26;}�R��N��&amp#26;��i�iaSC���&amp#22;z]��<�>I��]�&amp#0;�,kť&amp#4;��3s*|&amp#30;/Y�mJ9�&amp#21;�<���&amp#0;L����\ZW���H��睥&amp#1;@&amp#8;�&amp#5;&amp#16;&amp#28;�2`2eS&�&amp#25;=��cq*U���gQ�_D��&amp#29;Z+,�+�]�5ɩZ&amp#23;%�&amp#22;��&amp#24;�+�񓇯���2�{d�z�����K���z�ǥQ꩜&amp#30;�מǮ������_N��!&amp#26;Kvy���&amp#24;o�l��_�\FK-�I���8����J��jF&amp#26;����Y&amp#24;�,�R-&amp#24;,n�َZ�~�r�M�'|�<m�^���&amp#28;ٳ�4��(&amp#21;&amp#3;$&amp#0;�&amp#16;&amp#6;�&amp#12;&amp#5;a
+�&amp#8;�&amp#11;�![&amp#1;[&amp#1;[&amp#1;[؈V�&amp#1;
+�`&amp#6;}@&amp#12; d&amp#5;�@��P&amp#31;�&amp#16;�&amp#4;y�B0&amp#21;�A\�&amp#21;���&amp#16;&amp#2;��T�9&amp#2;"&amp#17;&amp#0;(&amp#0;��&amp#2;&amp#21;:&amp#0;2H��؊e؄2"�&amp#3;&amp#16;YM&amp#18;�l����t�&amp#21;���S�&amp#12;:����2܎�*f[i�5����&amp#5;��\���&amp#14;@ &amp#20;&amp#1;�&amp#8;&amp#16;��&amp#19;!P�&amp#20;@��(d&amp#0;�
+�&amp#21;[`#h&amp#4;l���b�!q&amp#28;��~gLֱ�{
+�iuE�x?#&amp#22;}ǻ&amp#23;��w8�3����k��ʾ7�ٞ�~w�b�0�64o#�%�.&amp#15;D��sך�J1�c&amp#26;ia���Oȟ,���Q:s[��o�Y�{&�<&��;c�s�&amp#6;t��M)E��O��s��#�]&amp#2;�����?�+�=X��������&amp#14;2q����1
+��ܒE&amp#30;��~&amp#15;�~�V��>p�=�g��gt�m����%��5&amp#26;p]K�&amp#15;Oy�&amp#29;3�&amp#29;&amp#12;z&amp#25;m:P&amp#1;�&amp#5;x&amp#8;W��jR�4ԖP&amp#30;sY�յ�$�&amp#20;�gx�b��>q�i&amp#21;l*��Óü�ԎQ��&amp#3;��)�2`2B�&amp#20;�d�&amp#30;&amp#18;ē%X�&amp#30;&amp#31;���[<~�ǧ����W�G�{u����G&amp#24;����.%z�l&amp#30;�^�9&amp#26;wPF������u�6���i�HѤ����p��R�(�M�]���'&amp#24;�.&amp#20;_'����q�&amp#24;r���%ҙ?���9&amp#27;
+�c�/&amp#24;�u��&amp#19;ٟӏ&amp#25;�'�����휹�����k�����,�f9��h����8���&amp#0;[{��&amp#28;u\YK��X#`L�2&amp#0;l	�&amp#21;�&amp#3;&amp#0;&amp#0;&amp#24;&amp#8;�B�&amp#2;�@��# V�&amp#25;&amp#0;&amp#4;+a&amp#11;� &amp#0;&amp#0;!@&amp#12;�2�0&amp#21;�&amp#2;��dBȢ�Fi"?N�&amp#16;*&amp#1;&amp#8;'�&amp#17;2&amp#4;�&amp#0;=
+�&amp#20;�FN&amp#29;Gb/&amp#12;�b&amp#16;Ȋ8D&amp#12;E<&amp#8;F�/r5&amp#29;k5����]�8��X�ۭ��H�Ҏ�Zi�J�:&amp#2;���L�G�&amp#19;&amp#8;n&amp#0;(&amp#6;L(�&amp#28;�&amp#8;���&amp#20;&amp#24;&amp#19;�
+�&amp#6;&amp#20;&amp#24;
+�Y0&amp#17;�&amp#4;l*��٥\:W	�&amp#27;��j>�oZ5�FQ�&amp#30;�{|�T��Q��<f��ӝqKn<�?y��}���s&amp#19;�n*�J�k5<��>����Ϸ�x��SM5�N��~�V&amp#11;�]&amp#19;�x>G���u��b�)�]��=�?��[y��W+*F&amp#21;&amp#23;D��٣�=&u&amp#28;��x�&amp#0;&amp#21;��h(շ��{������<&amp#30;�|yz6�kMB&amp#17;m��:�u��?�:�kB�u�������b���Q���kF4౅����g&amp#26;��\�(G4&amp#2;��!&amp#29;TP��@W8�&amp#24;&amp#11;&��&amp#3;�x�F��	J1��9�&amp#19;Q�&amp#31;.�,�ZW�$���ⳗ�ǒ&amp#2;��Q0&amp#25;&amp#20;6@dʢ�&amp#25;0���t�Ԋ�s��z�q�-&��J/;�:y�]�wo�.��ː�/7��<�u�D����Č�&amp#19;�����jz�ONQ�S=�')&amp#29;X�`��xZ�*&amp#17;~�=?#�&amp#12;�5�̥&|����ף�sjNR��4�bے��^�=Gv&amp#11;&amp#16;GП���a�os��]�N&amp#28;�%�χ��+�uN�^Y�1�&amp#28;ly�ST�p�=��yw^v�YNM��#���&amp#16;&amp#1;��&amp#6;�&amp#25;�	�&amp#0;&amp#3; &amp#6;�&amp#0;"!XR�&amp#16;�&amp#0;�B0�l�V�&amp#16;&amp#27;&amp#1;r&amp#0;�
+�@&amp#25;"&amp#21;�&amp#19; +&amp#2;g�&amp#16;��&amp#24;B6&amp#2;��a)%�&amp#8;���+ �&amp#0;"�&amp#1;&amp#0;!&amp#16;&amp#8;&amp#4;&amp#0;&amp#0;Ȋu�"4d�2�_�&amp#20;p&amp#3;&amp#16;&amp#20;E&amp#21;�F�&amp#15;tF��f���=&amp#5;��1]��m�ät���� �TJ��Ѥ�<FAL�� �&amp#0;W�&amp#12;�&amp#8;&amp#16;�d*&amp#0;&amp#0;�S!C +`+`+
+F�B6F��D&amp#8;T�k�J��4&amp#29;^=
+��<&amp#28;}&amp#30;�-=&amp#29;:���ƹx�ت��R9�O���b����ω�^�&amp#22;йQ�r<��&amp#23;��uӅ�7&amp#12;���}��Y�z��;�U�9Ŝ����,r�.�&amp#31;'�ώ�c7�y��ʖн�*3Y�Xϣ>��z]_��ퟢh�&amp#21;�F]]9~�켼�c�\��M��:	t�`�ks<jL�&amp#22;S&amp#2;�TEE2�&amp#6;k��T �VJ1__��k��&amp#26;�����*v��x�&amp#0;�U���&amp#17;�&amp#0;����5�O���U�u�&amp#26;�rU�8��&amp#8;�&amp#11;듟�W�O����&amp#7;�W��&amp#24;���&amp#23;|���&amp#30;�&amp#29;��g���t.UX���=-,��&amp#0;x�&amp#24;h�]�#�8<���ٱ��.�5�&amp#30;T*�Tr&amp#16;S�U2{&amp#0;QT�)�(���jE�L�Օ�?q'N+�����Ɲ�M�9�ǵ�넩m&amp#20;���|'&amp#28;�&amp#0;���O&amp#7;���7�&amp#21;_G��&amp#31;��ֵ�	B�S�Cg���&amp#25;]JW}H�ƣR�Jէ=�&amp#22;j�&amp#0;M���O,���=��[%[\,�}|y&amp#19;;��&amp#24;t�s���N��:�k������s���)�&amp#21;ƻ����&amp#6;1{��k�j:��i=����&amp#31;�y=6�կ*�>�sǒ�Y:"d�d�d	�&amp#0;&amp#3;���&amp#27;&amp#0;7�&amp#0;�&amp#17;�@��
+�B�[�&amp#1;[&amp#1;X@o&amp#25;&amp#1;[&amp#8;&amp#29;�\�&amp#14;�&amp#15;�	��&amp#3;��@&amp#1;&amp#24;&amp#11; ��Ia&amp#4;V�4�4�&amp#4;&amp#0; &amp#4;&amp#8;&amp#4;&amp#0;&amp#0;P&amp#12;�&amp#20;��u�&amp#20;�&amp#16;2[&amp#17;G&amp#1;&amp#12;��QH"�O&amp#12;�J��O�A�/Gc-�λGr���H�Q�F�\&amp#25;&amp#26;Z����ҡ3��&amp#25;?@�A&amp#12;&amp#1;^�2 �P"&amp#17;P(&amp#4;L�&amp#12;�:&amp#0;Po`&amp#21;�&amp#17;�)&amp#27;&amp#2;��I&amp#5;#d&amp#22;P��&amp#25;���+y�z�&amp#27;[���Y|����&amp#30;�/Grwq�O	��z�_�&amp#30;��킬3�k&amp#15;^iiғ�2t��|��7S��Yg���&amp#0;��&amp#0;o>����&amp#16;�%&amp#25;Hק�\1��UW&amp#26;��>����P���$��_��q���:��&amp#29;����Ӟ��z&amp#27;'&amp#23;&amp#3;�>;�fW���['�єr�(��O@(rl&amp#2;���&amp#8;�}j�Ŧ�
+���������&amp#31;���NT�8���5ç^;���~Ҿ��UUhE�|&amp#31;B5���r6ê[*�Ӄ��}&amp#28;|�U��^N&amp#24;��Ͽ�+&amp#30;B&J&amp#25;<�
+%&amp#12;��A�E��ƾdW���N(�3ֳ^��65�q��w�T�Cz�$x��Zv�N2����^�]�;cӍkY��u).8>|��^���&amp#11;�&amp#0;:�1�ϥ���ooU�G�	���R�4�+����Sk&amp#21;,��	tY[�lr���o&amp#26;T�*[�<�|]�}U���d�gӜ�ڛ��E�ϝ���򺾥��{&amp#26;����c���k�J���&amp#31;_&amp#24;�y-���)��d�d�d&amp#1;�o�&amp#19; &amp#12;�F�&amp#12; d&amp#5;l�[&amp#1;&amp#27;&amp#8;&amp#12;&amp#4;l�[&amp#0;&amp#17;
+�
+�&amp#0;Pl p&amp#2;�@&amp#6;@&amp#31;�&amp#1;�ȁء&amp#25;&amp#2;6&amp#16;��VH��VJ&amp#17;
+�&amp#4;&amp#2;&amp#1;&amp#0;+&amp#0;&amp#0;
+"&amp#29;"5&amp#14;�2�H���&amp#3;")��)&amp#4;2
+��&H�j�&amp#14;��l*=��\�~�{/��v�ӣ#-��r#k�(��Ι�x�&amp#12;u,��fo3���&amp#15;&amp#12;իN&amp#21;iU�f��.>�mx�mLZo�&amp#0;�^cj�TO��&amp#0;��t��:�^&amp#19;��_�&amp#15;���R�&amp#14;jk�"���?��
+�Z.�&amp#30;hK&amp#11;�&amp#12;���|j��]���d�&amp#3;&amp#23;&amp#22;G&amp#21;:u#����d.&amp#31;�&amp#2;��@#&amp#1;[
+V��F´�L���.�'�MeMn��/�5����&amp#21;��תNڄ�F?zIl�&amp#17;1�;�б�v�(y0���&amp#0;Ss����Z��՟�W��nz���XM����<�&amp#5;?&amp#2;js��9$���v�F&/�&amp#29;Y[�&amp#23;k�&amp#21;�%뜣7&amp#21;�㦣�[�i7uMK�s:��&amp#0;mO=;V:żzjW�������Yo�=^z��k����Q�����&amp#0;��=o�gV�MM�T{3^&amp#30;?}�&amp#0;٭o��&amp#18;�XG�̜xuXo��]6�&amp#26;�1YhZէ&amp#7;M��៞�����1������mJ�'�&amp#23;�?�����oMK&amp#29;JT&amp#21;Ēk	#��&amp#12;�������*&amp#20;U&amp#24;�3׌LNG&amp#11;z2�搒��E&amp#18;y{&amp#0;�[�H&amp#11;`WR)��.�e&amp#26;��Ĭ��ƿ`�M�+&amp#24;<&amp#30;��eǳ���_&amp#27;���&amp#31;P��g*&amp#17;�&amp#31;G?��z'�]&amp#21;�Y�%X�W�)�_K&amp#30;����7&amp#28;&amp#4;G1&amp#1;�TQC�.�QĽ&amp#2;�
+��T�
+�&amp#30;&amp#26;��Q�
+��7�:�-�3&amp#7;�%X����8\9-�O.���&amp#7;Ϟ1�|bu��"�Y7���>Ҿ��R��=&amp#28;X�ƆP��Ξ&amp#22;&amp#7;&amp#2;m&amp#20;s�q����&amp#21;Ҟ�M���J��|&amp#27;�Y���q�Ƽ���&amp#15;T��G���-s�m��D�A�D�&amp#4;l&amp#1;ܢd�d&amp#1;�&amp#3; &amp#25;*&amp#21;�&amp#5;l&amp#4;ϰ&amp#1;��&amp#21;��l��e
+�&amp#21;��&amp#3;`)&amp#4;�@`&amp#2;"&amp#20;&amp#0;�&amp#0;0&amp#21;��R0�m�Ĭ�<&amp#21;�a&amp#0;��@&amp#8;&amp#19;�@&amp#0;�2_�@�&amp#16;<W�f�&amp#14;���&amp#0;�&amp#17;D&amp#6;Q&amp#1;�Y&amp#5;����&amp#14;,tmhɵ�n;�T���:Gz�&amp#15;c&amp#22;:�N�v3c�j��&amp#27;���&amp#21;��ʙ�x��,��&amp#30;���n�B&amp#20;&amp#21;(b	',n��5�]j��>�F�>*���ZR����<&amp#23;�&amp#26;��tu�&amp#25;��t�\�&�OWL�[�y
+��s�W-a�\z���ru{����#��L�R�I7��Ⱥ�^&amp#26;T-�&amp#31;�&amp#17;�=Rf��&amp#24;�z�zf�(���.vD�9�g��4�;a8���'���<��5�&amp#25;��kg&amp#15;�mK=��Yg�ثx^�˥4�{&amp#24;�?�.&amp#28;��%�?�m��w�Q��c�esOy�����Yc4��)�#��[PU-�YUJ]9�b�N/�D���c�&amp#0;����=&amp#5;+�4`�фi�[��a&amp#28;�����S�E���n�~<&amp#23;u$𾥻���euQ����u���3U�'M�Y�g�~����>r������&amp#0;{�&amp#30;[�s����_��&amp#14;�����5�,�|%�5&amp#28;�����9f}��..�ӡR�Ib�&amp#19;m����ֵ9&amp#28;&amp#29;?_뭆�l��[�|������
+�M<��KѪ&amp#22;�����#J���	�ڪ�M:�_C9�Z���&amp#17;�'��&amp#14;�T��&amp#5;eS�V&amp#27;�?"V�:�H��&amp#17;&amp#27;�Q��&amp#29;Q`x�&amp#17;�)BO&amp#7;&amp#15;L���j&amp#14;��^��a�
+�4��q�2�ml���J���&amp#31;/�q{/����&amp#0;$��Q��VIS�m�&amp#25;svl�3{_yG�3�|�S��Q�T���:ǩ��>
+��Rl��s���!B+�#s�/�T�&amp#6;���&amp#11;�&amp#15;�>��4�\bb��k�w���r㝎z�zݠΥ&amp#26;�&amp#19;١���63ꦟ��4֎`�&amp#31;<�u&amp#12;JR�����&amp#31;�&amp#17;�<7Iʢ۹�~Ҿ��Q�5�ұ�QI&amp#5;SU&amp#16;r�&amp#11;�B�q�t����Ww&amp#24;O+'&amp#28;�Ե޶���[v=R#��VP��g=-��_U��l��r��d��r��&@�&amp#16;�&amp#0;&amp#24;&amp#1;�&amp#23;�&amp#16;�d
+�
+�
+�&amp#21;�&amp#5;l!@&amp#25;&amp#0;?b&amp#0;�&amp#0;&amp#0;&amp#0;Q&amp#8;#&amp#8;P&amp#3;*&amp#21;�#a
+�G�Ȭ�+%*&amp#0;D�&amp#4;&amp#2;&amp#4;@&amp#8;&amp#7;�&amp#3;G�r,:��:Dh��D4Q&amp#3;�-��[&amp#26;&amp#19;��&amp#5;�U;)>Q���N�س&amp#11;#U;&amp#21;��N7��a�,jG^��&amp#24;����.�
+XHŎ�m�&amp#19;����(�n,H�i��ș�x̘&amp#12;�&amp#3;'�&amp#0;�AO
+�#�d��#SU���w&amp#7;�1�q��&amp#0;Rs���Q���n�����&amp#12;~��&amp#0;��=�(����t�}�����啦&amp#30; �m7)'�S�/�-��[z�J&amp#21;&amp#19;|�ru��g�L."���%��Z&����$��,Ǧ���!�F��8��W&���M�k&amp#21;ƇcZ/4�o�b\J�s(Yht-��&amp#22;ԗ&amp#24;�Y���|�e&amp#23;��&amp#31;C�&amp#26;���/Dڪ��﯑�����&amp#26;�ڙW��u4q���]&(:�[ª�^�&amp#29;?�������N��g�&amp#22;g�����&amp#0;ЫKi��.M�&amp#0;&amp#31;��&amp#15;��=*q��R�V�����>��5z�&amp#5;E�(�����s�&amp#11;k>���_�ʍL�/|��~�u��w����u�5?&amp#15;_h�U���f��{g���ߝ�r��9uZ�8�'��z|��M=u,��wmo^�ꨩ&amp#28;�&,j&amp#12;&amp#27;o&amp#28;��Z��GwɶO*��
+�Or�s��&DU*I�&amp#29;�&amp#23;��q�ʒ��(���&amp#21;*R���6>kO˽_3ï�&amp#21;�<'�&amp#0;&amp#30;�&amp#0;?�g��]?�:WU&amp#21;��%W�u�
+���%&amp#31;������i�zz-&amp#27;�&amp#20;�B-�&amp#30;�yH�%�Mo�ҧ&amp#20;�QӮ�-J֚�:�&amp#12;��&amp#19;�&amp#12;���&amp#0;���
+jZ��&amp#29;8��i���D�Ȗ�&amp#24;T�Q9\N��aM�	z&amp#27;���8�"��&amp#26;����r�:ͯ:�(���k?'oFУj�"3�����m��&amp#4;��jE�ATU{0�#�:�0�78z�e�-dڜ���DzY�&amp#20;���^#��R����u$�6�#$�T(9&amp#0;�`&@��&amp#0;�2&amp#4;l	�&amp#5;��@�&amp#2;�&amp#2;6@����� &amp#1;&amp#11;�&amp#6;�&amp#3;?�&amp#0;&amp#8;�&amp#24;&amp#3; N��D ��&amp#5;a&amp#8;�a
+�J\��^x+!ܬ��&amp#8;&amp#4;x�&amp#1;&amp#8;�*"&amp#7;�Q&amp#3;D�<R�L֎�b*���"&amp#28;i�i9�a%k��t�&amp#28;������I$��*�N�z&amp#26;�ƚv���^4S��"񦝶;&amp#18;�}
+81[���&amp#22;&amp#12;WH�&amp#4;b�&amp#22;��n&amp#25;&amp#17;_��ę��C&&amp#16;�"�}B
+`&amp#28;�2E&amp#28;�2A2&amp#3;F���&amp#26;��&amp#14;&��f�m��wKg.��-�M����E��F�/>��&amp#20;vK<�n����&amp#30;��t�iש�NYK��iZ�g��&amp#23;97���jel%�v��)a�%���z�3$�&amp#21;Qc�rߜ���"�N�rꦶ�>&amp#31;��uo�/_���ۛV��?������}'��=2���'	,���&amp#0;&amp#7;����f��yO&amp#25;���S�wy�&amp#0;��|en���II������8�GRժ������~6�_���q��9C���޸�S�*E¤T��qk)����kcBݧN8��&amp#23;?�g�&amp#29;HN`���d�bU.��rOڴR�����N1iܐ&amp#21;T�&amp#24;��GVN�U#>&amp#4;�.l&amp#12;<��M�
+&amp#18;i�&amp#21;TXDX����)&amp#25;�_6�(�^$�^O&amp#14;�ۛ��R�P�&amp#22;�c��9&amp#19;/QQt�#U���+*t$��&amp#11;�1��0i&amp#26;tg?6Kvo&amp#25;�s�k�Q�&amp#24;$�5���&amp#4;Pl&amp#1;�&X&amp#7;v&amp#4;�l&amp#4;�,�&amp#3;=Kd�&amp#4;&amp#6;�&amp#30;�.q�*��)�&amp#25;��&amp#20;=&amp#11;Ӄ&amp#26;&amp#17;��ŭH��&amp#7;;[৒�)*,�l�&amp#23;�
+���E�Y����%�'ǋx���*�{�:u\��m&amp#30;}~ǜ�����fz/ZE�Y�/�t��n���)�yR�&amp#15;�&amp#22;�&amp#16;�d&amp#3;�p�&amp#16;2&amp#4;�&amp#3; &amp#7;� �����+&amp#0;6@�!_�&amp#0; &amp#0;F&amp#16;�&amp#7;�&amp#0;�&amp#8;&amp#0;*!&amp#16;&amp#2;�h&amp#4;dB0�o&��r&amp#19;�߂�VT@ &amp#16;&amp#8;&amp#16;P&amp#4;��&amp#5;�&amp#25;k�i�lͭH�F�r{�Ik\t��"���I��ѣf�c��&amp#27;i�%��&amp#23;�0��)�𠂯�&amp#4;&amp#21;|(�k��D���N&amp#6;+r4�&kQj1[�G:�&amp#28;�_���^ALt2`&amp#28;�&amp#27; L�6H��	�&B�@�:����U�zT��c6u�^��P��6�&amp#6;๓��|��v����ʄ��r�&amp#31;���C&amp#25;J/yd��������Z.\�?��g�o^�=_?���J�&amp#25;�k�u=�Ο68&amp#18;t��N]�.�RS(Ҝze&amp#20;�t�Ŝ��K���vR��'&amp#5;�S˃{��&amp#25;��o&amp#27;����&amp#0;�7�&amp#0;�Y��-ӫ9�I&amp#30;����V}g#�$�&amp#15;��&amp#25;E�#�f�/&amp#27;3H�R[���z���͟�+��&amp#23;�d����Ѷ��&amp#30;���z&amp#30;�8�i�=��2��ç&amp#21;�7�UZJ-��y&amp#18;&amp#23;]2�Y7Q&amp#17;[~�T\WPQO�cW�#��V��Hͱly�])�����d�w]p��YFތb�0�]o3����}���Z�&amp#0;Q��귦�&amp#24;��g	~ZM_����(҉�L�IpF��`&amp#2;�&amp#3;( &amp#27;�&amp#20;&amp#28;"&amp#0;P�)�:&amp#18;&amp#1;&amp#26;@&amp#21;�#D&amp#21;�/�3cR�t��&amp#7;/�o�&amp#22;B�\�s�1i�5�|e\�ŀ�N&amp#7;&amp#5;&amp#21;�&amp#28;��8W&amp#26;�B�&amp#30;zrK�Y�SK����&amp#2;bD�dtJ)}�K�S_B�%�P�8��>&amp#27;��j&/�O��:��R�M�m�y�lk�D�OtEL�2&amp#4;�&amp#1;�	�&amp#3;x&amp#0;6@����&amp#5;l!r&amp#0;`/$&amp#0;&amp#0;&amp#4;a
+�&amp#3; B&amp#1;��*&amp#3;&amp#2;&amp#16;&amp#0;&amp#21;��&amp#20;&amp#4;ef��VK��0�
+�&amp#4;&amp#8;�@&amp#25;&amp#16;&amp#20;�ȋ�I��FmnF�6m�&~�|t�����[t(�%��!&amp#27;�P[lk��N�*�&amp#23;Ɵ�Uli�At E��&amp#3;*�13ZY&amp#20;f��&kP�+I�&amp#21;��FU���|ǔS&amp#8;d�d�+ܝ&amp#19;#��d	��&amp#6;��&amp#0;6@3����g���?��}�7���c%�&amp#26;|a����>S��&amp#0;��<�t�Q�����h(я�&�n����&amp#31;G>&amp#19;3�k�����:�͜_�*��n��Ri�خO��}c�J�Im��7Z���I&amp#1;W��k?����&amp#26;7�rt��>~پ!-J&amp#6;u�&amp#0;�����m-F����&amp#18;>���^w&amp#28;}q�&amp#23;&amp#26;��x:=2�{���=&amp#30;�zϏ&amp#30;y�3{�ӭa&amp#25;uӋ�l���&amp#0;��/������J�F�>��G&amp#30;ժ��U���&amp#31;&amp#20;?&amp#19;&amp#22;,�"�
+��&amp#8;9���������8��4��4ʩI��F�I�{�/Uy�<7��%.G�L�X�:�*&amp#15;�� ^�8��Nw&amp#18;�{C�K�<;�t�'�$������-K&amp#29;�&amp#31;O�8)��=ٜ�&amp#18;:�}&amp#16;�<w�|SoeFth�:�m�&amp#30;o_^}B�<Ǉ.'q_̤͛�?��k�V2��~G��7�E2&amp#2;Ƞ&amp#27;)&amp#1;&amp#28;�&amp#29;@N���&amp#2;6�&amp#21;J{�[�&amp#17;T܂�x��E�D&amp#8;�P����#`&amp#12;�v&amp#8;F�&amp#3;� &amp#6;�
+F�E&amp#21;�FI��<¤[H͝N>}�i�F�����W#$T�&amp#3;?@#�&amp#19;(�r@&amp#28;�&amp#25; V�@��B��&amp#25;�&amp#2;�&amp#0;��+&amp#0;>H�&amp#20;8&amp#8;&amp#0;N@�
+�2&amp#21;��|�&amp#8;�Y��*&amp#3;*Pa(&amp#21;&amp#16;"&amp#1;&amp#0; 2D&amp#26;(�r|&amp#28;�o9t-���g.�th��:�[���b�[iR4�t�i�0Q|`&amp#21;lb&amp#5;��&amp#5;�DU�3V,D�tf�&amp#22;&e��1Z+�&amp#12;V��&amp#25;&amp#31;���u���S'�&amp#3;&&amp#3;&D&amp#28;��E&amp#28;��L��܊&amp#25;&amp#2;g�@&amp#25;&amp#0;0&amp#2;�L��g��u�{��P�Y8-�r�3��^�����J�J�Q���ߩ�g��������#=�>Ǜ���1�֢�&amp#22;j�5һ�_&amp#31;>�5���$�*i���p���o�+�ow/��9dS��,���S��&amp#0;&amp#30;��SUjIm��?&amp#22;Ի�g��&amp#15;�p�&amp#31;��&amp#15;Þs���&amp#31;_��u&amp#29;*�/8���H�|]*&amp#20;aMa#]Y&amp#26;��E&amp#22;�&amp#21;͐b�&amp#4;�Q��[I5&amp#19;�f������E��K=�Vj�I7�͍J�՜v���Ȑ���3�,�7&amp#28;\�&�uϊ��ThΣu6s���6��y�q',��Ovϟ+�M�h���u���MF�&amp#11;o2r�Y=�RG&amp#30;<O��s%�oh���&amp#30;/O{~�6�swZ棝Yu6qs��)5���W�I&amp#31;O����z�c�&amp#22;&amp#26;[&amp#22;&amp#16;�e&amp#1;́|�&amp#21;&amp#29;B�)d&amp#7;��&amp#8;IL����u&amp#18;1�q�&amp#20;���q����j�X|��+�"��2��&amp#8;W0&amp#17;�(u0&amp#15;X@r(�&amp#1;f�&amp#2;��&amp#0;�P&amp#25;.i�E�x�&amp#16;�,I���xK�tUq�<ʧ�	���"u}&amp#8;��&amp#16;� &amp#25;&amp#0;6&amp#0;l&amp#5;l&amp#0;A&amp#0;�&amp#0;�&amp#3;"&amp#1;@l�w&amp#2;&amp#16;&amp#6;�&amp#6;@&amp#15;&amp#4;
+�Y$�bZ&amp#25;*&amp#17;��f��&amp#8;&amp#5;&amp#0;"&amp#1;&amp#2;&&amp#0;b&amp#11;iǆf��u
+y3#��F&amp#28;&amp#29;#M�c����b&amp#21;��vEV�.�_&amp#20;Qr
+t&amp#3;�Ab�&amp#20;�D�u#5aԑ��L�j&amp#11;����P�ZV�&amp#16;���&|��Ɏ�L�&amp#12;�9&amp#29;QDAL&amp#3;�&amp#19;$&amp#3;!S &amp#12;�&amp#27;&amp#29;
+ߡ&amp#0;&amp#1;�W�)uE�uez}3^��&amp#26;U��cY�����&amp#0;nĢ�Õ�}��&amp#27;����,�}ISr�~%����t�e�N&amp#18;m��MJ�k�:&amp#21;��Sˬ^��F�*&amp#25;i7��=��+�����&amp#20;��9z����O�˭�׵Y�ǻ&amp#19;���|im�o���@/[D�U&amp#29;&amp#18;Rآ��/�"��&amp#4;��&amp#21;�~�Y��i�pF�=J�O&amp#28;6N�"�O�+9l�^+�%���bƻWS�5&amp#24;�v�y&amp#24;R��~*���e����5�.c����u���(K)�^U&amp#29;OQ�;w&amp#5;,$�u���������������ѓ+b��&amp#31;��&amp#20;f������t��T�{]#�	�V�u�&amp#16;<���T�*�B�rE��s�L��EC�&amp#4;'VX&amp#11;9`&amp#12;�jKfs��q�&amp#19;jo=�&amp#24;����ھ*����nv6J�}Ό+�M�&amp#8;&amp#14;h&amp#1;�&amp#0;u&amp#0;&amp#29;y&amp#2;)�&amp#29;@#��FJ��e�3V&amp#30;&amp#21;T�aB��&amp#15;7�SN��&amp#12;h|�T��f��%��&amp#25;*&amp#7;R&amp#2;u`�&amp#3;?P&amp#6;H&amp#6;_�	�&amp#6;@&amp#25;"&amp#6;@&amp#25;&amp#0;e&amp#0;2@&amp#27;&amp#0;d�&amp#31;�&amp#0;�&amp#2;d&amp#5;�&amp#19;%@�&amp#0;l&amp#4;f�&amp#6;T�a�e@�P=�&amp#8;&amp#0;"&amp#0;@h��F�K��t��W�&amp#22;6�E&amp#29;&amp#22;6�\&amp#21;�� m�ح5@�����[&amp#4;2�&amp#0;*~�2�@ʩ�Ѽ�f��*�-YEVFmj#��LZҹ�^�-:�VNI"K�����&|��ɀ�&amp#5;0��D�&amp#16;���&amp#0;ltL�K����&amp#5;l&amp#1;�E&amp#12;�&amp#0;�A�IFY[&amp#5;t(�״iyp�Q�1��V��L�X���YM�r��g��4���w����&amp#0;�	����&amp#7;��6��]��妍�&amp#30;��:_���u���7Z�1y�[:�o�߷j�3�$��?&amp#31;wW�7��:��Z[4{�c�֚U��z���ܽ&amp#1;�,
+�5��'N,�&amp#21;���gH�&amp#6;�2�K�
+f�Vj���"�J�7���t�f��WWS&amp#22;�CE��>���U�����w'x�&amp#30;3S�>רΤ%�'�O��|���9&amp#11;&amp#26;��L��&amp#19;�?P�.w��:4�&amp#26;�1Q�W��}����+����yu�|&amp#27;��i��
+煮V{&amp#30;����t�e&amp#27;md�&amp#5;R��N��%J���d,j<&amp#18;-4g����V�����aY&amp#24;�
+.�t�&amp#29;��u�γ£3&amp#27;�$�,��h&amp#17;�$��շ;�X+��*&amp#23;�&amp#0;:�N�@&amp#29;B��&amp#0;<ǂ :��&amp#14;`s�+�ӧ����Lk\^%�̧&amp#29;�tq��16�&amp#22;��)&amp#25;Ҿm�c��g�_�r["&amp#3;�&amp#3;��&amp#14;��L�2&amp#0;���L�2&amp#0;�&amp#4;l gr�l�� �2&amp#0;�@�&amp#2;z�&amp#16;&amp#16;�V��&amp#6;ViYP&amp#30;YP&amp#24;@&amp#8;�D&amp#2;&amp#1;&amp#0;(��fj��Iz&amp#28;�m&amp#19;Q��&�m�hl�µӑU�2]�Ub�Cy�GP�WU"	�O�{��`}�+��ֺ�l^�;V&amp#7;�=�Z�]繊�W+��3N����#x�Z����u�:c��:&amp#25;6:&amp#14;I��&amp#29;&amp#19; L� &amp#11;�&H��&amp#6;H�����&amp#0;H&amp#1;��o�&amp#17;�"�B������z�O����g��un#&amp#25;��������^'�M�i�������?���ǧ��ӛ�Xg�ɞQ�b)&amp#27;�&amp#21;2@EQT�߱&KO&amp#25;.&amp#27;�GV	)m�P�X(�RD&amp#20;Ti�d�&amp#21;��jU&amp#18;�&amp#25;�&amp#27;��8��&amp#26;럮^�{9�&amp#31;�*�&amp#21;�,��5��1����ϿN��\6�ʖ6ӭ�t����ԭH���7ɭ8z�&amp#17;��ƶާ�R2�a^����Ed�b�&amp#30;�ֺ�S��:5�e&amp#21;TM3&amp#22;7)&amp#27;�&amp#0;D�&amp#16;S*&amp#12;%�b�ўM��O`2�I�H�L+�"���sl�G,�:�&amp#23;ݚd���
+��&amp#2;:��������&amp#7;S��/Ds'B����l:�-�&amp#26;�78o�G-KV:���\&amp#18;K�y�&amp#22;���&�y�v�F��9��:�\���}2�D&amp#12;�:�&amp#6;@&amp#29;@L�L�E&amp#12;�L�Ā6�&amp#6;@&amp#25;%D�&amp#3; &amp#12;��&amp#0;v&amp#2;|�&amp#0;T*&amp#3;x&amp#0;d d�C%JV&amp#24;�ʈ&amp#0;� B�&amp#4;@&&amp#0;e�B,��&amp#0;#5cM6r����cQ��I�mZ�H�]9�֘T
+�5
+t�&amp#29;&amp#17;�&amp#1;%\"�\c��S;�&amp#30;�;��w�ᘴ꿶�S&amp#22;�L���ezur�IZ�#��2t��{�/�б���w�Y����%��<�"PȀ�&amp#2;@~`&amp#18;�&amp#0;"�&amp#0;&amp#0;�@&amp#1;&amp#1;�aA�+(&amp#0;�(d&amp#14;΁g�\)5����lv��_L�hF�%�c��\��Hŭ�{�h�&amp#0;&amp#21;&amp#22;�â�`�&amp#6;�&amp#30;���&amp#18;%���x5Q�s�M�����/����ܽK&amp#2;REE3o���U1�ԋ�R�d��^�*�&amp#21;jB�%Ro&amp#16;�m�D�j�u�������)=��W�䷵ۜs.:x��qa)f+���h���rt��<퓶&amp#26;��V��[���7���廥'��q��x͟B���&amp#29;���o�������&amp#30;�z�&amp#5;���.�:��m�[�UH�U)`**��pѨX,�M�u��K;&amp#0;�!��65)T&amp#4;�XukϲQR��9�o�&amp#26;��4�n��&amp#11;2Q�t���5&amp#23;Xt&amp#21;�<l��(��I\E�&amp#29;^*�e�L�qL��R|��*�&amp#29;>"��:pʨ�8>t}GS��'�/N&amp#26;U0��&amp#20;i�YkvTlM$&amp#21;�ꪌ&amp#30;���<C~�(�㪖�-�n���&amp#22;�fr&amp#8;&amp#29;D&amp#19;>�G &amp#6;B&amp#6;@�`L�2@3�&amp#4;l e�&amp#0;&amp#11;�&amp#17;&amp#24;&amp#3;�#e&amp#1;�&amp#0;�S��&amp#0;D*&amp#3;�&amp#5;@��P&amp#2; J&amp#5;D �&amp#20;&amp#1;I&amp#16;�#�J�&amp#20;�ʷ&amp#26;�1+M��nU�P��j�0.�N7*��]�>w�	*�%���j+�7L��V�����R�M�3&amp#22;�j�>]�3Ӧ�`utk���&amp#4;k��xu&amp#21;_r�z�XT�z&amp#29;�&amp#25;�����W�ȁ�&amp#3;~�A �&amp#7;p&B�@&amp#25;&amp#0;&amp#16;&amp#12;�&amp#14;&amp#8;&amp#3;(&amp#28;"&amp#1;�@
+V&amp#4;K-{�&amp#15;e�t�&amp#31;�}o	����uAb)&amp#29;�Z̴VE<!�R%Z�R*&amp#23;i?bp&amp#25;5�b�*��%�a�q��۹�#q�5&amp#25;f/扙��߱��9:�ϊ���C�&amp#11;'�J�d���j�s3j��E�ʼݥ���&amp#31;�$�zK����}{~����ㅔ�Z������\��Z.�R���v(E�<i}<��;f+}8�Q��)\}^�g$����z��&amp#30;�4�D��-��U&amp#19;C���4MW&amp#29;)�Ս:f����g&amp#21;��WH�B�k��x|�UW8g�pg�d��&amp#5;&�Ӈ�CR�b�uW���\��&amp#8;?
+\�&amp#15;&amp#27;������e�lϟ�[�㿛�B�p��&amp#12;�~��a��G	M��jzh��0��b��3s�Q~&amp#17;���VX�y7?"��]��&amp#21;���������z����:�c�2X���8Ÿ�����C_��V�L�λ:~�&amp#26;�̷:�J�Ѹ����+65B�M2&amp#21;.�&amp#8;��	����&amp#26;�8E�#&amp#22;�x-WQ�d�8j�p�>�a�䨙&amp#2;g�H&amp#7;QD�&amp#4;�@�&amp#2;&amp#17;&amp#7;�&amp#20;ze�Bu
+�E&amp#3; &amp#12;�B�e�A��L���B�&amp#17;>`&amp#14;�&amp#19;�"l&amp#16;7&amp#8;&amp#12;�A&amp#4;&amp#16;�&amp#0;�L&amp#0;W&amp#4;&amp#5; �K����3�j4A��ө�R�0�����U��]&amp#26;�"�X�`t$�R\��&amp#25;�]����Z�;�K����Nm�ȁ�&amp#14;&amp#24;D_�x&amp#25;6�&amp#25;M��G��評z��T�z��U���&�>&amp#21;�9�&amp#12;��&amp#0;�&amp#6;_�&amp#16; �&amp#1;=�"� @�&amp#2;v�&amp#2;�&amp#0;?�&amp#0;&amp#0;>AA�&amp#6;P6&amp#0;�y�Y��s��b'���$�cE�(��&amp#22;6E&amp#5;�&amp#21;gR�4�Ք&amp#0;�*#�&amp#3;&amp#29;�G&amp#24;�F�{�o1ͩX�v�2��Rx$�K�-M�c�u�nv9U�)Y�yWQ����W8�&amp#0;&amp#20;N&amp#23;���M�vv4P�-k.�U:�}�g\�K�b�u&amp#17;��&amp#28;&amp#29;Y��7mE��kv�v>��&amp#30;/���&amp#0;�&amp#29;s&amp#30;O2�_~�5�����h&&amp#20;ZH�ZX��'Z�&amp#25;v&amp#17;��L�&amp#6;�&amp#18;��&amp#27;�[qB5��:9ju��==ӓi&amp#28;��Ǭ�/+�Į5���t��v,�5+����7���:�%��&amp#25;�����t��)cs_&��&amp#26;ɛ�<6bʊ�E`�W&��Tr��<�ՍH�T�zM��9ȱ��H���+&amp#27;6j~M?�3\���i�/�屍~N��p�.��MΣ�~������Sׅ��zG_~G�pѭ��ƺ56ɼ�W��r؝-:��D�V�3o&amp#6;�=&amp#11;���7&amp#25;��n��&amp#25;����&amp#28;m]e�Γ[�t��+�Zx��,��4�[׊R�&�L����&amp#18;�ZR��3t�y��bu[��juʩRSyl�ZL�&amp#3; N�&H&B&@�&amp#2;&Am*R��%�#�CNx�[��œ�il�&amp#23;�U�8�&amp#12;�Ma���*"�{ &amp#27;ʖ	Ӆ�e&amp#20;YR�&amp#21;&amp#1;�T�e�3�TD@r&amp#4;�ϰ@�&amp#0;M��&amp#0;�&amp#17;&amp#2;�&amp#2;"&amp#1;�$S,}H&amp#12;Vy�&amp#18;�b�2��I��e_	��5���4�cT��Y����I�7���L�9w2��,DL&amp#8;�&amp#25;&amp#5;N�A&amp#16;&amp#2;��&amp#8;PW�To��0oG��⥔|><�H���&amp#0;R ��&amp#4;�&amp#0;�n&amp#17;&amp#2;����&amp#0;&amp#4;��&amp#6;�&amp#3;@/�&amp#20;&amp#24;&amp#1;�&amp#0;&amp#4;��L����x~�]'��D{Kz��&amp#30;�h�$TȂ���&amp#5;&amp#23;ua$T$�&amp#0;S���&amp#25;�U&amp#12;��^&amp#3;���t��q�H�W�3I�,�$i��]X=Xy�&amp#28;o&amp#21;C&amp#20;�O�S_Ty.~�|^Z��kj��94��Ʈo]5:����n�F�.��|So)�v����r�y�6�Z�S�R�M�y#K;.��)%��j�R9��u��r5	e�2�]&��s�e�&amp#18;M��d���Y��P��h=�4Ƴה���$�F,���&amp#28;�	A���\��{��|�>���Yj�X��۶t�&amp#22;z�x�7+�ӵo�FI|F�V�w�}��&amp#22;J�-r[Q��k)&y�&amp#26;�1w����WXɝ��,�BĪz�HV�(�h�r�3�Z�]9t�v!j���e�6�����C�q�&amp#23;��&amp#30;��Ξj�e��p�fRk�L�5�O�&amp#11;�}���/S��i��d�:�t3�&amp#1;2&amp#0;�&amp#19; L�2&amp#16;r&amp#4;�&amp#3;Ӌ��D��&amp#26;n�午��4tݖƺ��WӰ�C�c�iӝ�\�pna�،i�+/&amp#8;���Z�JI<rg��#�5��x�U[Ni}�¹W&amp#22;��Vĕ��fΌP�P2&amp#16;P"-�&amp#4;���&amp#15;!C&amp#31;P���Y&amp#6;
+�&amp#4;&amp#8;�dC��&amp#3;�4(�Ջ�2�2o(��I�⛩��=M�rD&amp#20;&amp#1;ܢ&amp#16;&amp#31;� �D"%�&amp#1;(�&amp#4;�4&amp#5;��鑬�&amp#31;�����x�-��d�&amp#1;K`&amp#14;&amp#0;8&amp#2;`&amp#8;���(&amp#4;&amp#1;�&amp#8;�^܀&amp#24;�0&amp#21;�&amp#6;&amp#20;��&amp#0;�&amp#3;�&amp#29;�&amp#26;��d�x�&amp#30;�O�R�����R3M&amp#26;h[(�_x&amp#11;�S����@��@,�����V3T��9e7&amp#7;�r�7�V�W+&amp#8;I�)m��Q���ѧIm�{�$���^o�3s��&amp#29;�r���~U��_O#Y<�S���WRY���@�2�S�&amp#25;�nC�ro	&amp#14;�+�7����$��#f��n&amp#11;�Q��l�Q��Ш�Nx��&amp#0;2�h�&amp#20;�&amp#30;�&amp#25;.m)�ɸ�Į&amp#21;�Y�Flsד�^��!+ɬ�\jJ/%��x�CP�&amp#26;�}���KmbK�&amp#26;�o��P���㤭|�ֹ��5��*����6r�R�T}{�M;e�YO�ļl��&amp#26;��q�s�d&amp#28;H*�,j&amp#4;QT�O&amp#24;@&amp#8;��b4Ҏ0�H�l���#��W٬�#���֞g�α��Y*&@��*&B�Ԃd������3�&amp#2;d"v&amp#8;(��WSI��Y�5��߷Lǹ���$�^�g.�;$��t⛛E��K&amp#30;oT�I=�#Nv<v�&amp#5;&amp#25;&amp#19;�p�Wcn�TY�&���z~������CL�x/Z�=Λ��u,y�F�&amp#17;��&amp#6;k&amp#22;<��&amp#23;No�.k����&amp#20;
+���&amp#20;{{&amp#1;1�&amp#8;��  &amp#12;&amp#4;��@���&amp#20;�8d&amp#12;��&amp#4;2��<H��ёEd�̩�&amp#20;Ȁ�Ȁ�H!PB�&amp#5;�N�AE&amp#16;����<?sP����&amp#31;"���&amp#20;�&amp#3;�p&amp#28;&amp#14;	��x&amp#14;&amp#7;&amp#17;1�&amp#20;0&amp#4; V&amp#0; &amp#24;&amp#1;Y&amp#20;&amp#24;B�����
+�/����X�1�Q�t�K	&�g��ڏOkv�&amp#21;��V�&amp#21;L�JF�&amp#1;�K�M&amp#20;e�Ue��S*�<�c��U�r:�:�&amp#3;y���T��O�;�f�B��c].��g^R�ϕr�|'	&�&amp#28;?Ty�����zW����$�VQ�;�&amp#0;M�Hμ7y�t��-��q���.e�h�<4��&amp#29;kO&amp#7;,|h��K�޼)EG?�3�`���p��^&amp#14;���t:�&amp#27;�[G���I����(Ka��Ѩ��Yh�cG&amp#22;�����r�Yǩ�ښ�#$��3\{�&amp#11;v��^oL9&amp#19;Xx:G��䬚5$��X����E�27�к�'����j�����+�6����+�P�[���7�&amp#0;&amp#30;�OFK�&amp#30;�<��<���;�R&amp#14;���˭�o&amp#31;3��¶����c&amp#18;uG�&amp#14;�&amp#8;��V�Po���FV֥QS�GI����j&amp#18;�&amp#25;5$�H��ɼ���+��8u2S��EL�&amp#4;�/&amp#14;�r&amp#19;��&amp#19;;��&amp#1;Ϩ&amp#17;2&amp#2;��$i����K��V��h�zJ;&amp#28;��&amp#30;���(��&amp#29;�t�&amp#20;�&amp#6;�3\RX�&amp#15;5�SJ,u�O&amp#7;�G5&amp#31;�8i�E��qx�F�&amp#30;�N�J&amp#11;cq�:ѳ]<&amp#6;��,�\&amp#4;��uK%�-��5&amp#30;/T��{&amp#19;�:�$�&amp#25;�<��A�N�&amp#16; �	��Op��P&amp#8; &amp#20;&amp#1;DhȈdE�H�F�r!��&amp#0;r)�&amp#25;z&amp#17;L��D&amp#4;&amp#2;@@>�&amp#5;d	���&amp#20;&amp#16;&7�(�A(�&amp#31;���%�&amp#31;%�2@&amp#31;��+�&amp#14;&amp#0;�&amp#0;��&amp#21;0&amp#0;�@�&amp#20;1�&amp#0;��Y&amp#2;�(?逬&amp#5; W� P&amp#6;Z'U���P��;��&amp#15;Q�����cmJ�V�jinz%i�9Y5T:��&amp#3;&amp#5;Ӝ%���żn}�W�)E��}&amp#12;j�&amp#0;�L�8_T��g���&amp#19;���_9�4�P�w���s�5ѹs[&amp#15;�|]&amp#29;:����㱬�:�B&amp#8;���./���iJ\�&amp#4;'ب��DS�zq� ��&amp#2;t�)%J-p8u��M�V/13q*�<����gMpy=<y�&amp#29;f�F��t$��X<���7&amp#29;<�n)j�cd��&amp#17;Lk�R&amp#29;[Wƫk��t�U�\p%MN�&amp#26;ꋋf�^/L����Q&��&amp#26;�4��&amp#19;J&amp#17;'��܏_�x]��8坱��{&amp#11;&amp#18;4��O^q!&amp#29;�6&amp#17;�q�mEWzd'&amp#7;��fX�k�kzS��8��~�\zq���$��&amp#21;�uⶂp�ܧ&amp#14;�&amp#4;�F�K:���[z���jZ�6Z#i6����p��*�&amp#31;&amp#15;�=S�8�<���1�&:���%Zm�����a�r�Q�7�	S����D��Q�&amp#4;�Ee&amp#23;�&amp#21;&amp#0;&amp#25;�&amp#0;B�@W�T&amp#0;�e��#��]N-��ǿ۾c�iV�1��mz3&amp#30;�ڒI&amp#8;�WN�ђ�|,�W����Б�O&amp#23;yo�[&amp#24;���Ϸ��,�ÔWI&amp#30;�ʂPGH۠��&amp#26;ࢵ&amp#20;�*�Z��qg+Y��u[e�&amp#21;�O'uO��F�^}Fvtr�&amp#16;WȀ��D&amp#0;�&amp#1;P�4TE�Ccb(�
+�b$<L֡�&amp#20;W&amp#4;S�C��&amp#8;&amp#25;&amp#17;L���D2� !P �&amp#20;U&amp#18;�&amp#16;&amp#30;�&amp#5;.�&amp#17;�D&amp#18;����$ϕǜ� �&amp#1;��8&amp#0;�*`�`�|�&amp#7;$&amp#0;�@V@��*V&amp#2;0&amp#21;�+&amp#0;&amp#16;+3T�X�}L�7�^�e��y�+�隖p�=�{^�M�eR�g����*����*���a�ls��i�V�&amp#22;Q���6xZ���8�7V�NsjR[&amp#29;3�;�v�#&amp#8;�����kb�u"�G1Юd�GQ&amp#19;�&amp#30;b'U&amp#20;�z
+��G�Te���H��,^��4H�2�c������4���%B����=&amp#17;�uz�xU��|��֪{�&amp#0;���F���&amp#27;�3][u,�t�n[�\����&amp#17;_���<Zç�h&amp#21;��9����n�N=Ώ��RQ�&amp#15;f<�G��ӣ&amp#4;�=&amp#18;5#�J�%�k��$���4�&amp#7;��l�(Km�&amp#30;��u�|��ۢ��6>V���	��r+�0�H�E�(:�&amp#20;q���f����ǥ6�������5+(B8H�G �l���6��2Ob��&amp#6;�&amp#0;H���a�u-&amp#25;a�'�~k&amp#30;Z��Te��Ǽ^1��2�x&amp#2;&amp#4;@�&amp#4;�" �s��:9 ��
+uR3��>��C�_&amp#14;�&amp#27;^��ͅ$��;�b�vF��|&amp#26;&amp#24;�^��j�֫�dF+���J�pj9q�t{t�4܏SmO&amp#17;GH�Z���*�&amp#29;�-W&amp#19;Q�qg+G��irX��1Q�X�o6�ӳΈ&amp#6;�`�/O@�� ��D� �&amp#0;T&amp#20;@B�/�D&amp#5;"&amp#7;Y�&amp#8;�I��$@�ʊ�&amp#8;dE2 +&amp#4;&amp#12;@P&amp#4;�( �&amp#20;Q&amp#12;���5�&amp#16;��&amp#26;D\&amp#8;&&amp#15;�����<�H&amp#6;H��""*Y&amp#2;&amp#1;1�&amp#23;&amp#4;&amp#1;�&amp#0;d
+�&amp#21;��&amp#25;*��&amp#2;�&amp#4;&amp#1;^�BȔ+�u��&amp#3;��&amp#11;؃��y�kf�O���ǹ�'%&amp#4;�}/?N��v�&amp#21;%��Z	S/E&amp#19;���&amp#18;�_�|[3�k�&amp#20;��Gv�,��&amp#21;&amp#24;�"��@|ĉ�&amp#15;9&amp#14;�+��ӄ�r]/&amp#21;;�s&amp#31;#��G�>K�W&amp#11;�M�[&amp#27;��t�g�&amp#21;Tt�&amp#5;�3L��эJRX3��k�^'�%&amp#26;��c���3��c_O%:R��5֖�3F�&amp#30;�&amp#25;F�e�]()D�
+�M�cV��YM���ן�=ƛ�S�V"�vqǛ����b���F�RH4�G&amp#1;D&amp#4;�0&amp#7;+R��&amp#25;����z�&amp#15;ڶ�����f�8�9�z�t�\�,`��2;Z=�]H��O�;X��i��&amp#20;����y���H�&amp#5;�S&amp#8;�R�eN0\�ŧ�Y���l&amp#19;Oabq�5�=|YG��&amp#3;��Q���6��&�&amp#26;e;�2A&amp#0;�&amp#16;'�&amp#8;V�2&amp#25;��#��p��%/��q�ӈ�6k&amp#17;Dv�ѦjS���Z0��fs����%�&amp#18;�iȣ&amp#21;׃q����i$äz&amp#26;&amp#11;dt�Z&amp#18;��)���UƿK��j���&amp#29;��n8��uT��s�y��4wp�&amp#23;�dR�^&amp#14;Ȁ��&amp#0;%&amp#29;£	C�AAE/�&amp#3;�܊8��&amp#15;&amp#20;J�
+DS�&amp#2;E2"�&amp#17;&amp#5;z&amp#0;Ȁ��&amp#12;E@&amp#24;	�&amp#16;�P&amp#8;!&amp#17;&amp#26;&amp#16;&amp#2;Q&amp#18;(��ė&amp#7;�y��0&amp#25;"*`�!S&amp#4;@
+&amp#0;@&amp#20;�0&amp#21;�+DR0&amp#17;�&amp#4;fB�&amp#5;"��>�B�4YN��<Er8�&amp#29;K=&amp#30;Ri�~&amp#2;幗����5��&amp#25;��g�Gif�������K]&amp#8;S�;�S�p7 ��&amp#20;/V&amp#8;&amp#15;XTu&amp#12;ڱ\��b�*��]��^*w�����~֟r|�����3t�V�&amp#12;|��&amp#29;ǹ-^&amp#21;���c�p������,j�Ϲ�Θ��&amp#21;rv�φ�Ă�&amp#31;S��q&amp#23;�qߜ���&amp#23;�xo��&amp#24;�]����<�{
+�$�<�_��)<l�2��24��˷��WcJ��Q&z<��Ƨ^�K�	B8gКylv饂����@��N�U*�&amp#29;^0�<���Q�5Zk-�&amp#15;O�Շ&amp#14;�R��Y��H&amp#26;�,�Uzm&amp#18;�&amp#26;=^Q�O]o�&amp#20;{c�Z:�z�&amp#19;%&amp#1;��&amp#20;U�QQʽ��X�6<��n�-�1�^&amp#23;U��6y5�J��+6&amp#7;�Y@&amp#15;!Sl� ���8܊�hԺ�d�۶#����G&amp#29;W�&amp#15;Sm�F:�#t^ux3��m8�s-����jofj8�͵m�F��&amp#30;�LX�&amp#29;v��&amp#23;��U~v5��=g��W�U��f
+�&amp#26;�&amp#28;�F㆞'W���O�Ϸ&amp#26;P��W&amp#27;	��9�&amp#26;N�&amp#4;&amp#21;&amp#16;D&amp#2;&amp#4;&amp#15;�&amp#5;H���"�a&amp#17;LE�v&amp#8;t���&amp#25;v dE&amp#21;�&amp#3;"&amp#6;^�&amp#5;&amp#0;Q&amp#20;p&amp#16;Q&amp#20;{z�&amp#17;&amp#0;K&amp#4;�&amp#29;&amp#16;�&amp#8;���&amp#28;&amp#22;#��ȑ�c.@??Ċ�A �&amp#2;&amp#5;+ &amp#0;&amp#6;@�&amp#5;`+"��A[D
+�2&amp#17;�&amp#0;�T�&amp#16;]on�ρő��-<6�q�9z&amp#11;k&amp#8;�-�]�V��,lz�&amp#31;)��RH�r8���Y&amp#5;S"&amp#4;h)&amp#25;���HΚ�&amp#21;��sͪ�
+׍w9�5�Y_<�c�&amp#21;{�O�p�lo�>h�j'ɨ&amp#14;��|�En�=���,�rÍtk���F+&amp#23;.�&amp#26;�=9�w-q����Ė&amp#26;&amp#29;V+�hTO+';&amp#26;��=&amp#30;��&��xu�x��&amp#25;������59�"V�H�Tk�4:�[�j��M��&amp#31;N�9o/gku&amp#25;�4�d�64��tU:�m^)�C=^&amp#17;�&amp#29;8�q,ř�nG�ԡ��/Gl��x��y��3��E�#�"��4�����s��R�&amp#17;��Y�:�<f^�a���&amp#21;�{&amp#21;&amp#28;붰�<���35��_&amp#17;��&amp#30;z_y��3J�Ƞ"&amp#2;&amp#4;&amp#28;&amp#16;L0&amp#25;-�"�&amp#22;�O&amp#24;g&amp#11;^�G�Ң�bp�z�&amp#30;���}vk�&amp#6;����&amp#24;n2�`�&amp#29;�&amp#7;$�:�8i����\&amp#29;&amp#28;ޒ�b(��:���eiwV�E&amp#21;Y*��+f!\&amp#27;�|,�q����2��&amp#6;���ëK&amp#25;&amp#31;�,c�0Β�jp�*"�&amp#8;-n&amp#18;�Ђ"��C�&amp#6;[0��E�DQ[�2H�d@Ȁ��&amp#3;`��&amp#20;H&amp#25;&amp#16;&amp#20;&amp#20;Q&amp#3;`��@&amp#27;�&J!&amp#4;5&amp#1;F�%��&amp#30;1(��̏��	&amp#1;K�&amp#2;A&amp#8;�&amp#0;�&amp#0;`&amp#6;�&amp#4;R�&amp#16;��XR2!Z"����^�
+њ����^�I��M�N��Yeh�[&amp#21;�1ӧI$K&amp#29;dk�&amp#3;��&amp#28;�У��4�EER&amp#2;�&amp#20;��Y&amp#21;E^&amp#12;ՎU�VY���p�j����׌3��L��
+�^y3k+&amp#21;�:&amp#15;ڽ��,���Հ��y$�/�s��5[��&amp#23;��4�ѡq�w��&amp#27;)�/S_&>+Ut���q&amp#29;X��8�_��cZk/-�[FI��6�ݣ�׋�6q[&amp#6;�^�ܽc�&amp#17;��Q���tf�^��,{'\�b�=~~�����(�Ƥr��k�|O*��KW��T�Z�7ܟ%��r��K#�{�g�ҺG&amp#6;�n�=��F%8��|h�Q�ׄ�^&amp#25;�ل�;���)&amp#23;��-����L�d�%����y=��<��Wfb�+���&amp#19;�G�p_%s�&amp#4;&amp#8;�&amp#16;&amp#20;��&amp#30;&amp#20;�7�&amp#20;�%�qӳ��tחE��&amp#18;v���:��ڴc�:o&amp#30;�5�{��{&amp#23;YZV���֋�G��~ޜW��%𣆫ח��{"GF�n��c�(�+�z�rc����Z�;&amp#29;s�*�&amp#27;^���0�[G&amp#24;1c�t)�ez�&amp#26;��MlK&amp#23;�7&amp#17;٘&amp#28;[����委��Ύ6<�z|���c�Z>��s�Pm�&amp#22;J�HQ�&amp#3;��&amp#0;h�Ȱp&amp#14;
+�HC%۱&amp#20;�}H��N�&amp#17;L���!�&amp#20;P�H	&amp#3;"(�&amp#1; �&amp#4;&amp#8;&amp#17;&amp#19;&amp#2;&amp#21;Gبdj*Ȭ�Z)�ɨ���Ώ&amp#3;�8 $&amp#19;�d&amp#4;&amp#8;@&amp#2;� V�&amp#0;0&amp#21;�&amp#25;&amp#2;2)Z*&amp#23;&amp#6;T�&amp#4;h�&amp#3;F����tll:��ܖq�ǩ���R�˾r�[�I&amp#22;;Hґ�����&amp#23;-/�{#�W6&amp#17;D���&amp#2;�H��6C���3Z�u�r��q�/9|�[<[v�MY�S�K&amp#20;y�&Y���Lڈ�?S=&amp#1;�~�mSF�ɨ�_
+�gH�]&amp#27;�cs���N�&amp#29;����0��&amp#23;IŪ�����=Cܟ3���Z���㕨\Fpk#����0�ٍ4�)��#5e:ޯaS���&amp#27;�V�k�M��ƥ&amp#30;�O�e��|�8�оS�&�G�k���>G�T�&amp#24;�k��[&n�0�K)�uZq8Q���&amp#17;}��G\�Ca<E&amp#30;��k�NYGiX�&amp#16;GI&amp#24;�⎒1O������]C)�3^cV��Oc&amp#23;,W��-&����N�&amp#19;���[��Ε&amp#21;&amp#12;�ԃU��su.�4ܛ3t�z�/�;�nڕHyp��ߩ���&amp#0;ծ=։���Y�ʺ�*/��&amp#30;2~���u��kB)S�&amp#24;��B�&amp#26;]�6�������z&amp#23;Qu(�F�����7?�&amp#19;��
+&amp#21;m+yU&amp#22;0Ϗ�\�W�&amp#27;�i,���:uӤ�&amp#14;�3j�M��Y�'���\�c�.�=/�n�\�x�wT���)�&amp#30;$�P�'JX�<���o�&amp#16;�,�]Z�O��ʛ����&amp#29;zO&amp#28;&amp#28;u+}qo�I'���y]N&amp#15;|���&amp#26;yۅɺ�\������Y%��9P��&amp#21; �&amp#30;�A��&amp#21;&amp#2;�$�&amp#12;F�&amp#1;&amp#5;")�&amp#1;Kl�1&amp#3;"(�&amp#16;Ȋ(�� d&amp#1;D&amp#4;&amp#2;@B��&amp#17;&amp#0;}&amp#0;��&amp#22;!⾦�Ɗq�H�J&amp#28;&amp#21;��ҡ&amp#30;&amp#23;�q؀� �  B(c &amp#6;@0@��&amp#20;&amp#5;h&amp#1;�&amp#21;�&amp#5;y�&amp#20;�&amp#0;�_�8����ѥ���&amp#20;�s�z3&amp#30;��	$r��GF�&amp#18;5&amp#27;Y�p]H�&amp#30;1�k�&amp#30;�%5$&amp#5;&amp#18;�&amp#21;T�N���"��+�2����f4�pu*\���&amp#29;�^v�^Y�m�Y%eS��Ρ�&I&amp#16;�e�x�,2��R��5��:�]&amp#11;��jQj��&amp#21;���LTW+�z��b�^���W�w&amp#23;�&amp#12;��Qʭ_w���k%I�܌�*n[&amp#6;�U���Z�V�z���w&amp#28;3R�ͭ�X�ԫ+�J�r:�X��&amp#3;�lu	W�&amp#20;r�<���2ٕ&amp#22;Q�RF��nʢ�=&amp#25;�]�&amp#18;��=6�gx�Z ��V`�$�r&amp#6;ZԲ��\k�N����k���z��笣�j6}��=��g\�V�j�F&amp#17;r���&amp#18;=����GQ�jׇ�G���Qs��o��h�&amp#20;�t�1�:JS\ͭ�z��2�&amp#29;�Q�\&amp#27;S�$&amp#1;�&amp#1;�.GT�Qd��'V�)�/6&amp#17;��8�p����:�g���&amp#18;�<����t��apz'�|��X�#_Ɵ%Ԩa�>{&amp#26;�8���td0�&amp#20;բ���Ί#O�����]Y�"|&amp#23;��&amp#19;�g�C=��5�9�6JI�f�%���:2���g�&amp#24;�yk�
+p�H��u��l+Ro1�&amp#28;nl�u˝9E���apQ&amp#2;#�&amp#2;�d~ah�&amp#16;�h˱&amp#20;v"QH,2D&amp#12;@Q&amp#16;VB�&amp#17;LE&amp#18;&amp#2;�$A�&amp#0;$&amp#7;` &amp#4;(0�&amp#2;
+�n��-���5REn6ъ�&amp#8;��ӥd�<�&amp#1;�&amp#2;&amp#16;L�&amp#4;
+&amp#17;&amp#17;�/&amp#4;&amp#0; 5��R�P�&amp#4;
+�
+�&amp#2;�&amp#1;&amp#30;}ʭ��)!W.��D�r�Fk�mUa&amp#24;w�����Ϊ���j�4}O/�ϥҞǥ͚�� �R
+Fȡ�p�I&amp#1;L�Ռ�&amp#22;��j97��&amp#22;y�&amp#29;s^j�&amp#24;�<U�Ψ�)ks6 �2Hɳ�@rfkP:؊e?��U:��jP�5�&amp#31;4X��C6"�I��ōu���O<&amp#12;Ƙ*I��"Uo,�!�Ud$�3b5ҫ���Ѩn3ƨWk&amp#24;-�o��i��&amp#27;�ӣr��W�1�x*&amp#5;Z�DΚ�uUd�R�>uH�&amp#2;&amp#23;&amp#24;gI&amp#23;����{g�:ı�mke#Ӛ�F��ҹָ3q��6ȸ�&amp#21;Ԇ�&amp#28;��I��J�z��Ķ&amp#21;��tk�B�[Ѓ���&amp#30;oI���&amp#30;&amp#24;�&amp#29;���[�Ƶv�����o��O��&amp#30;Ν&amp#24;�$�&amp#14;��&amp#0;�&amp#1;�����KW��j���L䑛[��-��&amp#24;w_&amp#11;w�W��&amp#20;���I���ן��򦼾���b��ǵ�#&amp#30;�T�����R,��.�g�^Γ&amp#3;N��B�j���:�����L�'�/&amp#19;�&amp#22;&amp#26;�"�PC���Lq&amp#25;+Z)gcIc�u�FY�q�&amp#28;&amp#11;�
+2��c^R�^WR��_I�߇?L����I�8}��Xɍ�0�&amp#4;L?�&amp#2;�Y&amp#1; d����&amp#8;8܊d�&amp#22;&amp#8;KG&amp#4;&amp#12;E2 =�dE&amp#30;耠	&amp#1;  &amp#20;&amp#4;@@ &amp#16;",�]O���]"�&amp#27;���+q�ԩ&amp#30;&amp#23;��&amp#4;&amp#2;"&amp#3;�!&amp#0;`&amp#7;�2&amp#0;&amp#8;�*�&amp#0;&amp#1;X&amp#8;�
+�&amp#0;&amp#2;�U&amp#18;aeu-n�yf+�k�B�)-�:z3[i�'��&amp#29;f�F�g�ʽo��O��<5���3(�9���ERɚ��
+d�&amp#4;�&amp#20;M�-*���^G�g�L�Ρ&amp#28;6x�&amp#29;z�T���/��z)&amp#25;�u&amp#26;}�Ѝ�K܍&amp#25;3qVF-�3&amp#5;���&amp#7;Y�mYOO���ooR���%/�#_�o���Z�7�9q���%���k�3��ذ�&amp#30;�q&amp#8;ʿE�_*o�K�&amp#0;l6�&amp#0;�u����/��K�2���&amp#0;�^�Q�&amp#26;qQ���v���~��j7?�f�8�ʽzR�n2_G&amp#19;W��Om<���]XНō�ڡMuJ��ML.\q�������������%m5�Z<]v#���H�05ѫ�IF�T^��_N�Xy*�йk�z���&amp#22;9/Z��v���j9�&amp#23;&amp#25;g>uk&amp#12;�<��aW��&amp#28;�Y]IIo�ԩ^�O��:�NZv�V�&amp#30;�\�}*�GX�T$n2�&amp#26;B�&amp#20;c�K&amp#1;&amp#28;���Ti�&amp#14;��&amp#29;];D����(�ma��&d8�F84&amp#28;&amp#0;�9�*����&amp#0;&amp#0;�GS&amp#6;m�"�M=�'-m�&amp#25;�4�'�z��L��|&amp#30;}N��Ԗ��T�&amp#8;����&amp#0;��*�H�p�d�o�c����J��g�vc������,��m��o�e��X��`����&amp#0;oN<�&amp#20;�6g&amp#29;�Yƕ&amp#30;��n��JJ[&amp#19;>�k�v�[x=�^�p�ZZ���&amp#23;.&amp#15;+�DU��,�&amp#3;@$��(�$ʌ��#%�R�&amp#26;�&amp#0;M���&amp#12;X�֏&amp#28;K�<��}c�&amp#21;ym*&amp#21;&amp#26;kc���gL��+&amp#3;�Q&amp#0;�&amp#2;B� ?&Z&amp#16;��&amp#1;_@�D&amp#5;-�&amp#25;&amp#16;&amp#20;&amp#20;W&amp#31;�&amp#1;&amp#8;dEB&amp#2;&amp#1;��&amp#8;A
+�&amp#4;&amp#2;"��f�Q����cu&amp#22;��WH�ը�<��&amp#1; �S�A&amp#0;�&amp#1;�&amp#0;&amp#4;P�&amp#3;&amp#1;&amp#11;�&amp#21;��`+D&amp#8;�]�
+ҋ�͋+]&amp#27;ƻ�b��i�&amp#23;��&n[�]&amp#29;K��X��t�5.���g��֞�ڿ�&amp#4;ϣ��A�,���[�ʦ@&amp#18;&amp#4;g�y2�Z�&amp#12;�4�&amp#22;cQ�^kT�����I\
+�6pZ�`���̢4N*�/�3�&amp#12;&amp#14;4��&amp#25;Ԝa&amp#8;�JM(�,��dt�-�E�z�?���X)�J&amp#22;����)~*?&amp#15;�&amp#0;cݏƿێ�c��^&amp#15;��&amp#23;U�U�\��&amp#21;��Ϝ�Zݮ�(B&amp#17;Q�Tb�Ia&amp#29;&amp#24;:��&amp#0;F�W�&amp#5;5g����&amp#18;MKt�<���m�9�PJ-���{&amp#30;]�Gi���<-(e�&amp#30;M�q�;y�:�&amp#22;��p��IY&amp#26;qd�4+4�5Ѧ�\�N4B�X�"�Ѹkl��&amp#19;�o���/Y�UɩW�%5��X�&amp#19;�9ڍV�&amp#18;D��}W&amp#28;w4ŏAk_duΜ�t�V��1��u&amp#14;��ƈ��D��"�IՖ�&amp#0;t%m�IE$�&amp#17;�W� &amp#8;&amp#1;���R�&amp#20;Ti��V�&amp#28;�G=�cQ��~��|�_[���g&amp#29;��k8���ۘ*�&amp#25;��s�ڟ&amp#30;/�J�>(��Vs?lkV�6R�S=�Yy�VT��&amp#28;�=w�g&amp#25;�d�Y6�y>&amp#30;�.�޽�2F	T�R���b�&amp#28;��۷ԍ�%O�+���Yԑ�Խ4꣕ܧ�T�(�&u�C��&amp#20;���|&amp#31;C�sy�&amp#31;[�:\#��&amp#2;�V�C��J�Ԁ&amp#15;&amp#12;�%&amp#20;ʌ�&amp#20;�Ob�y�V�8��X���n�''���8��i�<�s�&amp#20;�_B"%�&amp#6;Dhw��C"(�(���ِ2 ?0
+"�&amp#16;&amp#20;&amp#1;D&amp#4;&amp#2;A&amp#2;&amp#8;T&amp#0;&amp#4;@'�&amp#1;ES'��T���V6љ]#�֬�<�E@&amp#15;r&amp#8;A&amp#0;&amp#28;�&amp#0;�&amp#0;(&amp#4;&amp#6;���(R�&amp#21;�#&amp#1;&amp#26; F�&amp#23; &amp#21;VK�ƺhT��H͋+��FjK?����3�a��d�~[�g&amp#29;5��BI��S.L�&amp#17;&amp#20;��B8�/J�Fz��3Z�7�%�y=&amp#29;c�����;�O&amp#22;@ߩ&amp#21;!Ju$�N.R{$��|z����>&amp#2;��Q�}/��xj&amp#28;��_�z��&amp#0;&amp#18;߽����&amp#0;���<3�i�5(QN�x�/�Y�&amp#0;����9�9�Z�$td��&amp#17;�&amp#27;�&amp#5;l
+��w&amp#21;7HͭH��%��&amp#3;Q_&amp#22;1�ܼ^�͌*'�1r�������|8<~�nٯ&amp#19;�i��7����~��ۓ:n,�Q��c�Lj&amp#22;TY�^
+�6cP�I��#�{P��}�x:Aش�&amp#6;�u���,f�v�8;�c�Fg|�,k��:J�&amp#23;��ر+\&amp#18;�:F&amp#22;)`�u&@�_P&amp#3;�&amp#21;K&amp#25;�+<��3kqK�����ŭp��j��s�y}�O�Lj���qF��&amp#15;?3�o��&amp#0;Onw?�X���RM?^ǟ�en�t��&amp#8;��ߏ�&amp#30;&amp#31;I��N��=ٮ&amp#22;&amp#30;SRX|&amp#19;VRE&amp#30;[��&amp#7;��|��//�/L���e�i^���Sͯ;?n�����B�;��&amp#31;M�g�O��\&�o&amp#7;<�5r��R�#�&amp#23;,��yk�_�&amp#24;ݙ��&amp#14;�qP�1��q98����c�N�&amp#3;{&amp#1;D���&amp#30;��Xh�]8|�:�*e&amp#7;����&amp#26;*9W�Ԣ�X���z��N;�u�/�8Ui����i�&amp#25;+����؅&amp#18;&amp#2;�
+8 e�&amp#2;�S"&amp#2;@�&amp#4;&amp#2;@P��&amp#14;&amp#0;$&amp#16;&amp#3;��&amp#2;&amp#4;@&amp#0;&amp#16;&amp#3;��E�
+.�)d܋+�mF��&amp#22;�v�+q�׬�<���&amp#7;!P�z�&amp#0;&amp#8; &amp#16;&amp#0;&amp#0;x&amp#0;0&amp#23;&amp#28;&amp#0;��V&amp#2;0&amp#17;���&amp#24;
+�$i�O	nJ�:VZ|�&amp#28;���:�.����XG�[zq�~�t�{�&amp#31;�u�ε���]y�#��&amp#0;��&amp#3;�&amp#2;�&amp#16;$��Z�c���g-m�e�5)Jy�<�Ӭ�&amp#5;J&amp#18;�x8�&amp#21;y/�q8x�~���OFЮ5K�J��&amp#22;���^7w�&amp#0;�;�&amp#31;E��7�i���>���&amp#0;Y�/���&amp#24;��?O=���(腓K&amp#1;`�YY&amp#1;��&amp#21;�	�&amp#21;�ԡ&amp#27;�@��ɫ���9j��b}"䱊�mM(��6�\�@�sgN�zd��2�5Ǔ�|=8�Ui���]�<^�&amp#31;�z|�%xk�&amp#21;&amp#25;=�&amp#29;���Γ�9t�M���PԨg,�HYD́&amp#26;2�&amp#5;�&amp#29;&amp#27;W��2�[���t�v)�B�:D�У.&amp#14;�bƨ�c�s�e9�YcK<�.&amp#14;�g�i\g�*q�&amp#19;R*&amp#29;�&amp#2;���&amp#0;P������,�s��p��&amp#22;���}&amp#27;�&amp#27;QIv<���nE&amp#18;�K8�໎�5[�7��g/<ߺƵc=�u&amp#6;��&amp#27;����Lg�g�]I��;y��&amp#25;�&amp#26;ܽ	}~ɒƮ��Ϸ�ܬ�F׹��%�R�Ǽ�xU���|�&amp#19;��&amp#0;&amp#31;R���Ա%Q(�9o���Y�u,��Z�O����w�'��<ޓ�k�9c/-�ٗ.U6:u�ɷ��&amp#6;xK,�T�,��!b��!���L�dV�&amp#14;�&amp#12;�&amp#23;��s�/S�w+1a&amp#30;_V�RR3\�x-f��rK���^��&amp#15;��c�\L�&amp#28;}&amp#1;E&amp#16;2_B(�)�&amp#3;"&amp#2;�"�&amp#0;oԂ`&amp#6;\�&amp#18;&amp#2;&amp#4; !D"&amp#5;L&amp#4;� @�&amp#21;��έy�+c�<��/K�xu4��{1�Ƹ���58%�fZ�Ь񼢷 �&amp#18;*d"nE@�&amp#20;0&amp#4;&amp#0;0&amp#3;&amp#1;Y&amp#2;0&amp#21;�#&amp#8;W�&amp#21;[&amp#8;VE&amp#26;t��"�^�O��9k\u�]�k,%��֞��ЧEA&amp#30;j�f/��;yo�b�S'���y��Sl�M8X�1l�Y&amp#23;&amp#6;E$�'UT�6���j>�&amp#29;i�1����=��1շr�&amp#28;�\d�b�a�K�^��v>Ƹ�E�)+{�S{y�o�s����&amp#28;=g����'��&amp#28;�&amp#5;R�Ķ�X�x`&amp#5;S/f&amp#1;��&amp#8;��k&amp#28;�&amp#28;�@��5zJrO�1cr�(�r��&amp#8;H��&amp#17;�&amp#22;2�&amp#0;&amp#25;EU!&amp#25;�ŭ�,&amp#30;'�~&amp#31;�&amp#23;+�x�R{�+���<^�&amp#31;�z��{�^:��w��~��h��"�4P�f�b�nn":y3p�&amp#5;M�����ݨ�&amp#6;��:��1����P��,�GF��u�+�I�w˝_Մta)U��\߶u&amp#23;I�&amp#28;�M��&amp#1;�-�&amp#26;er�k�&amp#20;&amp#6;�&amp#0;�M�TU������F�&amp#29;q&amp#21;}�v�|��G���饷&7��	��ϝ�=9�)\�n�ߍ�?_n~�`�]������&amp#22;�֦~��&�����g��c���ʮ&amp#22;N�7>+�۩���>�_�W'֏(�S�zf�O�Y/�Yk3�hu���	忇�z�=�K�����=S?�&amp#0;�?%����8֊x\�q��4VU׹�&amp#12;�KrZԌ���F�1�ݜ���ʹU[��rN�&amp#7;�^�&amp#12;�^�b�"ʊꬣL�&amp#19;R��Y&amp#25;��u�&amp#11;�8�O�:�U��Q�s�&amp#28;���E&amp#17;�[�L�o̍
+ d@PQ_� d@P&amp#5;&amp#16;&amp#20;&amp#1;D&amp#4;�!&amp#19;�&amp#4;*&amp#1;&amp#16;D&amp#2;`&amp#8;&amp#21;���w5TR�{��3��{m#H�N+���c<i�m�#&amp#21;�;ȭ��%�ҿ��C��&amp#0;�D&amp#4; <�&amp#0;	&amp#0;&amp#0;4P&amp#0;V@&amp#24;&amp#8;�V@�&amp#5;{&amp#5;#"&amp#23;&amp#29;O&amp#11;�&amp#7;_O��O&amp#7;=i�&amp#25;zKK4���j���]&amp#8;�QG&amp#29;;Ȫ��N5�Fw_&amp#15;��,�l�>����&amp#27;�.�&amp#31;K���}:+&amp#7;�9&amp#4;餅&amp#25;jD�Vj�ōFj�g;��R�s�t�V��\��:i�'�zWA&amp#22;D�]&amp#5;�k��ۧF�jGg&amp#23;��&amp#27;���:��aF��J3\I'�=�!���	9%&amp#28;�EX��i��u�&amp#4;k$�:q<���&amp#25;*p&amp#21;|4�#�&amp#22;��&amp#6;F2
+&amp#21;6ܔ��Gdʋ%,&amp#20;/P&amp#3;9&amp#0;�&amp#1;*q�jK)� �&amp#30;!�+�ʵ�T��\K�y�|f���g����Z�jJ�X8T�Ë>n�e�z��&amp#12;�}N|^�qh��1xgYY_&amp#7;�N�&amp#14;�ȗ-B��y�V�z��&amp#8;��
+�nnUt��٨�P�����֔�ڌwo�ub����%,�|�71\���CNX��쎼c��aF;��&amp#19;���c���Q[&amp#1;\��&amp#20;ʹf�&amp#5;�^������v���ӟSm&amp#31;'�Uc��Л|�9�:aΧ]˹�k�&amp#26;!'�џ<�Vt�6ܲg�V�2&amp#19;Ó���g�����+mz�����&amp#2;ާƟc�����&amp#19;��}|޼�&amp#18;u��]��������8�&amp#24;���O?YSYY&amp#25;u=�އ�W:�&amp#23;���:�/&amp#11;=��Y���ݎ�p*Q�yq*�\�l��O�/�?t�׫6f}�Th����&amp#16;��B�͟鋯�_3}���)&amp#26;N,�4��j1M5��\����x�e/��:�*�&amp#7;��ܴ���A&amp#8;<��&amp#15;�&amp#12;�2+]>�z���#s&amp#21;+YV��%�ꅉr�#(8&amp#8;=��&amp#1;  DE&amp#16;�&amp#1;&amp#2;v
+�&amp#16;&amp#8;&amp#3;B.RIw,�X��&amp#29;�R�Ƿ�:���&amp#20;��T��F���&amp#16;*���N���&amp#28;z&amp#1;0&amp#21;&amp#8;&amp#14;�B&amp#8;&amp#4;&amp#2; &amp#3;�&amp#0;&amp#2;��&amp#0;2&amp#4;aHȅ`# �en�TO&amp#27;&amp#25;��&amp#30;�O��I���X��&amp#26;ID�^����9j���]VQ��޺�����5�U�.s$�z|떞���$}�&amp#25;��n��[&amp#30;�5uY*��d��p&amp#28;&amp#25;�&amp#3;6/TJ81cr��9�ܥ���]&amp#20;����&amp#29;/Ix�wtڝV�Y�&amp#27;3כ���}��es�&amp#21;�S�fF�-I8�����3T�骲������{&amp#22;Ʋ}�5+��<��'�+S�Ч��t�����ب�S�[�&amp#17;vTc�&amp#5;nY(&amp#25;&amp#1;�&amp#14;&amp#1;� I$�&amp#30;_�ն�&amp#23;Q|&amp#23;&amp#17;_&amp#12;��9zy�GLzX��݅j&amp#21;�P��:o&amp#12;�����뗬����&amp#31;&amp#17;S����~(1��o!���&amp#2;ɜ����m3�&amp#21;��|`Dt��8�ܣ�B�dvƙ�A���n��l�_��ۇ�w�&amp#17;�pX&amp#1;�&amp#19;b&amp#5;x�&amp#21;EE�&amp#0;�RxMInbָ�j5�X���~V�&amp#0;�^�,��iU<Τ�v|�������Q�Ӕ���״k��0B./&amp#7;���v��VPX]�&amp#29;����6��q<c�&amp#31;�'�&amp#26;τ�K�mtS��&amp#22;0�V���)�&amp#11;����ä]E�&amp#24;�ع��i#y��d�L�y���������-s�&amp#31;7�"|�?����ѩ�g&amp#11;'_���;�u
+�O&amp#11;s�y�6��J�d�rz�&amp#30;zyK�w�5QEiIқ��3MO�&amp#18;��^�&amp#15;��&amp#23;��.7gI�s��=K�g&amp#30;��.��3W��f����J���9:�E��k&amp#21;����29n�׎�i�g��rҝ�"�&amp#4;2DS`��hEJ�"��"V�>�����&amp#16;��Q����Y?&amp#15;��jO�dY��<�������/CvK�y��&amp#28;�BP���&amp#26;�b�9�;&amp#17;D!�&amp#7;'��&amp#22;E�gig&amp#3;��*�\^&amp#31;$d�!&amp#16;&amp#8;&amp#4;۰&amp#19;` &amp#4;&amp#11;�"�h��&amp#27;����]+c݇G�����Aԥ&amp#29;�+L&amp#17;G��S��!&amp#1;&amp#2;&amp#1;&amp#0;��&amp#14;&amp#0;�&amp#0; 
+�H&amp#21;��&amp#4;`+ G�&amp#17;�&amp#26;p�� ���h�&amp#27;XFlu��Z[���/�^��ta&amp#28;u��+&amp#29;Ժb�&amp#31;�k�k�wY圳&amp#26;�R�����&amp#14;z�[�/:+'o<��koa��J(�~s���ڏ&amp#7;A\�H*p&amp#2;��&amp#12;�&amp#17;&amp#26;f�1[�����.&amp#8;�H�g��p�`pmӧ(Tq��s�:����n����х3�{��QRk&amp#27;��t�u��s��W
+�I�L���|k���76�r�7&amp#11;&amp#28;��f�޴e%��I\�t<Ճl&amp#17;��
+&amp#29;A&amp#12;�C�`(:݈pT�T:{&amp#0;�܃���F��wJ?&amp#26;���&amp#30;oo>��&amp#30;[��bv��&amp#7;�߬�-��g��R��b��X��&amp#12;ܢ��SM&61r�&amp#26;�g&amp#29;+m&amp#11;�w&amp#18;��os�'LԱ��?.�(��o'���&amp#0;&amp#23;����S���2&amp#6;�@ Yg&amp#1;Tͅc�JQ�~�=���ԪT��ܲ��&amp#26;>&amp#7;����=�Y�>�x�\uO�&amp#28;�'��g\u��c�8�u5��g��>�ܼ��z��{&amp#31;3����zs��&amp#16;�&amp#19;{m�^����>Y떿m�6�]8I,����r5J����k�d��U��ۣn���y\�M}.7&amp#16;s��T���n|~S������­�_.�Ĺ��+��]����=K>��V��.{���w����M��O�~.y�_?ַ��&amp#29;]Iag/��\&z_>.����&amp#4;���$�,�ҭ>��%V/v���c]������5<ړ�e&amp#5;����7�u���]4�&amp#23;�ӎ=s'�i/s����?��ٸ��,�&amp#24;�:�EE&amp#21;����p�+�E�f�4��'&amp#15;M9ט��7�O<r�A�-�&amp#26;v<9cB����	f1~�u��^�^&amp#15;���GB���$��q���&amp#22;��§V5*\�II5&amp#24;�.=�&amp#31;&amp#28;�|�]o�*0Q��\e&amp#28;/��W;,Ŭ&amp#25;��&amp#29;m&amp#18;&amp#21;S�\�2�c�S�:u���Sm�6�C����i���"�~&amp#27;x��-��k��Y?	i������3m��������&amp#21;�&amp#19;ү�9׾&amp#17;�b�A�&amp#29;�F��:�y-OJ�oS&amp#18;�^�5���k?ln�J;�?&amp#22;~,Ӄ��fY�&amp#8; @ &amp#4;&amp#14;Ƌ��:�U*4�i.j�b?������8�&amp#0;o�i^&amp#29;��#�7Rk��}&amp#15;vq���V���`��4��,&amp#1;��&amp#7;��B&amp#8;��&amp#16;!&amp#4;�&amp#4;	�&amp#16;&amp#8;�&amp#0;`#&amp#1;X&amp#8;� V&amp#2;2&amp#0;���A]M>���F���z�&amp#27;E&amp#20;�:�&amp#29;��҂I&amp#18;��&amp#12;�&amp#17;�yt�˽���o&amp#14;����d�9L%ۍ^��#�����+�����=��y&amp#22;��>�?NSOMJ�ini��EW9 3Ԓ"�ԑ&amp#21;�r1[�$�6�&amp#4;:EA�PЃ��A-u���"����'&amp#28;�5zR��`FI�qɚ�Q6�u��V�>G�{�c,���rp�h�"�_�>�ɝz�&amp#0;��*�w����#��S��*&amp#18;ʖz{&amp#19;?�e/��A�kv���	.����}�/i����y\�J3�&amp#7;n�����,"��U��֤&amp#8;s�J�,��0��*�MU��[=�,X�z��RΫ�n����=����e�Ս�ǩ�<&amp#30;WFz�&amp#6;\ۖ�_�i��殯sr�~��&amp#5;�W&�q�&amp#22;R��1�o�]�&amp#26;�&amp#31;A��wVů��>��O���^OY���y��8��&amp#12;&amp#2;��&amp#2;���
+f���"�T�cM�&amp#27;\��[f���|o��u���+���R�Q:م8��ݴy?&amp#19;�n��;zz�};&amp#23;��K	c&amp#11;&amp#7;���&amp#25;�����+�ֶ�:����~���v}%�4�a&amp#5;/���2}/&amp#31;?�x�o�[ �iプ��g�UF&amp#18;g�k��9Tj����+V};T&amp#31;&amp#24;1oۛ�o,C��&amp#30;7����W{aB��U&amp#23;��]ѿO)�9L���8QӫY�}&amp#20;Wݑ�5�W;�&amp#0;���&amp#0;,�n�RN1K~�&amp#31;[�_��>��|&amp#18;{�w�bL���%�M.�۱<�&[������ҕ&amp#12;�QK<�}&amp#12;��<���<�&amp#24;f���&amp#28;����,X�y�u&amp#28;�O&amp#21;��T��&amp#20;�n%]&amp#25;&amp#29;%b�ꤍu&amp#24;.�RL��^oR���b�:�:��S{�oK�*��/,ː����4&amp#11;�F��E����&amp#29;�;&amp#27;&amp#23;�<G�׍zV�&amp#18;��&��&�&amp#0;��7��޽�����Gȸ��\Sڥ9,5�Z�o���sQ�hԄ�x7������&amp#26;�g�e�ʵ&amp#2;3��lh���&amp#7;Yc&amp#22;&amp#31;1/N&amp#18;s�8�R72N�l��&amp#0;$k�Yӄ�&amp#14;�ܩc�{���g�
+I�w�q�y�S�*&amp#20;ܭ�&amp#31;���&amp#18;��<6�m:&amp#21;�g&amp#30;��y�1ǚ϶<&amp#28;Q&amp#2; S�%&amp#24;���K|����{x%T��#��Əo�ǯ���w���&amp#0;�}&amp#18;�O�F&amp#17;�"�&amp#21;�Ia#�'&amp#21;�4R*&amp#31;� �`#`��&amp#7;��@	&amp#4;&amp#2;`&amp#2;&amp#4;&amp#0;��&amp#0;�&amp#0;�V@�&amp#1;&amp#31;�&amp#2;�&amp#8;�Sx@t�&amp#27;i����&amp#30;���G&amp#25;G�F�]z4��7&amp#26;3�f��=z�#�����.p��Y_���W�{��X֜��wf�\�����t�n���t4�=>{N�u��&amp#7;&amp#20;��D�]&�&amp#24;����z�RWq}��S;����R(�S=j(��f֡S"�%Jn���u&amp#16;GOJ���Ǻ\&amp#29;1&amp#24;���&amp#27;e��&amp#28;&amp#18;��Wl��Q���V{�����}ĳ�&amp#30;?O�|9�\����G�����zr�%^�V$�{c�<�����[dd�U!��M��x��ӓV�&amp#17;mˏa�Z��CZ�kYT�r���w=�3X�cV_���ߊ�jQTf�nR����>���c���ǧ���߮%�G�&amp#29;Y&amp#2;2}�VFF�X�"���&amp#25;K >�&amp#3;-�;�2�Qe4gY�����{yY\΄������z��^���&amp#30;�^#�\s��$�&amp#2;�檟&amp#24;���o;�����&amp#17;G&amp#12;p��M�ʽׁn\�^�����{�&amp#22;����&amp#30;ޟ&amp#7;��\��Pz�@W8�I)el&amp#5;&amp#21;&amp#31;�"��Wt��ۃ��&amp#29;q:�*�pjO9Y<~��u��$n��X�s����zɪ^S�I�r�����9&amp#28;�/;R�W&amp#21;�]�}+���{��k�Ns�ƚu�>�����o|�W�|z�j�f���=}�x����)<&amp#12;^����5[,�~���-ns��k��z޹ܻvWt��E�]ϻ�cͼ���ˁV&amp#16;�&amp#30;�,����X��&amp#23;&amp#25;�A�z#���o�ME��&amp#30;�M�&�&amp#11;-�N��ެ��Q�&amp#27;�S�ޙ��9[&amp#31;S:��b��ꄢ�i�C��.3q|��xl�z��_&amp#22;�5&amp#18;���]Fz�)'�:�r/o0��u��󓞫��=uW�^�&amp#31;ێ�1X2DH�hz�֓p�R��I�2����s/G����.�^&amp#23;���N�J�&amp#20;�_+(���s&amp#26;&amp#22;�g&amp#25;�T��&amp#11;?S�?k<����&amp#29;g���S����k��5�B=��c&�pٗa�q\��&amp#27;t�4�J,����n��4.��y�Xk4��G����<��&amp#2;�(ԋX=�Ƽ_�t(VNJ?&amp#18;�w=y�����Z4�9���x�������פ�ͦs�x�¥��I&amp#21;�|&amp#21;��:q���W����&amp#0;G,v�&amp#24;�'��L���"�\&amp#31;BB��)#H,&amp#5;e&amp#21;Ȃ�2+�և��@ &amp#16;��&amp#2; Q�&amp#2;4&amp#2;�&amp#5;`+&amp#8;FE#&amp#8;4�J��D⺶v&amp#28;m���&amp#29;�kU&amp#20;�:��#�J�F���I$UWR�K�'\����=�Z�u�&amp#11;����R�¯p��&amp#8;�k+y&amp#12;&amp#21;��&amp#26;�YSy[&amp#22;Qӵ�%&amp#12;,�'���P�_��m�[�j�흋�t��7�K�|�%O����DW)�"��(o�%�u:�wIw/S��s�UP]؟lZ��}&amp#31;*�&amp#11;�Yg�����&amp#8;&amp#12;�e���%X�V/&amp#28;��n1V�]�&amp#27;u˟W��Ƿ�!B¥��k&amp#20;��c&amp#31;�w��ק�eͼ)E�l���be�k�#�]��j&amp#15;�q�ߩ�7�_����&amp#14;��E���o3�UyM�t��5�e��U,�)�ӓ���~y:y��Ic��e�o,�֦�>�u���<�
+O;��L�m��&amp#31;&amp#8;�d��PљQ|d&amp#17;b�@/�<ߊ��sh�A~֖������c���\�|��<�&amp#31;:�n=�V�&amp#12;��qy&amp#22;�e<�����#q&amp#22;(��YGrX�z�&amp#2;VQ��M��Oo������9{O��i�&amp#17;G�yVFh!���&amp#0;&amp#2;��/B*��� ��;2+&amp#21;��*yqr�&amp#26;�&amp#24;�{&amp#27;��\&amp#25;ԭm]�Վ����$�&amp#0;�>g���ٞY�j�'N���J�&amp#8;���[�v�w[�&amp#20;�*y�&amp#0;#���&amp#25;���~RK8M�&amp#0;�卽F�i&amp#8;��o2{���ݟIt��=X��ו��X�Z՜~%�=�_�d�K�?�N��0�����6�9J&amp#19;Y�������7C&amp#17;ԡ8ͬE�%��>���^8�ާ_�)�>��1z��jVl&amp#12;�������uf�=)���񯑔�&amp#5;�&amp#7;O�&amp#24;��i��r��݌k&amp#18;�UT�;��z���&�n���c��q��ֳ�&amp#15;;c=iM[�.C6��W�Or3k�yy��K\�pn�z�2qֺ���NR,�&amp#22;��S�-&amp#30;9L��߷��1yN�M��&amp#28;|P��&amp#3;5�+�R�C��5�53�*�y1}:�&amp#14;&amp#17;�'&amp#27;��x��k4$uB�&amp#2;��#&amp#7;&amp#18;QɝE���&yw��2ʃOc��O��沟\&amp#25;��75�r�B�۟[�]y5&amp#20;]�ƴ&amp#30;Ǧ8�>�M���&amp#4;���>5�>q�XVWj�`�9<F	n��<ޙ����=��:s����*5p�������y����=}��B�
+&amp#20;����H��2-���F�0&amp#1;����2
+�ȯ�ׇ��@ &amp#17;~@&amp#31;`&amp#8;&amp#16;	�!&amp#2;�&amp#3;&amp#1;&amp#25;&amp#16;���P�G�Ë#�id�6:g-�Z��IltnF�pI&amp#6;�ޤ���p��u&amp#28;��AE=�Z�<����w8�Ů-jҨ�ɘ�j���&amp#21;�d&amp#1;�P&amp#24;&amp#3;-&amp#0;�(�GVV�w�w74�Z�_�w/�f�#��R�����+Բ��X�&amp#21;�K���W���g���:�ӻ�;I^�y�ޜwg_)߶;��&amp#2;J1�=���&amp#25;j$�U��r�V�-Z.Od����IUR�z��Yb+�������z��鮢�&amp#18;�[-�z/ӗ��A��)[��T���&amp#20;|�����c��}ה�&amp#25;ɶ��&amp#7;�/E�&amp#27;L7&amp#22;���=3&amp#31;펤mc�,t�e�|�|&amp#2;�ҵĔ#&amp#30;�K�.����Z���<7J���٫O/9K����zrr�zN���i�z�p#�溜:�D7[f�ў
+�c<�&amp#22;��&amp#16;�f@�{����Lƚ����CM��Kcì��y˭:Q�x8\5�EA���ëc&amp#12;&amp#22;AtQR�\{&amp#26;�&amp#11; �τ&amp#26;Z�,�,I��&amp#22;u��&amp#0;&=?����+'�y&amp#22;E�&amp#11;&amp#20;��&amp#8;�0"yx&amp#0;7�&amp#0;��pE�f�d�i=�5�_��o/�v��Ƽ��yS�&amp#8;T�Ki-�&amp#31;�|]g|��^��(�&amp#29;J�}4�ߩ���]w.U�NTܢ�%��}O=�;&amp#22;��J&amp#20;�&��,��k�t�{���JR�1Y_���ĵ��G~Th�~���&amp#30;n�&amp#27;[�B�&amp#7;&amp#8;Iu,�#��'&amp#29;qכ��V&amp#17;߷�|߇۷M��\\j&amp#17;�~&amp#24;����w��g�e&amp#26;�Db��.�Ǣ�q������EJ\=�&amp#0;&amp#3;&amp#31;�b�ʶ��)��'l�ʗ&amp#21;�T��w��|4YQlwXf�fӪI�_�g�eK&amp#28;&amp#15;�>J�)y��&amp#26;߳3z�-�Q�k&��_���uƯx�B]9wW�=�W;\[���d���Ԩ�&$q��&amp#21;�&amp#29;`�dE2 �w�V�������&amp#24;����1���/s&amp#30;�q�u:�+&amp#20;���cɹǦ^��Y��5ar�
+�lm�YX�Q�s�<&amp#23;�p&amp#21;L36�&amp#22;����N&amp#11;q8�	&amp#24;FM���z���>�wךM+S�|�����y��&amp#23;��f��-�<�%�ƬX6�&amp#5;�.>��W�7�_#S&amp#19;�g��؅8�a#�"&amp#0;&amp#0;�&amp#0;�BI�\�&amp#5;RfU�Ї��@��&amp#16;��&amp#16;&amp#4;&amp#8;&amp#4;&amp#0;&amp#16;#&amp#1;Y&amp#4;�\�&amp#28;&amp#29;KJQX��b��)����7B8A�g4�&amp#21;��ʊd�r/u%&amp#20;�gm-y���O;�&amp#24;�\�ڕ&amp#28;�Xb�a
+�&amp#21;�&amp#2;)@&amp#12;&amp#1;���@
+��S*�/N�\�R�z?k~�&amp#29;:��X�|��w.O�=^���x�:{���?#�y�\=WV[6ک��&amp#5;W�)���uL�b�d��]EUQct����U��V^�3w#S.&��T�p����&amp#7;��|��/F<��y�간6�O�y7�&amp#29;�P���mo��~��}3j�P�T��Q�:&amp#28;Vq��:̢�i��+Eҧ�>d�&amp#0;���ԑ޲�(�QQQ��ޗ��|�7}Sr��u-�<�����uQP��j|���5�R���ԞS=y�q�&amp#27;:FEL�P镓��:���O;�t�-��]&amp#23;&amp#28;��z�x˃]ţ�vrn�BY��&amp#14;�7&amp#20;�&amp#28;�&amp#25;�>LM��V54xI5�1��&amp#20;&amp#25;&amp#6;�>����UK��i�.�;���,�}R޴*�3�%(If-p��e��g&amp#26;�-��&amp#16;r�_�*Ŗ�VM�n�(��T�w܊I4�&amp#25;3U�<[`�K픱���'����7�����ǡU�pMf��In�&amp#19;�c�GmE7�]k�&amp#26;�&amp#26;k&amp#11;�x��;&amp#30;��~�&amp#12;&amp#31;`�&amp#20;�B����g�F./�k��ZE�l�ŬU����&amp#11;�&amp#0;j=~rf9j����&amp#27;�˹���緷n��Y��E�]9ϩ��mv�Ҋq��UN�/���Nq�����gIB�\�-����s��뷧��&amp#29;sM�/�i�<y����&amp#0;ū���FI��s������k5{7��	��t���&amp#0;y\����^✺f�-���o��ҹm&amp#29;q��r�J�p�^}\�&amp#27;��L��r�Xа�р�&amp#17;��뙪i���,,��^�d+��͵ŅyFi�m�2&amp#23;.U�&amp#30;�W���2�YI�8�D�+&O�/L�?B)�&amp#3;.�&amp#30;���çQ�T�)9��?&amp#17;�G��}�}&�U8��LM=\U^9���]2�8�O?�ӫ��_���-�:�\s��_s�Ȍ�l�k��]�h������~N�&amp#21;�~&amp#15;V�&amp#25;eÓ�<��u��&amp#31;/~�ݛǚ岄�i��޹X�NK&amp#7;FVu&amp#21;&amp#3; D&amp#1;(V&amp#2;�+�&amp#5;2fkO��'��L&amp#0;&amp#2;!&amp#4;&amp#0;�@�&amp#0;&amp#0;&amp#24;
+��&amp#17;�]EnQҵ���u�I$�:E�H��Z�J)�b�&amp#14;-��L�u>N&amp#29;�Ԧ�&amp#31;&8��&amp#28;�or�F�V&amp#0;l�X@
+V@&amp#31;&amp#5;@a@�&amp#20;.2&amp#0;&amp#0;&amp#0;&amp#2;�Vd�`}{��&amp#28;4�/\~G���cXz'�'��o&amp#29;a�A-翱�[n@�Jt���z~Dˮ|��s�S�{�|����Q���z9ϥ-�?���o|��d�5���j	��o�O?鞾�(f
++������SQ�5&amp#29;:�eN�7�7��t�5�ָ�ףӼ;s^&amp#17;uߗ&amp#4;�T&amp#18;ݯW�}Lx��~�:��&amp#11;[~�G8�}Ο�&amp#28;����]:K&amp#17;XH��=�=��*T��$�gZ����ψ"�&amp#11;v�-����|�&amp#0;ON�Y�&amp#30;F��)��[����5��~&amp#16;�&amp#19;�Սy|Q��'�&amp#30;�&amp#0;-}<����][&amp#30;�\&amp#17;I&amp#26;�eP�&amp#5;I����8˦RI�'N2\�)eS��7K&amp#28;�כ弜�m���Y���:���!���qu&amp#23;�%ӝR�g99�M%;����uΛ!Y4e��&amp#21;F,���&amp#12;�붩m)|T��&amp#21;�&amp#25;s�&amp#0;���6�8�뗬��=n&amp#11;a�QjxEB9��&amp#20;�m���W���R�$R�����t�&amp#23;T$��&amp#7;=�MNV��~�.�%�J�-���\N-��������>v}GI���V��Z��T��&amp#7;��-<�~�<3��&amp#31;��G�5Ҷue&amp#31;�X��Ƿ�����'ӌ%���&amp#15;�T�Q^��T�)Eǭ5&�'�fw�_����l��&amp#27;�G=K>��^��n}��m��)���b��~��'��_��2ߦYN��Y�a��p���o�1�hۼ�&amp#28;�&amp#30;�&amp#15;ƺ�U����J�&amp#22;&amp#31;-�_�����}Y�%�z>,|�+xK�Q�yJ�uEKW&amp#7;��<&amp#30;��ϸ�N��k���x��ˬ�(]T�ĸ�:y�E��+�B�2G���놱Ƹ�I&amp#30;�\�7J/&amp#17;��&amp#30;��9.��&amp#25;���n��Jt��O��>��-a��&amp#23;&amp#23;�&��Ǐ=��"CƜ��M�#&amp#17;�^̉�a�&amp#12;��E����)ՃÌ�~�˧��_fҫ��)�+t��&amp#11;9_FV��!��Q�M&amp#27;_"7���y}'#�~�&amp#23;	�yg�W+&amp#28;��zs��+&amp#20;Inu�&amp#17;Gi����ٝy��E(gs���&amp#26;ѪSrX;�ϬM��I�{���et��-�9T��y;���}n�n�&amp#28;3՜��W�7L�"�:,L�d&amp#1;(&amp#0;,��l���5���c��&amp#0;&amp#0;B&amp#8;T&amp#18;&amp#8;&amp#4;&amp#0;&amp#0;��V�&amp#17;�&amp#11;)ȣu�E&amp#22;j4�&amp#11;�"���KĖ��uʽ�;&p����V�)�0���l&amp#0;&amp#2;��ʥ�&amp#1;��aA�&amp#31; &amp#6;&amp#0;&amp#0;&amp#0;?�&amp#1;�&amp#0;0x�~�&amp#31;e�u&amp#27;�iPu�ॼb����&amp#0;�u�,z$�9j�H��G&amp#20;y=�g��&amp#17;Ǿ��&amp#30;%�&amp#31;��˽ow��3���&amp#17;�=��_��Z�����&]&amp#27;[&amp#12;G/eݾY�O��,�>w��k�mgE>��~��\�|�䢖0N&amp#17;�VtjTSqM�c&amp#28;�n��(�8G{�8��{<&amp#28;��#s&amp#15;3�k&amp#21;�d����&amp#7;&amp#29;{�l�<���\\M�6���<7�x�=��=&amp#25;đø�k/uݜ�&amp#22;�Ԗw��Ӷ�Y&amp#25;��9��ʟގ��:]s�>��jq��Y���_4{|�f�ϼr�&amp#25;;�̕n�P�jK&amp#30;ĺ&z6�&amp#21;k�.��?��%���/�e&amp#25;T�Iԛ��&amp#25;df�\hq�&amp#31;��q���&amp#23;)ל�t��&amp#5;�(����+ds�l^��k�w9Z�������R�
+���}�.��y'�&amp#6;�,�ƕ��$�&amp#27;ϣ�oy��8\����&amp#26;5ԉ�iW�'��i�ѵ&amp#25;i����3��w�&amp#17;�=�u�u;&amp#31;Q��T&amp#20;�&amp#18;�|��#�Z&amp#28;�y4�:��&amp#0;�T�J<&amp#16;S:�w%�"�r���Z��*U&amp#26;�e�]jPQF�I�&amp#5;3���%�&amp#21;���=+&>&amp#17;��	P�xX3q&amp#14;��o��b�F�����&amp#23;0p�&amp#5;,��W����5=,r(�BΝ5Jo�7ԾG��&amp#4;��ӷ�����aN*0xH������kD(�k&amp#12;�c�e��6�&amp#29;8�Ig��+�k�E&amp#15;1�")g&amp#8;5�9k�5�k,�L���ޟ����4z5z^�1.io]&amp#26;71k�ݍ���
+ɮN�LX�c&amp#25;�&amp#12;�S�&amp#14;��S�&amp#22;�r+5��&amp#16;xqEʥ(����S�z�^R���LiO���<��q�>���L��&amp#24;(탏ϏT�l�&amp#27;ow&amp#20;�p��,�k���&amp#31;��W�':��v_�ӱ��g�����*i���&amp#28;ro|	Z�eoQ�'r���&amp#0;N���o�d�o��%�&amp#0;&amp#14;��?c&amp#27;�~㿝���[\B�M=�&amp#25;���髦8����Xn�x>_�i��0�ϙ��X�No&amp#27;��W&amp#29;&amp#26;M%��w��,j&�n#��1�3��&amp#29;h�u�Y��->N�9�yQ{��I��)�/=��x]4�`�ʙ#*� X��2&amp#8;�&amp#1;��`S2
+&�֣��s��&amp#1;&amp#17;�&amp#27;�@�[�&amp#14;�&amp#4;
+&amp#25;&amp#0;0&amp#3;dB6@��#Q�t_
+�,���M.E�={Ǻ��ޯX*Tr~�g�X
+�&amp#0;a
+����!X&amp#1;�0U(&amp#3;�@�P(&amp#30;�&amp#6;�&amp#0;&amp#12;&amp#1;�Ѵ&amp#27;�b��l�i���e��&amp#0;�F��ֳ�����&amp#0;g�u�H\�I�֎���)�C�&amp#0;#��;�2=�z)�	a"������&amp#24;��$y�"e�&amp#30;V���*��������&amp#0;�/����y?ltgqs[�Ofp��|���3&amp#29;�{Z4`���^��W��q8�^���R�L�k&amp#18;/�Yp�6�Ɔ�&amp#2;��$ꩩq&amp#12;c'&amp#31;Mř�}��a��]���y��c=s�	[\��8i�����F�6>ww&amp#21;F�p�p�]�T厝sg߫�&amp#25;�3Tɹ/��&amp#18;�t�WGL��l�j�vO�����#��b�Գ�$���Nݏo�g�돭�un-+�/�Y}�z�k��ͷ��\]��Y�8�g�s�m�mkR~��QT餖&amp#18;;�˥�EJ�)v*,�8U��H�A�4��|�Ǟ&amp#28;��/�Z'�J�����&amp#0;�<����W��^R9L��)m�hR��&amp#21;d+4�3r��&amp#27;����&amp#28;u��;u(\)$q��Mp�x2��&amp#24;��F�BN]S��9�8���&amp#0;��>������r���wo�;��U����=K����&amp#12;�52�V�Y��oC��r-�c&amp#28;�YQ�џ[�^p�F��ݥ��̒i�K�&amp#7;l&amp#1;\��&amp#20;�[�^&amp#18;`&amp#7;��C�`1ָ��ϩ�Z�|�%���&amp#15;1��&amp#1;C��&amp#14;&amp#25;�2
+�y�2Ԫ�}�ɛ&amp#27;�q&amp#30;���vg�+6��|wkCR�F��&amp#24;>�'�k��;�/�&amp#31;�&amp#29;K&amp#15;&amp#27;�Wj=IK��z��W����֊�[�%Jj�&amp#19;Y\
+ˍ�R�V-5ɋN>}��U_:�Ģ�b��?ۻ�{�7&amp#20;R��4���<^����Ǹ��'&amp#21;��3]x�S�6��5�&amp#23;�t�:u�*�iNK�&amp#22;+ƕ	��b��
+)ѝ&amp#23;��1�9뮙hU�&amp#12;�}����UQ�#���|���)�%��&amp#28;�.��,&amp#30;��WD��eO������窦�����^ǿ�5�N�!���\�ujMpo����v/S������͢�#<���(= 2EA(&amp#0;&amp#6;&amp#16;�&amp#2;��Q3&amp#21;����W&amp#4;e&amp#1;��!&amp#30;2Ab{ !&amp#4;e
+�&amp#21;�&amp#4;� ��&amp#4;l�W6�&amp#14;��*��&amp#1;&amp#30;�
+�V�P�@
+�a&amp#1;�&amp#0;
+�|�&amp#2;&amp#7;�*&amp#0;;|�&amp#7;`&amp#3;&amp#2;�;+�ۘ[[Ǫ��ދ�R7��d��>&amp#27;Ѩ�vP�&amp#5;�Ve.���:u��rQYl�\nG:��E8�yvG����=^~N&amp#29;Ǜ]���&amp#11;�[�{�Ȯ&amp#22;��sǍ��[n��P�Ws�~&amp#15;������g&amp#27;\�>�xTI9�ؖ/Z��G&amp#11;ZY:��9kѹ�6�P��w�'��LO�|yu����7�w�<_�%��&amp#27;��e&amp#14;�&amp#28;G��>�z~��Ӎ_]q��wmv1���MW
+�Z�j9������2N3���&amp#5;���%���\��Nsk&amp#23;QղШY��$��>&amp#28;�Ǧ|y�g�V���R��{�,���ϕ�n}=��AP�&amp#26;}��&amp#31;_�g3Ǐ����&amp#17;kc��&amp#31;g�WR[�&amp#29;U^�bŋ&amp#24;�jE�0��Ȭغ&amp#18;4��݅&amp#27;�*�ެz�(?�T�&amp#31;�k��T��&amp#18;q�<&amp#30;k9\59U�&amp#6;&amp#20;
+ &amp#15;	��6,�n��k&amp#27;�5��&amp#27;um�S[���gOe��b4k�ʬ�J��6�U&amp#23;�g�����}'~��sG��	&amp#25;�NMl��LZԌ�O<�h�i�K/t����&amp#23;'���#|e��-<�y�ߖ���5z�)��*��PU&amp#8;&amp#15;X&amp#1;M6&amp#5;r�
+�AS�&amp#18;R���^^�Z�+�єz���s�Ͻr�g?N���:��}>�����TO�o��&amp#27;��ўV��ba	(�Jԯ;�]k��I�)�\\�&amp#16;�K��;��?Mr>F���,�<V��j��&amp#23;���OK&amp#30;�D�UZS����ni�ǯ^��X�sE5$�3t�&amp#25;�p�O�u�^{R�&amp#26;�i�`���o#my*M�I�'&amp#31;\�&5��������<v��J����}&amp#26;��wH�=Y�i�u.��l�V�i��g��Q��pZ���=��_LJ�&amp#22;6O�c�?&amp#15;���&amp#22;F�+����|�-zS�&amp#17;]�^|��:17����1���tx4pɚ����2��K)�&amp#6;�U�]�"�D&amp#11;�i&amp#12;&amp#17;&amp#0;�&amp#6;�&amp#21;�&amp#22;L
+f¨�3V?�հ�@&amp#1;e�&amp#21;��ˎ�&amp#22;&amp#1;&amp#2;&amp#0;
+�&amp#2;6E$�B6A[ @�fB�&amp#17;���X@&amp#1;X&amp#3;�&amp#20;&amp#7;�&amp#3;(&amp#1;Jʉ�&amp#20;&amp#0;&amp#0;;�&amp#0;���{��Q���	&amp#26;��{_&amp#4;h�6��U��p��T���u���&amp#25;��Q�&amp#28;vHƵ#�s�+���h�;���=XČr��{�S��N�#���L�I9�&amp#11;��dNZ�&amp#29;A�xkos������&amp#14;�AT����H��{������x^�<�5��!UGu���UZ������cӈ�]FSm��^���g韥C��1�r붔q�k�=��/X����֫Z&amp#16;�ꔟ&amp#7;�ǟk��Qe�[�A�P��=��&amp#31;#ݏ&amp#25;#����#ж-�G.��&amp#19;R������z�I&amp#29;s��&amp#26;�8u�.��������zKz})c��1�<z�О&amp#14;��gRe@qO�+��|&amp#19;��&amp#19;���^�&amp#16;�x&amp#1;u	�Z}y��F&amp#18;m��G�K��e�Y�&amp#0;&amp#20;�������ڂ"&amp#5;&amp#2;�&amp#4;&amp#0;�mpK&amp#23;�m�s���Xw��[K�4��Ofq�&amp#30;������(�j&amp#23;�rkeR&amp#31;�E�&amp#0;_�ӟy����;v����<��R{�=��&amp#0;ŝf��'+N:��F�S�]<���b��Kx���|&amp#27;��Z�T��U���&amp#20;&amp#28;�@/V���S*�&amp#0;:�&amp#28;���kp&amp#3;�k)�V��{�U՗M9I�M���:�e�Y=�7��x�/�՟��i�+X��[ܸ�&�mj�&amp#31;ùӬq��U5�&amp#25;�Y��i�&amp#20;[&amp#25;e&amp#4;�'���&amp#31;(��J�Xp�7*t#��۩?��ǥ��_Mu���¢A&amp#12;�~�X��&amp#26;�kYt9>�ǰ��緡�mk��8Jm�&���·�N�p�������J�n�:���a�1��&amp#19;?&amp#15;���t��Tҭ<�s��ϯ��ћ�uZ�.N&amp#26;�w\�*�T&amp#30;�Y�v���Ïq�8�J�wf����4F�/�����So9&amp#31;8p�q�,�8o2,�c�W;�&amp#14;h��Lp�H�m�&amp#11;��/�qz\���&amp#15;	uq���l[&amp#22;tau<�Pi�++QPrP&amp#27;&amp#1;[&amp#8;V��$�&amp#21;M�TL�W��s��&amp#8;&amp#12;�d&amp#1;���&amp#3;d&amp#1;��&amp#17;�&amp#17;�&amp#17;�![ F@�!Y&amp#2;�� FP��B&amp#3;(&amp#12;&amp#0;&amp#0;`&amp#6;P6&amp#0;<�&amp#0;��&amp#15;��&amp#3;�&amp#0;&amp#21;��ꕼ�&amp#0;j�C��<��&amp#30;�K�V�J�Q��[t�f/^�X�[��&amp#26;�ڶ���ٛ�G��&amp#26;�ӝ��8���ˎ��H�{���m����9�m&amp#19;���Ӓ3�<.�Y�O茲�Q���[�&amp#26;�E��yB�)�2��ac&amp#27;/S��&amp#0;��.3�<_��oc�mm:�R�q�f}+�&amp#30;o�dm!&amp#20;y}w�L�դ�|�&amp#0;L��W:�&amp#21;�ɯ.��9�1�N_�:��kz�&amp#11;�&amp#11;��=�&amp#30;.z�f��S����}��<����}6�u&amp#11;zNO��^���������{���&amp#27;�_����z�$Ukg*���(��y��;����)��,$��.���lr<~��Շ��
+u<o��#&amp#26;ۚE��&amp#8;>h	*�Ru��o�ҰЮ:��V.&amp#17;]��ͥ|)���&amp#0;&amp#21;
+&amp#0;T&amp#2;&amp#0;T�c��Fᣖ�퍺v�[n�>�ǧ:uh�?ݖ&amp#25;?N�C��ۚ���
+�&amp#18;�[o�Rxm/�'-�yY��{��&amp#15;/����߱��]l�a�<�&amp#14;�uw�u�&amp#1;U]X�N�3���&amp#18;5^0&amp#16;����&amp#21;<����nyo���w��ƭf��_>�m8���2����6��<[�oF^�H��M�|���|����:�����ك�0�Rߓr���&amp#8;�x�VZv�V�^+Myt�r�O����'9NnM巖�5�x�~�&amp#20;�U��8���K,���Z��ڵ�X��&amp#23;��زZ�<��i�&amp#0;�̥�]Uo�1XF盤��l�&amp#15;���*R����7��w��j&amp#20;��`��F�Z�&amp#27;*q� ����&amp#25;j&amp#26;4�ǂ&amp#3;.�lcQc-X'��&amp#31;\u�:`�&amp#7;&amp#12;��&amp#0;&amp#3;���藬��q�s��#~�s&amp#21;~+����ϴ����X��3��Ij&amp#21;"�Y�&amp#29;���&amp#16;����
+rǫ��y�u�Z���&amp#29;I,����fq�+��&amp#19;���&amp#6;��J�%�i�E��	5���\(ӊ�$jH���%�����`&amp#11;�VN�D�&amp#0;9&amp#4;+`+e&amp#1;�&amp#18;L
+��*�3Z��~��&amp#2;&amp#3;&amp#1;[&amp#0;6@&amp#27;&amp#8;V�&amp#3;`#y V�V�&amp#21;�#d&amp#8;�&amp#8;&amp#21;�&amp#2;�&amp#2;&amp#0;
+�&amp#0;�&amp#0;&amp#5;&amp#0;&amp#20;&amp#6;P&amp#0;&amp#0;G�&amp#0;aC�&amp#8;&amp#24;&amp#0;&amp#5;&amp#2;�&amp#7;��&amp#0;��&amp#29;S���E��&amp#6;{B<�:��ǧ�r=���'�&amp#15;.�����Ζ&amp#22;�&amp#28;��74�p�X[&amp#30;?[&amp#29;��J0��e��V�J&amp#18;�]8g�?q�iR�&amp#21;�nĬ��J+&amp#28;&amp#26;������5��[�s,7&amp#26;�w��U�e˹�p��[�`U�^~��_�V�F&amp#17;L�&amp#24;�G�W�^�&amp#16;�y�&amp#23;~�1&z�׮��e��z3�{�����f`+F��-������]�:�m�j���v\�����t���b���=�s��U�&amp#21;6I�z#�,��E~j�/CF�C�ë������8WX�8������P��kNY��}).&amp#28;��g&amp#29;i�w�y#.`&amp#0;a@�&amp#5;@ &amp#0;&amp#8;�@h�]�&amp#25;1��gN���XY��k/Vt�Q�i�F]2M5%�h̶WY^�O���4�{IV��̎��~����O��^]�=��t�C
+�e&amp#26;��T�&amp#25;&amp#30;��_ӕŎ����WP�8��V�&amp#0;&amp#3;6�"R��&amp#18;��<̽�u�&amp#15;�:�W:��f��&amp#24;�M&amp#14;��&amp#25;.KҸ�+����4��#&amp#21;&amp#30;&amp#18;ƣ���|�zңXi��������/�o繯�X�&amp#11;��_�:g���Ŷ��4�&amp#7;���yz���{&amp#26;G��&amp#30;��k�q�&amp#23;������O�2n�q��aa��٬:����&amp#19;)��m<3eo&amp#21;&amp#26;t�&amp#31;�F�-GR��*X�K![�
+qF�&amp#28;&amp#25;V�&amp#30;Z)&amp#21;KQ�&amp#30;�zҚ��&amp#24;�/Q���J?��ڬ�<EM~�3��4�MM~�&amp#0;�bֺ�SĴ�3��q�������&amp#0;F{u��g��κg�'��S�ry5&amp#30;��:ܞS��mv���cx�]&amp#26;=2Xos��&amp#29;WR�ފ���ϡ��&amp#30;]j���4�G�8ֈ�3l���Ku��el��3b�GJQ3���Ւٓ�ŽY5&amp#25;L&amp#26;CE�&amp#30;��u&amp#0;�@&amp#7; &amp#23;�&amp#0;�&amp#2;ɁT�&amp#21;\�����g���&amp#4;B�&amp#0;`+d
+�&amp#16;����&amp#11;����^�+ V&amp#16;��X&amp#1;�(&amp#0;&amp#5;~�.&amp#2;&amp#3;(&amp#0;.&amp#0;&amp#30;�&amp#16; &amp#5;&amp#0;&amp#0;&amp#0;&amp#0;�&amp#5;&amp#3;&amp#1;Qa��&amp#29;˟�&amp#31;_��xN�&amp#20;:&amp#18;�;,&amp#26;����1܌��>�~R7�+������&amp#30;&amp#15;o_���&amp#25;s�7�����<&amp#22;�iT��&amp#20;�Ȟ�+��R�����;c��ؗϋ&amp#21;�I|�7Y��s�����'#-K�����Q�˹�S��(����:��"�&amp#11;*U�!���V]s��Fu$�m�C�su[�#E+,�����^��&amp#12;J1�{��z�&amp#24;�&amp#29;Ao�}�ܧM�G�2I���%&amp#25;�6t�K��_��4�&amp#21;��&amp#16;/[C�&amp#5;U�:p�i:q�׵H�iW7&amp#18;���$���5�I�K��}Iʤ�9��O-�[g7��&amp#20;&amp#0;��Q&amp#0;&amp#0;@�&amp#0;(�D�&amp#5;ԫ8��z�Վ���&amp#27;�}e���
+u����iW���&amp#26;�Gli��<[{e&amp#31;*��&amp#0;SK�S���G|�G?lk�W���O�_ISS�k?�u6��2��|���qc����i��&amp#12;��,�H��^����tU4��&amp#25;������&amp#22;%�&amp#20;���Xu�q��]ӗ&amp#30;[i��ȕ�[
+�.犷��V��&amp#25;tu�R�4� ߺ'�Ѿ��Zk��N��u&amp#27;���P�3k<�O�;�<b֥mR[JO�[Z�h�kJ+�5&amp#24;�����4�SSS���I��&amp#5;ƿN&amp#28;I`u&amp#28;��&amp#20;�&amp#28;�/�JͱȺ�%��_�����W�垌�c�&amp#25;�����/g���3��+4�����&amp#12;�&amp#0;#7Ҫ������3}*|�|��������ʊ�7�����M&amp#25;�<��������ZjU �f�&amp#0;&amp#19;�����۵m��,<�my=��u(�ך�&amp#23;=�q��7}z�iV5�&amp#21;:����^>&amp#31;��[w���+c�1�&amp#31;��E�x5��b�}�eZKf:q��D�z����&amp#5;.&amp#27;�e�GcQ)��S84��&amp#0;�&amp#0;9&amp#0;�@&amp#14;�&amp#3;�&amp#11;)&amp#16;V�R3*��-�72�&amp#7;�&amp#2;�&amp#16;��+`&amp#12;�&amp#0;&amp#5;&amp#2;0�x&amp#0;d�&amp#24;B�H&amp#3;(V&amp#16;&amp#24;B�&amp#20;&amp#0;�V&amp#0;&amp#0;2�&amp#0;`&amp#0;'�&amp#0;&amp#0;&amp#0;�&amp#1;�Q0&amp#21;�I��sy&amp#24;V�&amp#0;�����5���g��6�V�V&amp#17;pQ�
+q�[,$�k]z�X�5&amp#27;��9��I���z�m��5&amp#29;&amp#25;%N;�,��q�^��&amp#21;'7��6�o��}1U��%�,&amp#28;/����7&amp#11;n�A��-��/9��7z�&amp#11;z�$�����\��[V1��)d���f��s���&amp#12;�u/�&amp#23;�|�=Mɡ]HV�&amp#11;�[�9&amp#24;�V�jt�c���o_.7dt(��1\���&amp#30;x�<��m�A-��ל8�K�P�w:9�Ֆv�LՊ��߰R9���p�L��\�,&amp#26;wSK�_�a�WՕ!�&amp#23;ZX�%�&amp#11;&amp#26;��k����iBw73P�MfO�/�&amp#17;�x�O�|Es��>����4�&amp#23;��&amp#0;&amp#17;:�zo�N&amp#27;&amp#14;`P
+�&amp#0;&amp#2;&amp#5;&amp#0; &amp#16;�&amp#0;&amp#2;�&amp#22;S���س\o��{&amp#28;5��&amp#27;t��R\�,zs��R3cR���̑M&amp#11;�RR�Zq�xjL�=4r:&amp#22;�.խ��*��&amp#26;��#����Gf���W�m5.�-4t�H��]O�&amp#22;&amp#19;x�&amp#26;�O���e?��Q�N�S&amp#31;&amp#20;���?�?��V���uy߆&amp#30;M|�?&amp#26;�u��jK�TgQ�]�?�&amp#23;5�u�&amp#20;�:��)�&���/y|��N�G*�F�+դ�Txo�Wc�&amp#29;s&amp#30;�M�i�q���]���^���8%�:f9�Ҽ�.N��T��&amp#4;^��uֳ&amp#8;-�F5[�-ߊ���{��*j�&amp#18;�ƴ�j3r~��&amp#28;.�q�<]V�zSF-f�G2��{Y���&amp#15;���mc��Y��6���k&amp#23;t��#&amp#22;�dE��G\&amp#17;M&amp#19;4�&amp#17;�2"�/ǸS��1��&amp#21;&amp#23;�,�k6��t;&amp#30;��SG�&amp#24;z%z�Z&amp#17;�RH�L�+l`�i&amp#17;�&amp#0;�-&amp#17;J�v"�jP{&amp#16;&amp#24;ԓ2���nY&amp#16;�5&amp#25;CHY2�܀W &amp#7;X&amp#3;��u&amp#5;&amp#7;0&amp#21;�&amp#1;�&amp#0;&amp#7;�ҙ<NeaJ�B�@����&amp#12;�&amp#12;�2&amp#16;&amp#0;�
+�VD&amp#6;&amp#0;�!X
+&amp#16;&amp#31;8&amp#1;X
+&amp#2;��&amp#4;�&amp#3;�&amp#0;&amp#0;`&amp#12;&amp#0;0&amp#0;*�&amp#0;e
+D&amp#26;u�Q��7�.�^�&�o��բ�Tq���6�{�&amp#11;��\�-��е�gn�&amp#21;���o�=8��&amp#21;%7���O%��L�f�=I=�'�󅝕Yw5|ϜP��)�燒O>U�H�R敵&amp#15;�It�ٽ���~�KP�=���S�x3�M}�&amp#0;�������d-k�S���Z����q��&amp#30;i�t�*4�&amp#28;5�&amp#29;����&amp#29;���-k�uhBr~�&amp#24;;&amp#12;>M�(�1Ir�o��V1�icxIz�&amp#28;�RYX\"QW�:��xx�l�&amp#23;��#R�jk&amp#18;���D��k��T��tE&amp#5;�o&amp#28;�E&amp#20;��[&amp#24;��&amp#21;liɯ�9���]q�ִ���W�� ���&amp#11;p�o^/S�%O.+&amp#28;�n\�z����Q�R_���Y�,�&amp#1;T&amp#0;�P&amp#0;Q&amp#0;�&amp#0;�&amp#4;&amp#2;&amp#0;��8�ŗ���&amp#24;����&amp#30;�mӣ]4q��5k�F8�&amp#21;N,F��t�{�[M�R�6�tr��ҥ&amp#5;$t�V�Ipi�&amp#28;ˋG&amp#25;��p�n9X��&amp#30;�(Ӈ���&amp#0;�����{�ޟNV��x��1�!�_�����>gņ�P��񱛵���Ww&amp#18;�Ǐ�~nzy{����M��sz�n�,���j&amp#6;E2&amp#3;��p
+"&amp#26;,��&amp#22;�ZZ���&amp#30;	R,FZ2 t&amp#21;dW��������b��u�]3&amp#31;I�-�!&amp#21;�ۈ��Ҏ&amp#17;�&amp#23;&amp#21;&amp#17;�&amp#21;��Y&amp#24;�&amp#17;I8 &amp#19;�"p�PJ&amp#18;L��R&amp#2;�H
+܀W2(u���&amp#20;���`2�C�&amp#7;��V�&amp#19; �&amp#8;Ȁ� F�&amp#17;�&amp#24;&amp#3;$D*&amp#0;&amp#17;�&amp#0;@�&amp#0;0�d
+�&amp#0;
+�B&amp#21;�&amp#21;�&amp#30;�/���&amp#0;`&amp#0;&amp#0;&amp#0;&amp#8;&amp#20;&amp#25;@�&amp#2;��d
+��W���kim&amp#8;:��8-�pt����vW��g��J��g��5��ឭg&amp#30;�&amp#0;��a������u�;I\�o|[eA?�,&amp#23;�j]��o<x����/�|g����;�x�P�N.]&amp#17;�D��/���t�>�R�P�{o9z&amp#27;�Y�~U��.���S��QK&amp#25;:]���24�,ŝu����2ng�z��m$��3&amp#25;�j������Лm��&amp#16;���ME&amp#19;���8�I5�Tf�aBw�}�����Z�.�\�%ҹ~Ĺ��g��_�&amp#20;���;���7[�Ue��iz�d9S�&amp#29;;}&amp#14;1í.��1��t�훶�ZB1�R�쎜�&amp#12;76P�{
+�9��Q�&amp#14;�,,x�[F_&amp#23;�y���>�J��Td��g_Ӟ�&amp#25;M�&amp#5;&amp#16;(&amp#20;&amp#0;�&amp#0;&amp#2;d&amp#8;&amp#4;&amp#0;&amp#20;@&amp#30;&amp#19;qfl%�m&amp#27;��:þ6�P���糏Ntх$f�X��2J�%&amp#12;&amp#29;%&amp#6;��%GB�k'/�uhM`�F��4��AI3Q,g�&amp#29;7��zŋ�*���at�5�x��kqz��⺻��J�_G�N:�9y&amp#30;Ma��s��2&amp#4;0&amp#16;��&amp#30;+Д�dL�:2�&amp#17;����_�&amp#17;dR
+��:�&amp#21;�&�G���I<&amp#30;�8�f=͜1&amp#20;z�Z��	&amp#27;d\�
+�&amp#4;��ȫz��������&amp#21;�eEr�&amp#21;�@W)&amp#17;U��+�&amp#20;�d�̝SFEE���V&&amp#7;��Fx�+&amp#1;Y��!X
+&amp#2;� &amp#16;&amp#6;ʈ&amp#4;�Q&amp#2;&amp#0;&amp#1;�+&amp#0;4D+(&amp#12;!^&amp#8;&amp#21;��&amp#15;Р&amp#0;&amp#0;�&amp#1;�&amp#0;&amp#1;�A�(
+�&amp#1;{&amp#16;,��M���:���O�M��O�R��n���&amp#18;��U2������'Ο*�r���:�V��&amp#16;�-��֍&amp#26;+3���ε����)���[�8�Q�'�v���fq��O&amp#2;�IUc)��0��&amp#29;JMͷ�7rM}&amp#14;1��alY&amp#19;������)[̈'&amp#27;��a6s��&amp#22;)3HhɢĬ���m8�k&amp#31;R��3E�4�&amp#4;��My��=]&amp#26;IE&amp#29;&amp#27;Z�AT��Z&amp#11;&amp#4;iͺ����jǛ��&amp#20;���8�z����㬹��Wv�ߡs�+8�͠&amp#5;B�&amp#0;
+�@ &amp#0;&amp#8;&amp#4;*�CFM2X6��a�p�^�mң]K&amp#7;�Ǣi�*H�t�'M3?�UӇ�z.�>�5&amp#27;��q��&amp#29;*&amp#21;Q�Q�I5�@8&S����Y&amp#12;�&amp#12;�&amp#22;)&amp#25;&amp#2;r��J�^.�͹�8&amp#23;��&amp#19;��˕R��=&amp#18;�z�&amp#21;�+&amp#2;&amp#16;@e�&amp#5;����4x�TX�2�&amp#22;G&amp#6;j�-�&amp#25;-��&amp#22;B5Z/�D܍ǽ��0�^&amp#30;��V�J(�ī%r��4*w��d�N,�\�&amp#29;&amp#22;B[��H�9&amp#2;2�%,&amp#17;Y�P
+�@&amp#17;�&amp#4;s&amp#8;�R
+�Ȋ��ʑ̊_3r*�H�etdT[&amp#22;i&amp#31;��F��B0�d
+�V@� &amp#0;�"&amp#1;&amp#19;&amp#8;��&amp#0;&amp#0;��!Y&amp#0;B�&amp#0;�&amp#1;��
+&amp#4;�
+&amp#1;&amp#0;(&amp#5;&amp#3;�&amp#3;�&amp#8;&amp#3;(&amp#31;�&amp#2;�&amp#5;�B�&amp#4;|�#3B?r
+�L�J̄e&amp#8;�MA��&amp#15;���+S��%��e�{3�G|�>�&amp#26;J�TR�E�d�n�mBRo&amp#15;&amp#6;tu�е�7�j�euE���Tw��7_n�\=��5V)����}E�L�*[��&amp#5;I�D禲&amp#17;3&amp#22;�L�d�Df��J���l����i�&amp#20; �;3&amp#29;H�"4�`S6&amp#21;�k$VJ�򙚮]�&amp#4;���W�լ�%��<6�g��9k���Ǟ�i��&amp#28;K��UN��:&amp#6;&amp#25;D�P&amp#2;&amp#1;&amp#0;�&amp#2;�&amp#4;@�&amp#16;�L̈́�k�]����|�ѷ���G�:k�M&amp#24;���Q0��
+�)�i��[�W�q&amp#17;Х[87(�	&Qb���h�x&amp#28;	*�&amp#26;�+-o�`Ŏe�&amp#28;�嬹W&amp#20;7}�gO.���-3�+�b&amp#6;E&amp#0;Ȉx��&amp#22;ǟ�f�Y&amp#31;���:D&amp#22;-�eN�&amp#15;&amp#21;�`�m�E�MG��+�����]�^o�'�Ug�]���I�o�I>N%�:&amp#22;5\Ι�Y��&amp#31;�tshL�h���&amp#5;&amp#21;$&amp#21;����V����Lwc�&amp#6;�UI��}�S�]�SQo9YO�^�]T:p�D�R3UT�g�+U&amp#17;&amp#5;��n%h��2�&amp#18;4��֭�&amp#20;+&amp#1;Y&amp#2;��![ V&amp#2;���&amp#7;p D*&amp#0;D&amp#0;0��P��V&amp#16;&amp#25;&amp#2;0�&amp#20;&amp#0;�@a@�z&amp#16;&amp#6;&amp#2;���&amp#3;(VE!&amp#2;0&amp#17;�%	#5H̄dR����o�_С���,&amp#30;�&amp#12;wK�����e&amp#11;{HE,t��ev��$�&amp#23;'�1���7�&amp#3;�ekN_���dp��k\x�3Q�gq&amp#25;�M<������o^n���j0�,)��u1��ٞ��u�U�K&[&amp#14;&amp#16;&amp#2;8�&amp#20;�VRǩ�m�#�"Ӧʆm%��sH�aQ\]�}���&amp#27;Í��[k&amp#20;���՜"*�H
+e0��"*��&amp#6;&amp#27;�&���?���Oc�i�5+&amp#7;Q����f�&amp#2;�����r�s��V��o�v�����������?�|�\F&amp#26;�t��7=&amp#18;����q�u���,T�[3l�T�&amp#19;&amp#0;L7�&amp#2;�/A�ʅG���/)խW؟8r��iW<&amp#25;��fk}��Dq��Ә�S����&amp#29;����<ш��h�-�U��FlWB޾v$�&amp#29;
+5r�u&amp#26;�4�D��&amp#19;o�E3�^�r�eUHe|̱��]RK!�qǸ�&amp#31;&amp#7;�&amp#21;��S�ې��FP�%U�1Z�b�f�&amp#15;&amp#19;*x�:(x��ߜ���&amp#22;�[�q�;b�G���ꦷ=r�CU]G=GX���'+&amp#27;t��8G,��&amp#28;�+�NYy=&amp#14;5r��N�&amp#0;��3ՙ&amp#22;1Vj*5d�&amp#14;�5�9�eD.�F�k)C�o�=�&����2�V|Fmtg�`Ԯv3��F�t��&amp#26;i��6��E��I�c��«��'N&amp#11;�X�:�g�u�ɛN$k'�J-�Cq+U)囌�ӑQ�ש�xP&amp#8;&amp#17;���V&amp#2;�&amp#24;@&amp#8;&amp#15;���@��&amp#1;���@`&amp#0;&amp#0;@|��&amp#5;a
+�&amp#21;�&amp#12;�&amp#0;��@�*|��(&amp#1;�&amp#0;&amp#21;�&amp#2;�&amp#4;y"�� FJ&amp#17;�H̄dP|mأ�g�Gڵ)^M~Ά��&amp#0;��&amp#0;��|3�����}v1T�$n����q�m6�&amp#18;Yl��ậ�/j\>���#�o���{X�ۑ��>&amp#26;�&amp#21;m:��0{J/���~�&amp#31;��-澛i{B��kіb�]��g��U�,&amp#17;�q�&amp#26;K(�!pe�$Q�׵&amp#24;���<N��&amp#31;��^Fu~��U��Ξ�	�{�y|(��S؂��
+��$&amp#1;���&amp#6;Z�bU�E�<�q�qįh�.&amp#14;6�&amp#25;e��<&amp#28;�&amp#17;��v%8IZ%��W��m"���
+�)��:�s�i�|	S��SL߃sU��&amp#21;=)�ƾu?�V��&amp#18;��&amp#25;���&amp#0;��*�ƺ&amp#26;?���|t��g���R�F�&amp#22;GKY�/�lt��&amp#18;��l,�&amp#29;�N�23��:�&amp#25;+&amp#25;�2NFx)��5&amp#16;&amp#20;��&amp#6;�UZk�Ń�oq�����*��k��,�RL��Q&amp#18;�"��cY+&amp#22;0�S�a�G&amp#22;�'LW�q��3��D!�&amp#8;��Fh�81[X�S+Ջ�!�U�aL�&amp#6;�&amp#28;���&amp#22;Rqi�W|�-�wҏFv�#�
+�\�:���,T^#�k5�5R��X�V��C��&amp#18;S�&amp#12;�&J���&amp#26;�3�6����9j:J&amp#20;�ȧ�K?#�ů��&amp#0;��Ma6nFz�+u�&amp#28;c&amp#15;{�*�Ѫ�.�g��\yؼ:�U�wIe������i�Wr[I4��ӊ��ܸC=^4ҫ'ٖVx�Jr}��&amp#14;�8�G���&amp#14;���rk�H�Щ� P&amp#3; P�&amp#2;�`��&amp#0;@�&amp#20;�&amp#6;B @ &amp#25;(&amp#1;&amp#3; +"&amp#21;�&amp#20; n&amp#4;(�@��&amp#3;*� V�&amp#12;&amp#5;`#&amp#1;&amp#25;&amp#20;��&amp#25;&amp#20;�$&amp#21;�H&amp#17;�&amp#4;��&amp#18;�|#~x�^&amp#15;��'GV&amp#26;](8⤗]Gߪ[�R�};G��ҋ�&amp#8;�[����T�-�MK⪜b�6�Z�|�|���H�(U&����&amp#29;�&amp#3;�W&amp#26;}�_VcĢ�k�������&amp#0;��k�&amp#22;w�/�cqE�2��?�g��^��-�n�D�2�Np�	NMF1Ym�&amp#14;&amp#15;�x�]w��0���&amp#23;����NZ�M�K��&amp#21;���~���V�3&amp#4;vt_)�R�
+P��&amp#18;ATT�&amp#18;��u&amp#12;�q�Q͝%����T�f���#�b�5D�&amp#24;��R(�X�:i���:&amp#17;e�\W�X��nS���q��S�VP�/W�x���&amp#17;8�6�]��&amp#23;o&amp#21;���:Q�'Z�pY'T�+�3�#�'Fj�&amp#19;��^[��F)�MB�m�d7(xɦf�i�S&amp#24;9�u��}�&amp#17;&amp#27;)����&amp#22;�&�+�+Q܂Բ
+��,���Qʺ���I^}�ȯG��&amp#30;����x�ۑ�v2�K�
+�&amp#6;jū���/C*�>�N�&amp#29;p�4��&amp#27;˭kؕ�˷g<cq5�y&amp#29;�y�&amp#7;I��ˡJ975ԭT��5�g��^&amp#15;Dr&amp#31;0�
+�T&amp#31;4&amp#4;o���A�AF).�j�H�&amp#14;Q�\��&amp#21;�l��F�T�U��.���`6]֧&amp#27;yn���a&amp#31;V�4��6ԡc��J8}�m"&amp#14;uŊ���Vd��&amp#3;65ګ�4��|b��;o.�����*�pq��[���5���(�/�ѥ�&amp#16;�!Y&amp#2;�;&amp#17;
+&amp#0;*&amp#0;@&amp#0;<&amp#4;&amp#6;&amp#16;&amp#2;&amp#0;@�&amp#0;&amp#0;d&amp#0;�B��`&amp#0;�&amp#4;&amp#2;&amp#20;O�&amp#5;&amp#0;���&amp#0;��X
+�VE#&amp#1;Y&amp#2;2&amp#5;~�H�Ѝ&amp#16;u|3`�uz&amp#16;k0���{?&amp#27;?�X�o���T�E.����˪\�4d��s�jGļW�J�&amp#0;T���K����7���&amp#31;J��Ñ%�K&amp#25;+(���U�K�&amp#18;��jys��K
+p}�����~�&amp#31;��.���X�Vz�5;j�M}�=��h�:���䕣4¼o�<CN�'eo4��&amp#0;1��&amp#0;?�&amp#28;�uϨƫ�&amp#14;��S�O-������׸��&amp#28;7:�ߦ��&amp#21;ԩ�����Ք&amp#0;�
+�(W")&amp#27;'Es"�\���5&amp#28;ʲ�<��L��J3T�1Q�r9Ӭ�x0�Q&b�&amp#8;��&amp#7;ZH�ԭ-�&amp#14;��&amp#22;&amp#11;���u&amp#17;�&amp#14;��sX%��TF-Ur�KZ���3�U9�te���)&amp#24;k.K&amp#26;d�:Ĥh�n�N���C&�&amp#5;��4b�k�\��m�W'Hqr�(=#�u&amp#18;qFP��&amp#3;61�[�?@㬹&amp#23;V��^���\��\_&amp#27;&amp#29;�M`�+���3N,�3VE�ʞ&ZY&amp#17;&amp#3;�&amp#5;&amp#14;�4Pxh5&amp#29;kW�zr�Y��a&amp#24;�Dw��g&amp#6;󖮝j46=&amp#25;�&amp#23;MP��&amp#7;Y&amp#24;�����0�9�|�&amp#14;�&amp#31;8u8hVJI���&amp#29;&amp#30;��@/Q&amp#21;̯t�'�(��+���̊
+�h��&amp#17;:��*�yi/F�N&amp#30;T��-�]&amp#15;1�v�&amp#23;�&amp#11;:ʯ\�/��8Ҧ��ܝ8��Io����ӊ3&amp#25;ɳ7���8'&amp#5;��H�X�:�w:3��ҥ�&amp#21;+&amp#8;F&amp#16;;�&amp#8;&amp#21;�&amp#6;&amp#16;�&amp#1;�&amp#27;&amp#8;&amp#15;� &amp#0;&amp#8;�&amp#16;&amp#24;&amp#1;�+&amp#0;0�&amp#0;a&amp#0;*~A&amp#4;�&amp#5;G�&amp#2;�&amp#0;W�&amp#2;�&amp#0;V@�)&amp#31;&amp#25;&amp#1;Y&amp#2;�# F@��&amp#7;������k�5��(����^9�&amp#27;��&amp#17;j4�+�y?&amp#23;�Q���S;�/&amp#11;߃�����e)�R�2yoݞ[{^kz��C%kr�
+Ѡ���8k&amp#0;o��[�*��Jn./f��ήM��&amp#22;��[
+Ԣ�_�Y-�S�pz��~�.�J��&amp#0;&amp#27;ZB�Tl&amp#27;��굌g�Q��I��&amp#0;%�|���w&amp#21;&amp#28;�����q�g�i�����8��L^Wi�}KD����s�+�z&amp#8;O(�.@V�-R�&amp#24;��&amp#7;9'W��&amp#17;��b,�X��O&amp#18;g�w�ё��&amp#6;:��Tͨ�u&amp#12;
+'<�X�S3Z��3&amp#29;n&amp#4;j4YZY&amp#26;��S*ެ�Cy�&amp#11;*é�R���W�Nr{,�ꯣcsU�1e�S��|?q?��nyZ��l��&amp#27;[�Γ��&amp#31;�&amp#21;<.������9w�&amp#26;pM���<u�y��*�&�&amp#23;��˖�ĭ*z3?&�"In�Ӂ*OП$�M�5�:Z�&amp#15;	8��j�U�F�UV&amp#14;��Ld�E�
+�1L�N�W&amp#4;f�:��)��Yq����%�ͼ�Ӧ���^��<H��fE�&amp#24;^,���: x��X�����&amp#23;Sن��g�4�p�m�ͣY�]ezKZ	$z3��N�&amp#14;�3��x����K��&amp#1;ɔ�۹z�D�D��&amp#26;'N'����is�Q[�&amp#29;�z�[:���{���GN8?iP]/f�h��r:V&amp#21;#�������J�&amp#12;�;Hϥ֊��E�&amp#23;}�8�gܽF;��P�nbҔ_K�M&amp#14;���x��&amp#23;&amp#25;7�ܞ2�Ş	�8�ar��x�^&amp#26;�̽�M��&amp#8;����z���F&amp#11;&amp#25;5�g���*���S��ӧ���
+�\&amp#16;&amp#6;&amp#2;�!^&amp#2;&amp#21;��2!r&amp#0;"&amp#7;b�&amp#0;&amp#30;�@&amp#8;&amp#15;܀o��&amp#0;&amp#30;p&amp#0;�&amp#1;&amp#0;"&amp#5;@&�&amp#2;�&amp#4;`+
+^B&amp#0;R��+&amp#1;X
+�Ȥ`+�&amp#2;4@�.go&amp#21;��&amp#0;�e�iNQ�J������&amp#0;S�Y��H��F��G:�&amp#31;,�Я3&amp#8;[�����G�z���&amp#0;O&amp#0;�;�F�*&amp#21;�P�&amp#21;8&amp#24;(&amp#29;=�Ӏ�
+��p�&amp#22;M�^K
+Fi����i���TO��Lk��������қ=8�Ӥ��ݕ�jAa��i��()&amp#27;3kP2s�&amp#30;&amp#12;��&amp#27;��.u�u&amp#24;�cu�&amp#30;r�T�&amp#15;&���r�2��P�E&amp#18;�c��U&amp#8;Ԋ�,��֢�,��j&amp#17;��O�A�`��B�nu����l�/�oZ�&amp#8;�:�ZhU*4��+X������A.���;����v-��1K&amp#16;H�g�G;��v0]��&amp#22;z�Z�.&amp#11;ä��Z�/Xnl!$�3cR��Z&amp#29;9��<���ӛSÐ�&amp#19;��M�W�&amp#18;[D��_��s�J�&amp#8;�qƺ�U�p�h�FyQkl&amp#25;��n�F��&amp#28;�(�J�Bk���U&amp#14;��&amp#26;�,�&amp#26;"�&amp#25;�(�O+�͎uͶ{~$��Yrn-��/&amp#30;}�T�dβ���ĔY&amp#19;5N��"�Ab�ӓ�i�/���(&amp#31;&amp#21;��&amp#30;B�]�'OnI�$묏ach����UסO&amp#7;^+d"UX�P�b�Za^{Q�q��7�c���&w���?���J�C�&amp#23;�f��/S?%�f����:y�k�Bi�&amp#29;Y_{��2�j�\b�i��/��j�+�S\�pt�F��&amp#0;
+{&amp#28;�&amp#0;��&amp#20;ӿ�R�aOyɤ����ǩ�q8Q�>���&�Go�&amp#14;f��tЅ&amp#20;�9�����z}&amp#18;9�l�R�����VZ�&amp#31;x��g<޵^��%&amp#7;%�'���&amp#25;���$��c��u������&amp#22;�k[�L��ԥ�5+"&amp#21;��&amp#4;B��B�&amp#24;B�&amp#4;(D�&amp#16;&amp#24;&amp#0; &amp#0;&amp#30;�&amp#1;�&amp#0; w"&
+&amp#1;&amp#4;(&amp#1;&amp#0;(&amp#20;�&amp#20;&amp#24;
+&amp#4; V&amp#2;�&amp#3;&amp#1;Y&amp#20;��W�&amp#20;�&amp#5;�&amp#5;�T&amp#29;��&amp#26;)e�qX�N�&amp#0;�?��}�G��[ӊ�)/���C�U�)?��U����o]ޫ5�Ɨ¾}�'�cu�g'"�
+�eB��cf�&amp#1;T0&amp#16;1�&amp#2;,��J�F$�������s4�&amp#22;c���&amp#0;&amp#26;�h7��A��*�&amp#0;&amp#31;&amp#27;m�+w6��F�ʟ&amp#23;���9qI��o&amp#24;���ӬjS���]O)�mUKc5�N��4�,�f��&amp#27;�.m���[G-���4'	<��s�Yz�P�+=C#4�s&amp#21;&amp#21;JDUNF-R�d��%#1b�H�l���$��#���.x��N<�s�zK[
+4��Y=���Zu(R��[&amp#29;f\�th�[&amp#27;�=m�M&amp#20;\��8
+Y$&amp#5;&amp#21;"���%F/��4��:K��|W��R���&amp#16;�������h&amp#20;+E��m�lO�O�5|&amp#29;cQ�(��y�Nw�Y�F&amp#30;&amp#5;ҿ�y��&amp#0;ݏ�g�&amp#28;���j�O��&amp#12;&amp#26;eR��6��n~&&amp#24;��*x?Aq�V�M�M��/�L/��2��:\�hJt_ϩ~g-~&amp#28;��Sڼ����iw&amp#14;��(s&amp#25;�&amp#26;<����UR��䕦�L��˂)��&amp#5;5ie&amp#6;,snm���ἹW&amp#22;�ŕ��Y&amp#28;&amp#26;{�덜&amp#24;�&amp#0;�*.�&amp#6;̵#e*+�jF��F�q�&amp#26;����p�V�.����%���#�i�
+	lz1�]�&amp#20;p��[!&amp#12;&amp#26;U�@0	7�&amp#28;�՘�5��&amp#26;�\[q<�nG����&amp#7;�羍��N�?�x}2�j����r��`���+�9��;��f�����W&amp#29;&amp#18;�	��a&amp#26;�&�&amp#4;�9<F+����iZ\m&amp#23;�W⸗�+�_��9�&amp#22;���ҵ��U�ǻf��<�k��5eV�ޗ&amp#11;�_�r��\u�K*Ӭ�G)�~��&amp#18;�:g��F�Lp��o�\��&amp#24;�7��N�W�����#&amp#21;���J|���ե�0��XB���[�!_�&amp#16;�.B @d&amp#3;!&amp#0; &amp#0;2DB��&amp#4;&amp#0;&amp#6;&amp#2;&amp#1;&amp#4;�E&amp#0;&amp#0;&amp#4;&amp#0;nU&amp#12;�&amp#0;&amp#0;&amp#6;&amp#20;�
+�&amp#21;��)&amp#26; V��F�='����&amp#17;����.��&amp#0;S�'��<ͮ�}�ޚ�<&amp#27;uy�&amp#20;_+k*�3�"��&amp#28;�U�:�%R��M�RnO��&amp#30;�k��j��J�&amp#21;�&amp#6;T&amp#0;������CK��Ҍ&amp#30;�?���{O��j�u&amp#19;���O7���}(%�&amp#15;��˹C�v�_q}&amp#14;��[&amp#26;�[��&amp#17;�Ϝ�X�&amp#26;]&amp#24;��:�&amp#19;��iJ=�p�D#&amp#8;�
+��
+0՚��*��&amp#25;fd^��^Mĭ1��H�WV�d�r/�#$�8za�5�.��	=�&amp#22;�&amp#29;�����a8�<��&amp#20;̕Tə�\��V��\e�4��v)�'����6�E�8�+&amp#8;�e�U��m�er���8:F+�J;&amp#27;F��&amp#28;&amp#0;�&amp#2;���&amp#5;2�c�Ҽ��/&amp#14;�t�S�	v	h�P�;���	�Bw�UU��*�Z��GUt��ڔ%�6�k�rr��o:����&amp#14;��R��)�������3?&amp#27;&amp#28;�%����&amp#11;�d�i���&amp#0;�7�&amp#0;�g����&amp#0;&amp#23;\z�&amp#0;���kuiS˹�*R����y����gR��&amp#18;�SId#=ZJA�&amp#24;+�'خ&amp#26;˛^�ؒ8k,�^&amp#31;&amp#27;&amp#14;�q��3��#�B�M7#�mC-&amp#17;�&amp#29;�K,�(�ʻ�VIcc�0�u�PI&amp#30;�&amp#25;m�&amp#12;&amp#26;U�&amp#20;0Pl
+jL���O)��[��5&amp#24;ud�m�G���ݳͥ�V�&amp#25;���R�M5�[���tvm�B�MF⛔��Q|�&amp#12;�O���+�7:�V���#/�������>�D㩧�l�����G�G��sĴ׷��!ÝW�`��m�<��k���eT�챲^���V�ƭ:�u���5��x��]�(Ǆ���'�&amp#0;�(���4�V*-�]M�����w�&amp#14;e�veb�7�ن^z�-g&amp#6;k&amp#21;�֥�0��+ V�
+ȅ~�+&amp#8;R&amp#5;&amp#8;�D(&amp#31;"!B#&amp#0;&amp#4;@�&amp#4;`&amp#0;&amp#7;p��&amp#0;e&amp#17;��&amp#0;&amp#28;&amp#21;A�&amp#0;&amp#12;&amp#0;�dB��d
+���q�&amp#7;���9+i��<���>�g3#�g��R�E/�ͮ���&amp#3;Pq�t&amp#19;ޣ�.O>�o�>ny^r�P�&amp#21;&amp#1;�&amp#20;[x/QѱѮ.d�&amp#23;�&amp#23;_��a�4�&amp#8;/��9}��n�/Se��&amp#20;��&amp#17;�����&amp#27;&amp#26;T��H�ne�1�G�/&amp#22;)E&amp#29;&�6&amp#15;R:�'Ē��~i�e�u&amp#24;w/�D�c��F/&amp#25;���1aaw*�a��4S�9�8u�����܋Պ�H�&amp#23;&amp#28;&amp#21;	%�&amp#24;�"�Q�N�˺�SOm�:�]%p�,�[�<��}r��q�N\VZ�&amp#14;&amp#12;�{��&amp#22;Y�&amp#17;�5b�Z&amp#18;��&amp#24;��=F�i(����N;��m��5�&amp#26;��߃�k����<`�:�N&�z(-���N�&amp#20;��J D�
+��)��"�IEd,&amp#8;O�d��l��بV�&amp#3;i�7�Zԍ6��:�K&amp#18;��z�d$�Ǩi���&amp#29;&amp#26;��g�?X�&amp#27;���k:��j�5֙U�';w�*���_�#��y�W�&amp#30;�L*g7D�@��5%�&amp#28;�&amp#24;�[�;&amp#26;q�b�m�&amp#31;�,q�&amp#26;t��&amp#17;8�m&amp#12;����wlm�[&amp#22;F��Kt����e׷���;f2�N&amp#7;D]&amp#24;�0&amp#1;��jT�%��V��Z���\����#�r��pӬ�-�&amp#4;�r�\K�&amp#24;�q�N0Ξ&amp#25;��,&amp#27;��sÑ��V{u�c�	&amp#29;������ɣ&amp#28;�&amp#26;��\�Y��-�)��*E,JO&amp#31;%�K��n~��&amp#16;I{.��&amp#0;�w�5UyuJ]�&amp#27;e͹[2#�yI���c�qk��3k6?�ס�Ȅl�[&amp#1;[�&amp#17;&amp#8;�&amp#2;���&amp#1;&amp#1;�&amp#0;L&amp#8;&amp#16;&amp#8;��&amp#0;D`&amp#0;�&amp#16;@P &amp#3;�&amp#16;
+ 
+&amp#0;&amp#2;2��&amp#1;C�a@&amp#5;a&amp#1;��)&amp#25;&amp#0;d	�&amp#2;F2��&amp#5;���&amp#21;�7��_h�,��&amp#20;W1��Ϲ�Ӵu��(Ri�&amp#28;��|kƗ����'�Mo�g��=u�<�G&amp#23;"��&amp#21;�&amp#18;0rx\�x�=&amp#22;��μ�)Ǔ<�r�&amp#14;��S�&amp#21;����Y&amp#30;���8-�Ӎ-j1F5[���T�&amp#31;��&amp#29;��Z�iw<&amp#27;��&amp#29;�����c&amp#31;���~��z��L�&amp#0;&amp#18;���;�g��\9w���&amp#12;�=\u&amp#25;m�J�7�z1��X��u�ɴ{3&amp#25;�N�c&amp#21;��FRxE	��&amp#17;�&amp#5;s{&amp#5;���^LXܪg&amp#4;�	��&amp#5;ղ�{&amp#28;����z���x<��&amp#29;%p�g89U��d�g��H�1����ر�t�=<6�c1��&amp#22;�j1[&amp#29;�+l(�&amp#29;#5��3�\�e(���Z�����&amp#11;'�F*�<�&amp#2;24��Us��M��)�%��&amp#21;%�&amp#3;���#i�R&amp#5;=�\{&amp#8;�c{&amp#21;&amp#11;,�&amp#12;1��U�^���ta&amp#28;E/C��&amp#29;�"��5�&amp#28;2y@-Kzub�R*Q�ËYM&amp#25;�_��8&amp#26;��t�Г�Nޯ+&amp#27;���y����vϵ��.�޽�yP��g&amp#7;�����&amp#19;ǩsy^�zD�EG&amp#5;$F,S:&amp#5;q�V�/@�&amp#26;�h�I&amp#5;�GcG	&amp#29;�&amp#25;��<`�f%t��c�F�#A�@l*��&amp#4;&amp#24;�U1kr0ժq�t���NNV�3M�&amp#24;�Q��S'&amp#26;r.��f�ʯ&amp#12;&amp#28;5&amp#17;��w3&amp#11;&amp#21;��/�m{��]N5P�y�����-��ص���K�ι�qڵ�QXm���::tb��GX�h�k~&amp#14;��u1�&amp#21;&amp#24;k�!&amp#28;�yfjX�R�z&amp#24;�������B���#&amp#8;&amp#12;�[d&amp#11;���@&amp#2;&amp#0;@&amp#0;0�&amp#0;" Dܠ&amp#4;B&amp#0;��&amp#0;&amp#17;?&amp#18;&amp#0;Q;&amp#5;&amp#15;� &amp#20;&amp#14;�&amp#0;2�E&amp#0;&amp#3;(R&amp#5;`+
+&amp#15;,�&amp#8;&amp#21;�t|?l�u[zil���H��<������>�E(�Dz-us�Ay&amp#26;V�$�:Sg-���W��qsR�����;&amp#30;?K�����sB��.&amp#30;v(��zg�QNKn�g�t�}'G�!J	��#�r�&amp#20;⢎�t�S&amp#8;ƷƦYkW����w�&amp#24;jԜ��w�]��<�7������U&amp#19;��Ö~�f�9�&amp#14;�Ռ�2�Iv>���>�4H�ʣ�G�&amp#26;뎲�YZF8��&amp#30;u��~�=8=��Z��k��G&z��
+�P&amp#4;u&amp#2;�̂�ȍE-�K8����6�q{&amp#28;w��yK�YBl��q��t��D��&amp#0;���i�N��k�3�I&amp#30;�N�P���mاM$w�&amp#21;j�ѕ��u˝j���ήF�#���"��deT��n�"���(��x��3Z�NR�/g��lY&amp#25;�e:��d&amp#19;��&amp#0;&amp#30;��<��T\�@
+t�&amp#6;���I&amp#14;��r�r&amp#2;�JR��0���&amp#4;i��&amp#21;�Y&amp#3;�����&amp#14;��&amp#21;��&amp#0;&amp#14;�7O�&amp#0;&amp#19;����t��^&amp#19;Q�n���U���ʋ��&amp#31;;x��o^u4�&amp#19;L�UtRh�X.�xEb�}�/�����]�8%�Ո��ۭ��%o�i&amp#23;��|�\�&amp#21;��C&amp#22;��5�&amp#28;�]$`�3����r9ڥɕUV;&amp#26;i̻�&amp#12;�Ÿ[�r�XjG~&amp#14;V(Ѡ�"��]�+D�x:��Q�&amp#20;t����c�F�H�ej��T��(�WtKQ��2fӌ�s�x�����B�D+ �� &amp#16;&amp#0;� �&amp#3;$@"&amp#0;&amp#16;"&amp#4;&amp#14;
+!&amp#16;&amp#0;�&amp#15;�&amp#17;&amp#2;�D
+&amp#12;�&amp#0;&amp#6;&amp#20;&amp#0;&amp#0;&amp#24;&amp#1;�&amp#20;&amp#0;�ȥl!&amp#24;R�&amp#5;d&amp#30;��V�wUn$��#&amp#23;���9̺e�&amp#26;mB�}�:�&amp#23;�u?.�ҋ����ù�T��|�G���d
+Tj��UjG<&amp#22;N�&amp#30;�A��N1�N�&amp#25;&amp#29;�&amp#30;��Q�RD��F�3c��܊�&�<�ݮ�*te.N?�k_.&amp#17;�H&amp#15;&amp#15;�\"��"�EXg���ܬr��{�y~&amp#23;��|�Epz�&amp#28;��M�{|�tm��{����Q�&amp#15;n'&amp#28;-^��yXe��z�<���9�W)�֤&amp#4;Ƞ�TSV&amp#29;I��&amp#28;J�9i&amp#30;oL�y�����G�_Mƻ=*u&amp#26;��r��e�,4�M,�<��;4)t�&amp#29;2��;&amp#29;�b�GX�[&amp#4;v�&amp#21;|N�Ν3h&amp#14;EE5&&amp#21;����U)�Y��.���*�o9%j+�ö~F#T�yx5��:�c�&amp#29;8�gQӈ��:�2����KӍ&amp#17;�&amp#18;+'R�%@�M�&amp#20;�h��&amp#1;�C��	�+�"��Yй��ק&amp#26;��%�&amp#26;���~�<����_ʔ[tg�Ro�&amp#11;�&amp#0;����_&amp#27;�&amp#0;���(��N&amp#22;Nm��&amp#18;�cM�>%�Y�s�v�6��Íu�5��2�&amp#6;m&amp#22;�Q&amp#28;���C6��:�91kR0֨q�t�u&q��&amp#18;f&amp#1;�R��G*��J�=s�VG&amp#28;��F�:F�Z�ъ�7&amp#28;�Ldt�����7&amp#5;џ��,���IL�E&amp#19;�&amp#21;T�s��&amp#28;Q�ָ����䬕�+{�&amp#19;�&amp#11;����&amp#18;�
+��&amp#11;&amp#0;�&amp#0;QJ&amp#12;�"�r�d��|�&amp#8;�&amp#0;&amp#16;B)[xF��ؕ �3�
+&amp#30;�&amp#0;�&amp#0;����&amp#0;&amp#12;&amp#1;�,&amp#14;�YJVD&amp#7;�&amp#20;�#�&amp#1;&amp#1;++O}�4���y<���t��UmP"WH�/��NW��yK-#��&amp#0;Lz<�<�ȯ�&amp#19;Ш�X6�,&amp#29;p�����Ri-Ɲ���ӓ��9Wf�6q��|&amp#18;�,�^����g��㦢�3��S#���29�*�����$�=�Q�N�&amp#20;},G�Mq��&amp#28;��m&amp#20;V+,s�E!T&amp#24;&amp#8;̴F�&amp#11;��4n��&amp#27;���tcK&amp#28;�Ѥ�Q�?n�v-(�Ib(Ď��8�v*�|R7���f���,U�;�ήGX�3HI6QEF�1ԓ�!�H�"idxϱ�UM��f�&amp#21;ɴ�0�+m�@*O8�&amp#20;&amp#27;x@	7�B&amp#5;9<�"��&amp#6;�tr[�T._R
+�v&amp#1;��`Y&amp#30;J�&�&amp#0;�
+�� v*<��hRvT�8��&amp#19;J2�[�_��;���:��S��QТ�&amp#16;&amp#29;&amp#11;nD���^ۄzp��Ԡ��0�&amp#6;�j2��Y6Eg�ٚ�a���M�:��4�&amp#25;d�NtT�↉&amp#8;&amp#21;^����=ٖ�z���iD~� �Zp�nzta�6����&�y7&amp#5;�l�&amp#18;.���&amp#7;'�TW6�Eyy9�Qζ��
+File size: 94878 bytes
+]]></system-out>
+  </testcase>
+</testsuite>
